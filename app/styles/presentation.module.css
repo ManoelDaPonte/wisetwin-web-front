@@ -1,0 +1,20 @@
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.automated {
+	font-size: 30px;
+	font-weight: bold;
+	color: #0077b6;
+}
+
+.powerplant {
+	font-size: 30px;
+	color: #03045e;
+	font-weight: bold;
+}
+
+.normaltext {
+	font-size: 15px;
+}

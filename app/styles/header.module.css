@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+.logo img {
+	height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.tabs {
+	display: flex;
+}
