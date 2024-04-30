@@ -4,20 +4,12 @@
 	align-items: center;
 	gap: 8px; /* Ajustez selon votre design */
 	padding: 16px 28px;
-	border-style: solid;
-	line-height: normal;
-	border-radius: 10px; /* Pour un bouton arrondi */
+	border-radius: 3px; /* Pour un bouton arrondi */
 	transition: background-color 0.3s, color 0.3s;
+	color: rgb(255, 255, 255);
+	width: fit-content;
 }
 
-.fullWidth {
-	width: 100%;
-}
-
-.icon {
-	margin-left: 8px;
-	border-radius: 50%;
-	background-color: white;
-	width: 20px;
-	height: 20px;
+.button:hover {
+	cursor: pointer;
 }

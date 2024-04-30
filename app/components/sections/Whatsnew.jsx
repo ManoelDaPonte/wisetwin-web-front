@@ -1,5 +1,5 @@
 const Whatsnew = () => {
-	return <div>salut</div>;
+	return <div>Whatsnew</div>;
 };
 
 export default Whatsnew;

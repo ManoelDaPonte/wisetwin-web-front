@@ -2,8 +2,11 @@ import React from "react";
 import styles from "@/styles/button.module.css";
 
 const Button = ({ label, onClick, color }) => {
+	const buttonStyle = {
+		backgroundColor: color,
+	};
 	return (
-		<div className={styles.button} onClick={onClick}>
+		<div className={styles.button} style={buttonStyle} onClick={onClick}>
 			{label}
 		</div>
 	);
