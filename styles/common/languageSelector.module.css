@@ -1,0 +1,38 @@
+/* LanguageSelector.module.css */
+.container {
+	position: relative;
+	justify-content: left;
+}
+
+.dropdownTrigger {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.dropdownMenu {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	bottom: 0%; /* Position just below the toggle to start */
+	width: 100%;
+	background-color: rgba(248, 248, 248, 0.51);
+	transform: translateY(-20%); /* Move the dropdown up by its own height */
+}
+
+.menuItem {
+	cursor: pointer;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	width: 100px;
+}
+
+.dropdownMenu.downward {
+	top: 100%;
+}
+
+.dropdownMenu.upward {
+	bottom: 100%;
+}

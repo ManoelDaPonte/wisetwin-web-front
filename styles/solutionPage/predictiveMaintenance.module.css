@@ -1,0 +1,31 @@
+.wrapper {
+	width: 100%;
+}
+
+.wrapper > div {
+	margin-top: 50px;
+}
+
+.title {
+	font-size: 50px;
+	color: #03045e;
+	font-weight: bold;
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.list {
+	font-size: 18px;
+}
+
+.list > div {
+	margin-top: 10px;
+}
+
+.description {
+	font-size: 30px;
+	color: #0077b6;
+}

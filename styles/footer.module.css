@@ -1,0 +1,15 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(28, 35, 84);
+	padding: 20px;
+	color: rgb(255, 255, 255);
+}
+
+.copyright {
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+	gap: 5px;
+}

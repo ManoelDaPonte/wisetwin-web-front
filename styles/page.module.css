@@ -1,0 +1,23 @@
+.wrapper {
+	width: 100%;
+}
+.pageSections {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pageSections > div:not(:last-child) {
+	width: 80%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #373737;
+}
+
+.pageSections > div:last-child {
+	width: 80%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

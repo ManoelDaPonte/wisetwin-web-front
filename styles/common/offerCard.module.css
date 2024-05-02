@@ -1,0 +1,59 @@
+.offerCard {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 500px;
+	background-color: rgb(241, 241, 241);
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+.offerImage {
+	position: relative; /* Crucial for positioning the Image component */
+	width: 100%; /* or any specific size */
+	height: 180px; /* or any specific size */
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.offerTitle {
+	display: flex;
+	width: 100%; /* or any specific size */
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 20px;
+	font-weight: bold;
+	color: #0077b6;
+}
+
+.offerDescription {
+	display: flex;
+	width: 100%; /* or any specific size */
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.offerItem {
+	list-style: none;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.learnMore {
+	position: relative;
+	display: flex;
+	bottom: 0px;
+	width: 100%; /* or any specific size */
+	align-items: center;
+	justify-content: center;
+}

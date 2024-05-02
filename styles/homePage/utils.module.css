@@ -1,0 +1,22 @@
+.columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.columns > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.columnTitle {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.links > div {
+	/* Styles pour chaque lien à l'intérieur de la colonne */
+	margin-bottom: 15px; /* Ajoutez une marge interne pour espacer les éléments à l'intérieur de la colonne */
+	margin-top: 15px;
+	font-size: 12px;
+	cursor: pointer;
+}

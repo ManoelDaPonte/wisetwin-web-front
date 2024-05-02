@@ -9,7 +9,7 @@ import styles from "@/styles/page.module.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-const HomePage = () => {
+export default function Page() {
 	return (
 		<div className={styles.wrapper}>
 			<Header />
@@ -23,6 +23,4 @@ const HomePage = () => {
 			<Footer />
 		</div>
 	);
-};
-
-export default HomePage;
+}

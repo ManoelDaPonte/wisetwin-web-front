@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	background-color: white;
+	top: 0;
+
+	height: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	z-index: 100;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo img {
+	height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.tabs {
+	display: flex;
+	height: 50px;
+}
