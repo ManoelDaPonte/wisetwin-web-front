@@ -1,10 +1,12 @@
-import styles from "@/styles/homePage/saasplatform.module.css";
-import Circlecard from "@/components/common/Circlecard";
 import Image from "next/image";
+
+import Circlecard from "@/components/common/Circlecard";
 import Tree from "@/components/common/svg/Tree.jsx";
 import Shield from "@/components/common/svg/Shield.jsx";
 import Monney from "@/components/common/svg/Monney.jsx";
 import Clock from "@/components/common/svg/Clock.jsx";
+
+import styles from "@/styles/homePage/saasplatform.module.css";
 
 const Saasplatform = () => {
 	return (
