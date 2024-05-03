@@ -10,23 +10,27 @@ import Utils from "@/components/common/Utils";
 
 import styles from "@/styles/page.module.css";
 
+import { Suspense } from "react";
+
 export default function Page() {
 	return (
-		<div className={styles.wrapper}>
-			<Header />
-			<div className={styles.pageSections}>
-				<div className={styles.mainContent}>
-					<div className={styles.beContactedForm}>
-						<BeContactedForm />
-					</div>
-					<div className={styles.contactAndFeedback}>
-						<ContactUs />
-						<FeedBack />
+		<Suspense>
+			<div className={styles.wrapper}>
+				<Header />
+				<div className={styles.pageSections}>
+					<div className={styles.mainContent}>
+						<div className={styles.beContactedForm}>
+							<BeContactedForm />
+						</div>
+						<div className={styles.contactAndFeedback}>
+							<ContactUs />
+							<FeedBack />
+						</div>
 					</div>
 				</div>
+				<Utils />
+				<Footer />
 			</div>
-			<Utils />
-			<Footer />
-		</div>
+		</Suspense>
 	);
 }
