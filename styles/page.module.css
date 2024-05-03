@@ -1,0 +1,38 @@
+.wrapper {
+	width: 100%;
+	flex-direction: row;
+}
+
+.pageSections {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pageSections > div {
+	width: 80%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #373737;
+}
+
+.mainContent {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.beContactedForm {
+	flex: 1;
+}
+
+.contactAndFeedback {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

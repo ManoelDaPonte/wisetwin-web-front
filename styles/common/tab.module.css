@@ -1,0 +1,15 @@
+.tab {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	margin-left: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.tab:hover {
+	color: #0077b6;
+	cursor: pointer;
+}

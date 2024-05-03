@@ -1,0 +1,46 @@
+.utils {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.columnsContainer {
+	display: flex;
+	width: 80%;
+}
+
+.columns {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.columns > div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+}
+
+.columnTitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.links > div {
+	margin-bottom: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #000;
+}
+
+.links > div:hover {
+	color: #007bff;
+}
+
+.links {
+	font-size: 12px;
+}
