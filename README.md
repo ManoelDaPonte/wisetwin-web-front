@@ -1,4 +1,4 @@
-# Wise Twin Website
+# Wise Twin
 
 This is the web site of Wise Twin
 
