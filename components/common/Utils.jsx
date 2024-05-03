@@ -1,4 +1,4 @@
-import styles from "@/styles/common/utils.module.css";
+import styles from "@/styles/utils.module.css";
 import Image from "next/image";
 
 const Utils = () => {
