@@ -1,13 +1,16 @@
 "use client";
-import React from "react";
+
 import WiseTwin from "@/components/solutionPage/WiseTwin";
 import Offers from "@/components/solutionPage/Offers";
 import OperationalAwareness from "@/components/solutionPage/OperationalAwareness";
 import PredictiveMaintenance from "@/components/solutionPage/PredictiveMaintenance";
 import FormationTraining from "@/components/solutionPage/FormationTraining";
-import styles from "@/styles/page.module.css";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Utils from "@/components/common/Utils";
+
+import styles from "@/styles/page.module.css";
 
 export default function Page() {
 	return (
@@ -20,6 +23,7 @@ export default function Page() {
 				<PredictiveMaintenance />
 				<FormationTraining />
 			</div>
+			<Utils />
 			<Footer />
 		</div>
 	);

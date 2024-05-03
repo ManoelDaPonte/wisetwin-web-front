@@ -5,11 +5,11 @@
 	align-items: center;
 	padding: 10px 20px;
 	margin-left: 10px;
-	border-radius: 5px; /* Arrondissement des bords */
+	border-radius: 5px;
 	font-weight: bold;
 }
 
 .tab:hover {
-	color: #0077b6; /* Couleur du texte au survol */
+	color: #0077b6;
 	cursor: pointer;
 }
