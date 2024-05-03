@@ -15,7 +15,7 @@ node -v   # Check if Node.js is installed
 npm -v    # Check if npm is installed
 ```
 
-If Node.js and npm aren't installed, download and install them from [Node.js official website] (https://nodejs.org/en).
+If Node.js and npm aren't installed, download and install them from [Node.js official website](https://nodejs.org/en).
 
 1. Clone the repository
 
