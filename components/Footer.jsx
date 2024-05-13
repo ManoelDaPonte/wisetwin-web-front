@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className={styles.footer}>
 			<LanguageSelector height={20} width={20} />
-			<div className={styles.linksGrid}>
+			<div className={styles.linksContainer}>
 				<div className={styles.link}>General terms and conditions</div>
 				<div className={styles.link}>Privacy policy</div>
 				<div className={styles.link}>Cookies policy</div>
