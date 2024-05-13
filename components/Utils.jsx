@@ -5,14 +5,14 @@ const Utils = () => {
 	return (
 		<div className={styles.utils}>
 			<div className={styles.columnsGrid}>
-				<div className={styles.links}>
+				<div className={styles.wiseTwinContact}>
 					<Image
 						src="/image/png/wise_twin_logo.png"
 						alt="wise_twin_logo"
 						width={100}
 						height={100}
 					/>
-					<div className={styles.logoContainer}>
+					<div className={styles.logoGrid}>
 						<a
 							href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61558731954437"
 							target="_blank"
@@ -52,7 +52,6 @@ const Utils = () => {
 							/>
 						</a>
 					</div>
-					+34 6 13 02 27 72
 				</div>
 				<div>
 					<div className={styles.columnTitle}>Start With</div>

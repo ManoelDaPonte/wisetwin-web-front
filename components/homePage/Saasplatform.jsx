@@ -13,8 +13,8 @@ const Saasplatform = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.containerGrid}>
 				<div className={styles.containerText}>
-					<div className="title">Intuitive</div>
-					<div className="subtitle">SaaS Platform</div>
+					<div className="subtitle">Intuitive</div>
+					<div className="title">SaaS Platform</div>
 					<div className="normalText">
 						Deploy your SaaS (Software as a Service) platform to
 						increase operational visibility and awareness, for

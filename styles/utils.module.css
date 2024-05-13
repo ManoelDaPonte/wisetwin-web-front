@@ -15,12 +15,15 @@
 	margin-bottom: 15px;
 }
 
-.logoContainer {
-	display: flex;
+.logoGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.links {
-	font-size: 12px;
+.wiseTwinContact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .links > div {
@@ -32,4 +35,19 @@
 
 .links > div:hover {
 	color: #007bff;
+}
+
+@media screen and (max-width: 600px) {
+	.links > div {
+		font-size: 10px;
+	}
+
+	.links {
+		font-size: 10px;
+	}
+
+	.links > img {
+		width: 60px; /* Ajuster selon le besoin */
+		height: 60px; /* Ajuster selon le besoin, gardez le rapport d'aspect */
+	}
 }
