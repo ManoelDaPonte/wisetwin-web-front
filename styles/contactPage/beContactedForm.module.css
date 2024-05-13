@@ -56,3 +56,19 @@
 .submitButton:hover {
 	background-color: #0056b3;
 }
+
+.successBanner {
+	background-color: green;
+	color: white;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.errorBanner {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: center;
+}
