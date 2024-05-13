@@ -1,11 +1,5 @@
-.wrapper {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-}
-
-.offers {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
+.gridContainer {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

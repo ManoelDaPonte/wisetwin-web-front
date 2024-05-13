@@ -11,11 +11,11 @@ import styles from "@/styles/homePage/saasplatform.module.css";
 const Saasplatform = () => {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.container}>
+			<div className={styles.containerGrid}>
 				<div className={styles.containerText}>
-					<div className={styles.title1}>Intuitive</div>
-					<div className={styles.title2}>SaaS Platform</div>
-					<div className={styles.sentence}>
+					<div className="title">Intuitive</div>
+					<div className="subtitle">SaaS Platform</div>
+					<div className="normalText">
 						Deploy your SaaS (Software as a Service) platform to
 						increase operational visibility and awareness, for
 						real-time decision making. Embedded AI algorithms
@@ -29,13 +29,14 @@ const Saasplatform = () => {
 				<div className={styles.containerImage}>
 					<Image
 						src="/image/png/saas_exploded.png"
+						alt="saas_exploded"
 						width={400}
 						height={300}
 					/>
 				</div>
 			</div>
 
-			<div className={styles.containerCard}>
+			<div className={styles.containerCardGrid}>
 				<Circlecard
 					text="30% Costs Savings"
 					icon={<Monney height={40} width={40} />}

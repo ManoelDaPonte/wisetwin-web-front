@@ -8,7 +8,7 @@ import FormationTraining from "@/components/solutionPage/FormationTraining";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Utils from "@/components/common/Utils";
+import Utils from "@/components/Utils";
 
 import styles from "@/styles/page.module.css";
 

@@ -5,7 +5,7 @@ import Saasplatform from "@/components/homePage/Saasplatform";
 import Gamechanger from "@/components/homePage/Gamechanger";
 import Addedvalue from "@/components/homePage/Addedvalue";
 
-import Utils from "@/components/common/Utils";
+import Utils from "@/components/Utils";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 

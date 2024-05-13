@@ -5,9 +5,9 @@ const Gamechanger = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.containerText}>
-				<div className={styles.title1}> Real</div>
-				<div className={styles.title2}> Game Changers</div>
-				<div className={styles.sentence}>
+				<div className="subtitle"> Real</div>
+				<div className="title"> Game Changers</div>
+				<div className="normalText">
 					Digital twins are no more science-fiction. Wise Twin thrives
 					to deploy high quality 3D rendering, with real-time
 					interactive data visualization, for complex IIOT network.
@@ -21,6 +21,7 @@ const Gamechanger = () => {
 			<div className={styles.containerImage}>
 				<Image
 					src="/image/svg/recompressor.svg"
+					alt="recompressor"
 					width={400}
 					height={300}
 				/>

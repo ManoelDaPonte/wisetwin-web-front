@@ -1,30 +1,66 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: sticky;
-	background-color: white;
 	top: 0;
-
-	height: 100px;
-	padding-left: 20px;
-	padding-right: 20px;
-
-	z-index: 100;
-}
-
-.wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	padding: 0 20px;
+	background-color: white;
 }
 
-.logo img {
-	height: 50px;
+.topBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.leftGroup,
+.rightGroup {
+	display: flex;
+	align-items: center;
+}
+
+.menuButton {
+	display: none;
+	cursor: pointer;
 }
 
 .tabs {
 	display: flex;
-	height: 50px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.menuButton {
+		display: block;
+	}
+
+	.topBar {
+		justify-content: space-between;
+	}
+
+	.leftGroup {
+		order: 1;
+	}
+
+	.rightGroup {
+		order: 2;
+	}
+
+	.tabs {
+		display: none;
+	}
+
+	.tabs.show {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: white;
+		z-index: 100;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
 }

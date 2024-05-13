@@ -6,10 +6,12 @@ const Footer = () => {
 	return (
 		<div className={styles.footer}>
 			<LanguageSelector height={20} width={20} />
-			<div>
-				General terms and conditions | Privacy policy | Cookies policy
+			<div className={styles.linksGrid}>
+				<div className={styles.link}>General terms and conditions</div>
+				<div className={styles.link}>Privacy policy</div>
+				<div className={styles.link}>Cookies policy</div>
 			</div>
-			<div>© 2024 Wise Twin</div>
+			<div className={styles.nowrap}>© 2024 Wise Twin</div>
 		</div>
 	);
 };

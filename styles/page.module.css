@@ -18,21 +18,8 @@
 	border-bottom: 1px solid #373737;
 }
 
-.mainContent {
-	width: 80%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 20px;
-}
-
-.beContactedForm {
-	flex: 1;
-}
-
-.contactAndFeedback {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+.containerGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
 }

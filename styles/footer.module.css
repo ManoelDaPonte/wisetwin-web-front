@@ -5,11 +5,35 @@
 	background-color: rgb(28, 35, 84);
 	padding: 20px;
 	color: rgb(255, 255, 255);
+	gap: 50px;
 }
 
-.copyright {
-	display: flex;
-	font-size: 14px;
-	align-items: center;
-	gap: 5px;
+.copyrigth {
+	white-space: nowrap;
+}
+
+.link {
+	text-decoration: underline;
+	text-align: center;
+}
+
+.linksGrid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/* Media query pour les écrans de moins de 600px */
+@media (max-width: 600px) {
+	.footer {
+		flex-direction: column; /* Change la disposition en colonne */
+	}
+
+	.linksGrid {
+		grid-template-columns: 1fr; /* Une seule colonne pour les liens */
+	}
 }

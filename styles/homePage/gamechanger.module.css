@@ -1,35 +1,16 @@
 .wrapper {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	align-items: center;
 }
 
 .containerText {
-	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
 
 .containerImage {
-	width: 50%;
 	display: flex;
-	align-items: center;
-	justify-content: right;
-}
-
-.title1 {
-	font-size: 30px;
-	font-weight: bold;
-	color: #0077b6;
-}
-
-.title2 {
-	font-size: 50px;
-	color: #03045e;
-	font-weight: bold;
-}
-
-.sentence {
-	margin-top: 50px;
-	font-size: 20px;
+	justify-content: center;
 }

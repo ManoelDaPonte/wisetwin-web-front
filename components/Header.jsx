@@ -2,46 +2,71 @@ import Image from "next/image";
 import Link from "next/link";
 import Tab from "@/components/common/Tab";
 import Button from "@/components/common/Button";
-import LanguageSelector from "@/components/common/LanguageSelector";
 import styles from "@/styles/header.module.css";
 import { useRouter } from "next/navigation";
 
+import { useState } from "react";
+
 const Header = () => {
-	const router = useRouter(); // Use the useRouter hook
+	const router = useRouter();
+	const [isMenuOpen, setMenuOpen] = useState(false);
 
 	const requestDemo = () => {
-		router.push("/contact?interest=requestDemo"); // Use router.push to navigate
+		router.push("/contact?interest=requestDemo");
 	};
+
+	const toggleMenu = () => {
+		setMenuOpen(!isMenuOpen);
+	};
+
 	return (
 		<div className={styles.header}>
-			<div className={styles.wrapper}>
-				<div className={styles.logo}>
-					<Link href="/">
-						<Image
-							src="image/svg/wisetwin.svg"
-							alt="Logo"
-							width={200}
-							height={200}
-						/>
-					</Link>
+			<div className={styles.topBar}>
+				<div className={styles.leftGroup}>
+					<div className={styles.menuButton} onClick={toggleMenu}>
+						{isMenuOpen ? (
+							<Image
+								src="/image/svg/traverser.svg"
+								width={20}
+								height={20}
+								alt="Close Menu"
+							/>
+						) : (
+							<Image
+								src="/image/svg/menu-burger.svg"
+								width={20}
+								height={20}
+								alt="Open Menu"
+							/>
+						)}
+					</div>
+					<div className={styles.logo}>
+						<Link href="/">
+							<Image
+								src="/image/svg/wisetwin.svg"
+								alt="Logo"
+								width={200}
+								height={50}
+							/>
+						</Link>
+					</div>
+					<div
+						className={`${styles.tabs} ${
+							isMenuOpen ? styles.show : ""
+						}`}
+					>
+						<Tab href="/solutions" label="Solutions" />
+						<Tab href="/contact" label="Contact" />
+					</div>
 				</div>
-				<div className={styles.tabs}>
-					<Tab href="/solutions" label="Solutions" />
-					{/* <Tab href="/segments" label="Segments" /> */}
-					<Tab href="/contact" label="Contact" />
+
+				<div className={styles.rightGroup}>
+					<Button
+						label="Request a Demo"
+						color="green"
+						onClick={requestDemo}
+					/>
 				</div>
-			</div>
-			<div className={styles.wrapper}>
-				{/* <LanguageSelector
-					displayedText={false}
-					height={20}
-					width={20}
-				/> */}
-				<Button
-					label="Request a Demo"
-					color="green"
-					onClick={requestDemo}
-				/>
 			</div>
 		</div>
 	);

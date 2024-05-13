@@ -5,7 +5,11 @@ const CircleCard = ({ icon, text }) => {
 	return (
 		<div className={styles.circle}>
 			<div className={styles.content}>
-				<div>{icon}</div>
+				<div>
+					{React.cloneElement(icon, {
+						style: { width: "50%", height: "auto" },
+					})}
+				</div>
 				<div>{text}</div>
 			</div>
 		</div>

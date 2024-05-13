@@ -1,5 +1,4 @@
 import styles from "@/styles/common/offerCard.module.css";
-import Button from "@/components/common/Button";
 import Image from "next/image";
 
 export default function OfferCard({

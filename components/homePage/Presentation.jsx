@@ -10,11 +10,11 @@ const Presentation = () => {
 	};
 
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.gridContainer}>
 			<div className={styles.containerText}>
-				<div className={styles.title1}> Automated</div>
-				<div className={styles.title2}> Power Plants </div>
-				<div className={styles.text}>
+				<div className="subtitle"> Automated</div>
+				<div className="title"> Power Plants </div>
+				<div className="normalText">
 					Let our <b>Digitial Twins</b> work for you!
 				</div>
 				<Button
