@@ -8,12 +8,13 @@ const FeedBack = () => {
 		success: false,
 	});
 
-	// Référence pour accéder au formulaire et pouvoir le réinitialiser
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
 	const formRef = useRef(null);
 
 	async function handleSubmit(event) {
 		event.preventDefault();
-
+		setIsSubmitting(true);
 		const formData = new FormData(event.target);
 
 		const response = await fetch("/api/sendMailComment", {
@@ -44,6 +45,10 @@ const FeedBack = () => {
 		if (formRef.current) {
 			formRef.current.reset();
 		}
+
+		setTimeout(() => {
+			setIsSubmitting(false); // Réactiver le bouton après 5 secondes
+		}, 5000);
 	}
 
 	useEffect(() => {
@@ -70,17 +75,21 @@ const FeedBack = () => {
 					className={styles.textarea}
 					rows="4"
 				></textarea>
-				<button type="submit" className={styles.submitButton}>
+				<button
+					type="submit"
+					className={styles.submitButton}
+					disabled={isSubmitting}
+				>
 					Submit
 				</button>
 			</form>
 			{notification.show && (
 				<div
-					className={
+					className={`${styles.notificationBanner} ${
 						notification.success
 							? styles.successBanner
 							: styles.errorBanner
-					}
+					}`}
 				>
 					{notification.message}
 				</div>

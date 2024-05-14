@@ -1,6 +1,6 @@
 import styles from "@/styles/contactPage/beContactedForm.module.css";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function BeContactedForm() {
 	const [notification, setNotification] = useState({
@@ -8,11 +8,18 @@ export default function BeContactedForm() {
 		message: "",
 		success: false,
 	});
+
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
+	const formRef = useRef(null);
+
 	const searchParams = useSearchParams();
 	const interest = searchParams.get("interest");
 
 	async function handleSubmit(event) {
 		event.preventDefault();
+
+		setIsSubmitting(true);
 		const formData = new FormData(event.target);
 
 		const response = await fetch("/api/sendMailContact", {
@@ -38,6 +45,15 @@ export default function BeContactedForm() {
 				success: false,
 			});
 		}
+
+		// Réinitialisation du formulaire après l'envoi
+		if (formRef.current) {
+			formRef.current.reset();
+		}
+
+		setTimeout(() => {
+			setIsSubmitting(false); // Réactiver le bouton après 5 secondes
+		}, 5000);
 	}
 
 	useEffect(() => {
@@ -59,13 +75,13 @@ export default function BeContactedForm() {
 				possible with the right person to help you.
 			</div>
 
-			<form className={styles.form} onSubmit={handleSubmit}>
+			<form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
 				<input
 					type="text"
 					id="firstname"
 					name="firstname"
 					className={styles.input}
-					placeholder="First Name"
+					placeholder="First Name *"
 					required
 				/>
 
@@ -74,7 +90,7 @@ export default function BeContactedForm() {
 					id="lastname"
 					name="lastname"
 					className={styles.input}
-					placeholder="Last Name"
+					placeholder="Last Name *"
 					required
 				/>
 
@@ -91,7 +107,7 @@ export default function BeContactedForm() {
 					id="email"
 					name="email"
 					className={styles.input}
-					placeholder="Email"
+					placeholder="Email *"
 					required
 				/>
 
@@ -100,7 +116,7 @@ export default function BeContactedForm() {
 					id="phone"
 					name="phone"
 					className={styles.input}
-					placeholder="Phone"
+					placeholder="Phone *"
 					required
 				/>
 
@@ -133,7 +149,7 @@ export default function BeContactedForm() {
 					className={styles.input}
 					defaultValue={interest}
 				>
-					<option value="defaultValue">Choose your interest</option>
+					<option value="defaultValue">Choose your interest *</option>
 					<option value="requestDemo">Request a free demo</option>
 					<option value="service">Service information</option>
 					<option value="support">Support</option>
@@ -156,17 +172,21 @@ export default function BeContactedForm() {
 					</label>
 				</div>
 
-				<button type="submit" className={styles.submitButton}>
+				<button
+					type="submit"
+					className={styles.submitButton}
+					disabled={isSubmitting}
+				>
 					Submit
 				</button>
 			</form>
 			{notification.show && (
 				<div
-					className={
+					className={`${styles.notificationBanner} ${
 						notification.success
 							? styles.successBanner
 							: styles.errorBanner
-					}
+					}`}
 				>
 					{notification.message}
 				</div>
