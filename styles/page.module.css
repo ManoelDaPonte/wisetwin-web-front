@@ -1,25 +1,36 @@
 .wrapper {
 	width: 100%;
-	flex-direction: row;
 }
 
 .pageSections {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 .pageSections > div {
-	width: 80%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border-bottom: 1px solid #373737;
+	padding: 50px;
+}
+
+.pageSections > div:last-child {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pageSections > div:nth-child(even) {
+	background-color: rgb(10, 22, 110);
+}
+
+.pageSections > div:nth-child(odd) {
+	background-color: #ffffff; /* Blanc */
 }
 
 .containerGrid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	grid-gap: 20px;
+}
+
+.split {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-gap: 40px;
 }

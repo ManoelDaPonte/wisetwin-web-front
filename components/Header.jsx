@@ -55,6 +55,7 @@ const Header = () => {
 							isMenuOpen ? styles.show : ""
 						}`}
 					>
+						<Tab href="/" label="Home" />
 						<Tab href="/solutions" label="Solutions" />
 						<Tab href="/contact" label="Contact" />
 					</div>

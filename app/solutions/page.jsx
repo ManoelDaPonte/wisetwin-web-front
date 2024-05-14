@@ -17,8 +17,10 @@ export default function Page() {
 		<div className={styles.wrapper}>
 			<Header />
 			<div className={styles.pageSections}>
-				<WiseTwin />
-				<Offers />
+				<div className={styles.split}>
+					<WiseTwin />
+					<Offers />
+				</div>
 				<OperationalAwareness />
 				<PredictiveMaintenance />
 				<FormationTraining />

@@ -58,7 +58,7 @@
 }
 
 .successBanner {
-	background-color: green;
+	background-color: rgba(0, 128, 0, 0.5);
 	color: white;
 	padding: 10px;
 	margin: 10px 0;
@@ -66,7 +66,7 @@
 }
 
 .errorBanner {
-	background-color: red;
+	background-color: rgba(255, 0, 0, 0.5);
 	color: white;
 	padding: 10px;
 	margin: 10px 0;

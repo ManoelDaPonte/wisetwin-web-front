@@ -1,15 +1,17 @@
 .gridContainer {
 	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+}
+
+@media (max-width: 800px) {
+	.gridContainer {
+		grid-template-columns: 1fr; /* Change la grille pour empiler les contenus verticalement */
+	}
 }
 
 .containerVideo {
-	display: flex;
-	justify-content: center;
 }
 
 .containerText {
-	display: flex;
-	flex-direction: column;
 }

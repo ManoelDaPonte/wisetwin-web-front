@@ -1,6 +1,6 @@
 import styles from "@/styles/contactPage/beContactedForm.module.css";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function BeContactedForm() {
 	const [notification, setNotification] = useState({
@@ -40,24 +40,25 @@ export default function BeContactedForm() {
 		}
 	}
 
+	useEffect(() => {
+		let timer;
+		if (notification.show) {
+			timer = setTimeout(() => {
+				setNotification((prev) => ({ ...prev, show: false }));
+			}, 5000); // Notification disparaît après 5 secondes
+		}
+
+		return () => clearTimeout(timer); // Nettoyage du timer
+	}, [notification.show]);
+
 	return (
 		<div className={styles.formContainer}>
-			<div className={styles.title}>Ask for a call</div>
+			<div className={styles.title}>Book an introduction call </div>
 			<div className={styles.subtitle}>
 				Fill in the form below and we will contact you as soon as
 				possible with the right person to help you.
 			</div>
-			{notification.show && (
-				<div
-					className={
-						notification.success
-							? styles.successBanner
-							: styles.errorBanner
-					}
-				>
-					{notification.message}
-				</div>
-			)}
+
 			<form className={styles.form} onSubmit={handleSubmit}>
 				<input
 					type="text"
@@ -132,12 +133,11 @@ export default function BeContactedForm() {
 					className={styles.input}
 					defaultValue={interest}
 				>
-					<option value="defaultValue"></option>
-					<option value="requestDemo">Request a demo</option>
-					<option value="product">Produit</option>
-					<option value="service">Service</option>
+					<option value="defaultValue">Choose your interest</option>
+					<option value="requestDemo">Request a free demo</option>
+					<option value="service">Service information</option>
 					<option value="support">Support</option>
-					<option value="other">Autre</option>
+					<option value="other">Other</option>
 				</select>
 
 				<div className={styles.checkboxContainer}>
@@ -152,14 +152,25 @@ export default function BeContactedForm() {
 						htmlFor="receiveMail"
 						className={styles.checkboxLabel}
 					>
-						Receive Commercial Mail
+						Receive commercial email
 					</label>
 				</div>
 
 				<button type="submit" className={styles.submitButton}>
-					Send Email
+					Submit
 				</button>
 			</form>
+			{notification.show && (
+				<div
+					className={
+						notification.success
+							? styles.successBanner
+							: styles.errorBanner
+					}
+				>
+					{notification.message}
+				</div>
+			)}
 		</div>
 	);
 }

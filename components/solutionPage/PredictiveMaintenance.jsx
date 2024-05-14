@@ -5,13 +5,13 @@ import Validate from "@/components/common/svg/Validate";
 export default function PredictiveMaintenance() {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.title}>Predictive Maintenance</div>
-			<div className={styles.description}>
+			<div className="title">Predictive Maintenance</div>
+			<div className="normalText">
 				Full operational Digital Twin with numerical simulations and
 				modeling of the physical assets, for predictive maintenance.
 				Designed for assisting decisions with AI implementation
 			</div>
-			<div className={styles.text}>Designed for Innovation Leaders</div>
+			<div className="normalText">Designed for Innovation Leaders</div>
 			<div className={styles.list}>
 				<IconAndText
 					icon={<Validate />}

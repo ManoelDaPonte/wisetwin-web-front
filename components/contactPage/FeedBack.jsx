@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "@/styles/contactPage/feedBack.module.css";
 
 const FeedBack = () => {
+	const [notification, setNotification] = useState({
+		show: false,
+		message: "",
+		success: false,
+	});
+
+	// Référence pour accéder au formulaire et pouvoir le réinitialiser
+	const formRef = useRef(null);
+
 	async function handleSubmit(event) {
 		event.preventDefault();
 
@@ -10,27 +19,72 @@ const FeedBack = () => {
 		const response = await fetch("/api/sendMailComment", {
 			method: "POST",
 			body: formData,
-		}).then((res) => res.json());
+		});
+
+		const data = await response.json(); // Parse JSON seulement après avoir vérifié le statut HTTP
+		console.log(data);
+
+		if (response.ok) {
+			// Si le statut HTTP indique un succès
+			setNotification({
+				show: true,
+				message: "Email sent successfully!",
+				success: true,
+			});
+		} else {
+			// Si le statut HTTP indique un échec
+			setNotification({
+				show: true,
+				message: data.message || "Failed to send email.",
+				success: false,
+			});
+		}
+
+		// Réinitialisation du formulaire après l'envoi
+		if (formRef.current) {
+			formRef.current.reset();
+		}
 	}
+
+	useEffect(() => {
+		let timer;
+		if (notification.show) {
+			timer = setTimeout(() => {
+				setNotification((prev) => ({ ...prev, show: false }));
+			}, 5000); // Notification disparaît après 5 secondes
+		}
+
+		return () => clearTimeout(timer); // Nettoyage du timer
+	}, [notification.show]);
+
 	return (
 		<div className={styles.cardContainer}>
 			<div className={styles.title}>Leave a comment below !</div>
 			<div className={styles.subtitle}>
-				{" "}
-				Good or bad, express yourself.{" "}
+				Good or bad, express yourself.
 			</div>
-			<form className={styles.form} onSubmit={handleSubmit}>
-				<label htmlFor="comment" className={styles.label}></label>
+			<form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
 				<textarea
 					id="comment"
 					name="comment"
-					className={styles.textarea} // Note the change of class name for styling purpose
-					rows="4" // Default height of the textarea in lines
+					className={styles.textarea}
+					rows="4"
 				></textarea>
 				<button type="submit" className={styles.submitButton}>
 					Submit
 				</button>
 			</form>
+			{notification.show && (
+				<div
+					className={
+						notification.success
+							? styles.successBanner
+							: styles.errorBanner
+					}
+				>
+					{notification.message}
+				</div>
+			)}
 		</div>
 	);
 };

@@ -5,28 +5,50 @@ import Validate from "@/components/common/svg/Validate";
 export default function FormationTraining() {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.title}>Formation & Training</div>
-			<div className={styles.description}>
+			<div className="titleLight">Formation & Training</div>
+			<div className="normalTextLight">
 				Training and formation are essential for the success of any
 				organization. We provide training and formation services to
 				ensure that your team is well-equipped to handle any situation.
 			</div>
-			<div className={styles.text}>
+			<div className="normalTextLight">
 				Designed for Industry Professionals:
 			</div>
 			<div className={styles.list}>
-				<IconAndText icon={<Validate />} text={"Machine Operators"} />
 				<IconAndText
-					icon={<Validate />}
-					text={"Maintenance Technicians"}
+					icon={<Validate color="white" />}
+					text={"Machine Operators"}
+					variant="light"
 				/>
-				<IconAndText icon={<Validate />} text={"Design Engineers"} />
-				<IconAndText icon={<Validate />} text={"Plant Managers"} />
-				<IconAndText icon={<Validate />} text={"Safety Managers"} />
-				<IconAndText icon={<Validate />} text={"Training programs"} />
 				<IconAndText
-					icon={<Validate />}
+					icon={<Validate color="white" />}
+					text={"Maintenance Technicians"}
+					variant="light"
+				/>
+				<IconAndText
+					icon={<Validate color="white" />}
+					text={"Design Engineers"}
+					variant="light"
+				/>
+				<IconAndText
+					icon={<Validate color="white" />}
+					text={"Plant Managers"}
+					variant="light"
+				/>
+				<IconAndText
+					icon={<Validate color="white" />}
+					text={"Safety Managers"}
+					variant="light"
+				/>
+				<IconAndText
+					icon={<Validate color="white" />}
+					text={"Training programs"}
+					variant="light"
+				/>
+				<IconAndText
+					icon={<Validate color="white" />}
 					text={"Engineering and Technology Schools"}
+					variant="light"
 				/>
 			</div>
 		</div>

@@ -6,11 +6,13 @@ body {
 img {
 	display: block;
 	max-width: 100%;
+	height: auto;
 }
 
 video {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
 
 iframe {
@@ -24,10 +26,22 @@ iframe {
 	color: #0077b6;
 }
 
+.subtitleLight {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+}
+
 .title {
 	font-size: 50px;
 	font-weight: bold;
 	color: #03045e;
+}
+
+.titleLight {
+	font-size: 50px;
+	font-weight: bold;
+	color: #63c5fa;
 }
 
 .normalText {
@@ -36,14 +50,21 @@ iframe {
 	font-size: 20px;
 }
 
-.smallText {
-	font-size: 15px;
+.normalTextLight {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: white;
 }
 
-.smallLink {
-	font-size: 15px;
-	cursor: pointer;
-	text-decoration: underline;
+.simpleText {
+	font-size: 16px;
+	color: black;
+}
+
+.simpleTextLight {
+	font-size: 16px;
+	color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,5 +84,34 @@ iframe {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		font-size: 16px;
+	}
+
+	.titleLight {
+		font-size: 50px;
+		font-weight: bold;
+		color: #63c5fa;
+	}
+
+	.subtitleLight {
+		font-size: 30px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.normalTextLight {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 16px;
+		color: white;
+	}
+
+	.simpleText {
+		font-size: 16px;
+		color: black;
+	}
+
+	.simpleTextLight {
+		font-size: 16px;
+		color: white;
 	}
 }

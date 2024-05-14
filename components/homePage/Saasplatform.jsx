@@ -13,9 +13,9 @@ const Saasplatform = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.containerGrid}>
 				<div className={styles.containerText}>
-					<div className="subtitle">Intuitive</div>
-					<div className="title">SaaS Platform</div>
-					<div className="normalText">
+					<div className="subtitleLight">Intuitive</div>
+					<div className="titleLight">SaaS Platform</div>
+					<div className="normalTextLight">
 						Deploy your SaaS (Software as a Service) platform to
 						increase operational visibility and awareness, for
 						real-time decision making. Embedded AI algorithms

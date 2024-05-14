@@ -7,10 +7,10 @@ const Utils = () => {
 			<div className={styles.columnsGrid}>
 				<div className={styles.wiseTwinContact}>
 					<Image
-						src="/image/png/wise_twin_logo.png"
+						src="/image/png/TS_logo-d6e6f57d.png"
 						alt="wise_twin_logo"
-						width={100}
-						height={100}
+						width={50}
+						height={50}
 					/>
 					<div className={styles.logoGrid}>
 						<a
