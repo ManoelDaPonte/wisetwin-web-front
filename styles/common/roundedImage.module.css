@@ -1,0 +1,9 @@
+.roundedImage {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.image {
+	border-radius: 50%;
+}

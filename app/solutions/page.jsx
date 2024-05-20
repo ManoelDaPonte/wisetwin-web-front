@@ -17,7 +17,7 @@ export default function Page() {
 		<div className={styles.wrapper}>
 			<Header />
 			<div className={styles.pageSections}>
-				<div className={styles.split}>
+				<div className={styles.splitRow}>
 					<WiseTwin />
 					<Offers />
 				</div>

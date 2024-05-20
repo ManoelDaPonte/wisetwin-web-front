@@ -12,7 +12,7 @@ export default function FormationTraining() {
 				ensure that your team is well-equipped to handle any situation.
 			</div>
 			<div className="normalTextLight">
-				Designed for Industry Professionals:
+				Designed for Industry Professionals
 			</div>
 			<div className={styles.list}>
 				<IconAndText

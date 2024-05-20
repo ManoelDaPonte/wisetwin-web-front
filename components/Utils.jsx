@@ -1,4 +1,5 @@
 import styles from "@/styles/utils.module.css";
+import Link from "next/link";
 import Image from "next/image";
 
 const Utils = () => {
@@ -56,21 +57,29 @@ const Utils = () => {
 				<div>
 					<div className={styles.columnTitle}>Start With</div>
 					<div className={styles.links}>
-						<div>What is a Digital Twin ?</div>
-						<div>What is a Power Plant ?</div>
-						<div>What is a SaaS</div>
-						<div>Our offers</div>
-						<div>Contact us</div>
+						<Link href="/startWith/digitalTwin" legacyBehavior>
+							<div>What is a Digital Twin ?</div>
+						</Link>
+						<Link href="/startWith/powerPlant" legacyBehavior>
+							<div>What is a Power Plant ?</div>
+						</Link>
+						<Link href="/startWith/testimony" legacyBehavior>
+							<div>What our customers say about us ?</div>
+						</Link>
+						<Link href="/solutions" legacyBehavior>
+							<div>Our Offers</div>
+						</Link>
+						<Link href="/contact" legacyBehavior>
+							<div>Contact Us</div>
+						</Link>
 					</div>
 				</div>
 				<div>
 					<div className={styles.columnTitle}>About</div>
 					<div className={styles.links}>
-						<div>Who are we ?</div>
-						<div>Career</div>
-						<div>Security</div>
-						<div>Blog</div>
-						<div>Legal informations</div>
+						<Link href="/about/wiseTwin" legacyBehavior>
+							<div>Who are we ?</div>
+						</Link>
 					</div>
 				</div>
 			</div>

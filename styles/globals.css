@@ -15,6 +15,17 @@ video {
 	height: auto;
 }
 
+.link {
+	color: #0070f3;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
 iframe {
 	display: block;
 	max-width: 100%;
@@ -64,6 +75,10 @@ iframe {
 
 .simpleTextLight {
 	font-size: 16px;
+	color: white;
+}
+
+.light {
 	color: white;
 }
 

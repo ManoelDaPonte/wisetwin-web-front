@@ -35,8 +35,14 @@
 	}
 }
 
-.split {
+.splitRow {
 	display: grid;
 	grid-template-rows: auto auto;
+	grid-gap: 40px;
+}
+
+.splitColumn {
+	display: grid;
+	grid-template-columns: auto auto;
 	grid-gap: 40px;
 }
