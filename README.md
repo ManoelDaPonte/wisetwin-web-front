@@ -21,7 +21,7 @@ If Node.js and npm aren't installed, download and install them from [Node.js off
 
 ```bash
 git clone https://github.com/yourusername/wisetwin-web-front.git
-cd your-project-name
+cd wisetwin-web-front
 ```
 
 2. Install dependencies
