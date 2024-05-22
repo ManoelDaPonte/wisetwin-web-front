@@ -1,6 +1,7 @@
 .utils {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-top: 1px solid #e3e3e3;
 }
 
 .columnsGrid {

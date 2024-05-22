@@ -26,9 +26,9 @@ export default function FormationTraining() {
 					variant="light"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Design Engineers"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
 					icon={<Validate color="white" />}

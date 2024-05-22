@@ -21,9 +21,6 @@ export default function Page() {
 					<WiseTwin />
 					<Offers />
 				</div>
-				<OperationalAwareness />
-				<PredictiveMaintenance />
-				<FormationTraining />
 			</div>
 			<Utils />
 			<Footer />

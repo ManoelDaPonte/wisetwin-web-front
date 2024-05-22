@@ -5,9 +5,8 @@ const Addedvalue = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.containerText}>
-				<div className="subtitleLight">Our</div>
-				<div className="titleLight">Added value</div>
-				<div className="normalTextLight">
+				<div className="titleLight">Our Added value</div>
+				<p className="light">
 					Bringing together former researchers and engineers
 					experienced in renewable energies and industrial
 					digitalization, we've pioneered the core of Wise Twin
@@ -23,15 +22,7 @@ const Addedvalue = () => {
 					efficiency, cost-effectiveness, and operational excellence.
 					Join us in revolutionizing industries by leveraging our
 					platform and expertise to drive innovation forward.
-				</div>
-			</div>
-			<div className={styles.containerImage}>
-				<Image
-					src="/image/png/tube_wireframe.png"
-					alt="tube_wireframe"
-					width={400}
-					height={300}
-				/>
+				</p>
 			</div>
 		</div>
 	);

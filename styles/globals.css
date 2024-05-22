@@ -15,6 +15,28 @@ video {
 	height: auto;
 }
 
+iframe {
+	display: block;
+	max-width: 100%;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* Ratio d'aspect 16:9 */
+	height: 0;
+	overflow: hidden;
+}
+
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
 .link {
 	color: #0070f3;
 	text-decoration: none;
@@ -80,6 +102,10 @@ iframe {
 
 .light {
 	color: white;
+}
+
+.dark {
+	color: black;
 }
 
 @media screen and (max-width: 600px) {

@@ -10,19 +10,18 @@ const getVideoSrc = async () => {
 
 const WiseTwin = () => {
 	return (
-		<div className={styles.gridContainer}>
+		<div className={styles.wrapper}>
 			<div className={styles.textContainer}>
-				<div className="subtitle">Digital Twins</div>
-				<div className="title">for Energy</div>
-				<div className="normalText">
+				<div className="title">Digital Twins</div>
+				<p className="dark">
 					The most innovative solution for planning, training,
 					control, monitoring and maintenance
-				</div>
+				</p>
 			</div>
 			<VideoComponent
 				getVideoSrc={getVideoSrc}
-				width={"600px"}
-				height={"300px"}
+				height={500}
+				width={1000}
 			/>
 		</div>
 	);

@@ -9,3 +9,10 @@
 		grid-template-columns: 1fr; /* Change la grille pour empiler les contenus verticalement */
 	}
 }
+
+.containerVideo {
+	height: calc(100vh - 60px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
