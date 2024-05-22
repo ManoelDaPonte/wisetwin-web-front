@@ -11,7 +11,7 @@ const Presentation = () => {
 				</div>
 			</div>
 			<div className={styles.containerVideo}>
-				<video autoPlay loop width={500}>
+				<video autoPlay loop muted width={400}>
 					<source src="video/demo.mp4" type="video/mp4" />
 				</video>
 			</div>
