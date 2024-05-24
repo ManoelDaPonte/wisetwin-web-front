@@ -1,5 +1,5 @@
 import OfferCard from "@/components/common/OfferCard";
-import styles from "@/styles/solutionPage/offers.module.css";
+import styles from "@/styles/solutions/offers.module.css";
 import IconAndText from "@/components/common/text/IconAndText";
 import Validate from "@/components/common/svg/Validate";
 

@@ -1,10 +1,10 @@
 "use client";
 
-import WiseTwin from "@/components/solutionPage/WiseTwin";
-import Offers from "@/components/solutionPage/Offers";
-import OperationalAwareness from "@/components/solutionPage/OperationalAwareness";
-import PredictiveMaintenance from "@/components/solutionPage/PredictiveMaintenance";
-import FormationTraining from "@/components/solutionPage/FormationTraining";
+import WiseTwin from "@/components/solutions/WiseTwin";
+import Offers from "@/components/solutions/Offers";
+import OperationalAwareness from "@/components/solutions/OperationalAwareness";
+import PredictiveMaintenance from "@/components/solutions/PredictiveMaintenance";
+import FormationTraining from "@/components/solutions/FormationTraining";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/solutionPage/wisetwin.module.css";
+import styles from "@/styles/solutions/wisetwin.module.css";
 
 import VideoComponent from "@/components/common/VideoComponent";
 

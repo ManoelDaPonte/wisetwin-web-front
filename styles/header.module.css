@@ -1,28 +1,17 @@
 .header {
+	display: flex;
 	position: sticky;
 	top: 0;
-
 	height: 60px;
-
+	justify-content: space-between;
+	align-items: center;
 	background-color: white;
-	display: flex;
-	justify-content: center;
-
 	z-index: 100;
 }
 
-.topBar {
-	width: 95%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.leftGroup,
-.rightGroup {
+.leftGroup {
 	display: flex;
 	align-items: center;
-	gap: 20px;
 }
 
 .menuButton {
@@ -32,43 +21,5 @@
 
 .tabs {
 	display: flex;
-	justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-	.logo img {
-		width: 120px; /* Ajuster selon le besoin */
-		height: 30.5px; /* Ajuster selon le besoin, gardez le rapport d'aspect */
-	}
-	.menuButton {
-		display: block;
-	}
-
-	.topBar {
-		justify-content: space-between;
-	}
-
-	.leftGroup {
-		order: 1;
-	}
-
-	.rightGroup {
-		order: 2;
-	}
-
-	.tabs {
-		display: none;
-	}
-
-	.tabs.show {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		background-color: white;
-		z-index: 100;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	}
+	height: 60px;
 }

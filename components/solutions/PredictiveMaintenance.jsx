@@ -1,4 +1,4 @@
-import styles from "@/styles/solutionPage/predictiveMaintenance.module.css";
+import styles from "@/styles/solutions/predictiveMaintenance.module.css";
 import IconAndText from "@/components/common/text/IconAndText";
 import Validate from "@/components/common/svg/Validate";
 

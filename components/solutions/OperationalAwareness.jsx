@@ -1,4 +1,4 @@
-import styles from "@/styles/solutionPage/operationalAwareness.module.css";
+import styles from "@/styles/solutions/operationalAwareness.module.css";
 import IconAndText from "@/components/common/text/IconAndText";
 import Validate from "@/components/common/svg/Validate";
 

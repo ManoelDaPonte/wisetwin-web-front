@@ -19,55 +19,40 @@ const Header = () => {
 		setMenuOpen(!isMenuOpen);
 	};
 
+	const solutionsSubTabs = [
+		{ href: "/solutions/solution1", label: "Solution 1" },
+		{ href: "/solutions/solution2", label: "Solution 2" },
+	];
+
 	return (
 		<div className={styles.header}>
-			<div className={styles.topBar}>
-				<div className={styles.leftGroup}>
-					<div className={styles.menuButton} onClick={toggleMenu}>
-						{isMenuOpen ? (
-							<Image
-								src="/image/svg/traverser.svg"
-								width={20}
-								height={20}
-								alt="Close Menu"
-							/>
-						) : (
-							<Image
-								src="/image/svg/menu-burger.svg"
-								width={20}
-								height={20}
-								alt="Open Menu"
-							/>
-						)}
-					</div>
-					<div className={styles.logo}>
-						<Link href="/">
-							<Image
-								src="/image/svg/wisetwin.svg"
-								alt="Logo"
-								width={200}
-								height={50}
-							/>
-						</Link>
-					</div>
-					<div
-						className={`${styles.tabs} ${
-							isMenuOpen ? styles.show : ""
-						}`}
-					>
-						<Tab href="/" label="Home" />
-						<Tab href="/solutions" label="Solutions" />
-						<Tab href="/contact" label="Contact" />
-					</div>
+			<div className={styles.leftGroup}>
+				<div className={styles.logo}>
+					<Link href="/">
+						<Image
+							src="/image/svg/wisetwin.svg"
+							alt="Logo"
+							width={200}
+							height={50}
+						/>
+					</Link>
 				</div>
-
-				<div className={styles.rightGroup}>
-					<Button
-						label="Request a Demo"
-						color="green"
-						onClick={requestDemo}
+				<div className={styles.tabs}>
+					<Tab href="/" label="Home" />
+					<Tab
+						href="/solutions"
+						label="Solutions"
+						subTabs={solutionsSubTabs}
 					/>
+					<Tab href="/contact" label="Contact" />
 				</div>
+			</div>
+			<div className={styles.rightGroup}>
+				<Button
+					label="Request a Demo"
+					color="green"
+					onClick={requestDemo}
+				/>
 			</div>
 		</div>
 	);
