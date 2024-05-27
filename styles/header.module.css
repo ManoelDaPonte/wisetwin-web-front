@@ -1,3 +1,4 @@
+/* styles/header.module.css */
 .header {
 	display: flex;
 	position: sticky;
@@ -5,8 +6,9 @@
 	height: 60px;
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
-	z-index: 100;
+	background-color: #ffffff;
+	z-index: 10;
+	padding: 10px 20px 10px 20px;
 }
 
 .leftGroup {
@@ -14,12 +16,118 @@
 	align-items: center;
 }
 
-.menuButton {
-	display: none;
-	cursor: pointer;
+.logo {
+	margin-right: 2rem;
 }
 
 .tabs {
 	display: flex;
+	align-items: center;
 	height: 60px;
+}
+
+.rightGroup {
+	display: flex;
+	align-items: center;
+}
+
+.menuButton {
+	display: none;
+	width: 50px;
+	font-size: 2rem;
+	cursor: pointer;
+	position: relative;
+	z-index: 15;
+	color: black;
+	text-align: center;
+}
+
+.nav {
+	display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.tabs {
+		display: none;
+	}
+
+	.menuButton {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+		position: fixed;
+		top: 80px;
+		height: 100%;
+		width: 100vw;
+		background-color: rgba(255, 255, 255, 0.95);
+		flex-direction: column;
+		z-index: 5;
+	}
+
+	.nav.open {
+		display: flex;
+	}
+
+	.navList {
+		flex-direction: column;
+		list-style: none;
+		padding: 0px;
+		margin: 10px;
+	}
+
+	.navItem {
+		margin: 20px;
+	}
+
+	.navItem a {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		display: block;
+		width: 100%;
+	}
+
+	.navItem a:hover {
+		color: #000000;
+	}
+
+	.subMenuLayer {
+		width: 100%;
+	}
+
+	.backButton {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+		margin-bottom: 1rem;
+	}
+
+	.subMenu {
+		list-style: none;
+		border-bottom: 1px solid rgb(212, 212, 212);
+	}
+
+	.subMenuItem {
+		margin: 0.5rem 0;
+	}
+
+	.subMenuItem a {
+		font-size: 1.2rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+	}
+
+	.subMenuItem a:hover {
+		color: #000000;
+	}
+
+	.navLink {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		cursor: pointer;
+	}
 }

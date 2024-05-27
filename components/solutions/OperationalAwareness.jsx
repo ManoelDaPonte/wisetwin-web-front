@@ -5,43 +5,43 @@ import Validate from "@/components/common/svg/Validate";
 export default function OperationalAwareness() {
 	return (
 		<div className={styles.wrapper}>
-			<div className="titleLight">Operational Awareness</div>
-			<div className="normalTextLight">
+			<div className="title">Operational Awareness</div>
+			<div className="normalText">
 				Digital twin with real time data displayed into the interactive
 				virtual world, and functional dashboards. Alerting systems and
 				automatic reporting makes your daily OPEX easier.
 			</div>
-			<div className="normalTextLight">Designed for Performance</div>
+			<div className="normalText">Designed for Performance</div>
 			<div className={styles.list}>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Real-time Monitoring"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Interactive Virtual World"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Functional Dashboards"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Easy Reporting"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Safety Managers"}
-					variant="light"
+					variant="dark"
 				/>
 				<IconAndText
-					icon={<Validate color="white" />}
+					icon={<Validate color="dark" />}
 					text={"Instant Alerts Visualization"}
-					variant="light"
+					variant="dark"
 				/>
 			</div>
 		</div>

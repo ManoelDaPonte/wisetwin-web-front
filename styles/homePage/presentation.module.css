@@ -11,8 +11,14 @@
 }
 
 .containerVideo {
-	height: calc(100vh - 60px);
+	height: calc(100vh - 70px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 800px) {
+	.containerVideo {
+		height: fit-content;
+	}
 }

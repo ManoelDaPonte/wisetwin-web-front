@@ -1,35 +1,28 @@
-/* tab.module.css */
-.tab {
+.tabContainer {
 	display: flex;
 	height: 100%;
 	align-items: center;
 	padding: 0px 20px;
 }
 
-.tab > a {
+.tabContainer > a {
 	text-decoration: none;
 	color: black;
 }
 
-.tab:hover > a {
+.tabContainer:hover > a {
 	color: #0077b6;
 }
 
 .subTabs {
 	display: none;
-	position: fixed;
-	top: 60px;
+	position: absolute;
 	left: 0;
-	width: 100vw;
-	height: fit-content;
+	top: 70px;
+	width: 100%;
 	background-color: white;
 	z-index: 1000;
 	border-bottom: 1px solid rgb(240, 240, 240);
-}
-
-.subTabsContainer {
-	margin: 0 auto;
-	padding: 10px;
 }
 
 .subTabsContent {
@@ -37,8 +30,7 @@
 	flex-direction: column;
 }
 
-.tab:hover .subTabs,
-.subTabs:hover {
+.tabContainer:hover .subTabs {
 	display: block;
 }
 

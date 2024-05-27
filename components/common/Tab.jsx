@@ -1,10 +1,9 @@
-// Tab.js
 import Link from "next/link";
 import styles from "@/styles/common/tab.module.css";
 
 const Tab = ({ href, label, subTabs = [] }) => {
 	return (
-		<div className={styles.tab}>
+		<div className={styles.tabContainer}>
 			<Link href={href}>{label}</Link>
 			{subTabs.length > 0 && (
 				<div className={styles.subTabs}>
