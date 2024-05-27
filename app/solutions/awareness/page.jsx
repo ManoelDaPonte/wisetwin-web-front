@@ -3,7 +3,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Utils from "@/components/Utils";
-import FormationTraining from "@/components/solutions/FormationTraining";
+import OperationalAwareness from "@/components/solutions/OperationalAwareness";
 
 import styles from "@/styles/page.module.css";
 
@@ -12,7 +12,7 @@ export default function Page() {
 		<div className={styles.wrapper}>
 			<Header />
 			<div className={styles.pageSections}>
-				<FormationTraining />
+				<OperationalAwareness />
 			</div>
 			<Utils />
 			<Footer />

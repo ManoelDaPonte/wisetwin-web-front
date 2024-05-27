@@ -1,13 +1,45 @@
-.tab {
-	text-decoration: none;
+.tabContainer {
 	display: flex;
+	height: 100%;
 	align-items: center;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-weight: bold;
+	padding: 0px 20px;
 }
 
-.tab:hover {
+.tabContainer > a {
+	text-decoration: none;
+	color: black;
+}
+
+.tabContainer:hover > a {
 	color: #0077b6;
-	cursor: pointer;
+}
+
+.subTabs {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	width: 100%;
+	background-color: white;
+	z-index: 1000;
+	border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.subTabsContent {
+	display: flex;
+	flex-direction: column;
+}
+
+.tabContainer:hover .subTabs {
+	display: block;
+}
+
+.subTabsContent a {
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.subTabsContent a:hover {
+	color: #0077b6;
 }

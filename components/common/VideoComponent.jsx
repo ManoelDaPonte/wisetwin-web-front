@@ -18,11 +18,9 @@ const VideoComponent = ({ getVideoSrc, height, width }) => {
 	}
 
 	return (
-		<iframe
-			src={src}
-			allowFullScreen
-			style={{ width: width, height: height }} // Example styling, adjust as needed
-		/>
+		<div className="video-container">
+			<iframe src={src} allowFullScreen className="responsive-iframe" />
+		</div>
 	);
 };
 

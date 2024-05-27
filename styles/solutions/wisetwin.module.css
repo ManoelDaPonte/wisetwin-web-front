@@ -1,0 +1,11 @@
+.wrapper {
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-content: center;
+}
+
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}

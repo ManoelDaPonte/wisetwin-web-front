@@ -5,14 +5,7 @@
 .pageSections {
 	display: flex;
 	flex-direction: column;
-}
-
-.pageSections > div {
-	padding: 30px;
-}
-
-.pageSections > div:last-child {
-	border-bottom: 1px solid #e7e7e7;
+	align-items: center;
 }
 
 .pageSections > div:nth-child(even) {
@@ -20,29 +13,25 @@
 }
 
 .pageSections > div:nth-child(odd) {
-	background-color: #ffffff; /* Blanc */
+	background-color: #ffffff;
 }
 
 .containerGrid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: auto auto auto;
 	grid-gap: 20px;
-}
-
-@media (min-width: 1200px) {
-	.containerGrid {
-		grid-template-columns: repeat(3, 1fr);
-	}
+	max-width: 800px;
+	margin: 10px;
 }
 
 .splitRow {
 	display: grid;
 	grid-template-rows: auto auto;
-	grid-gap: 40px;
+	grid-gap: 50px;
 }
 
 .splitColumn {
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-gap: 40px;
+	grid-gap: 50px;
 }

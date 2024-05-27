@@ -1,22 +1,26 @@
 .wrapper {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	align-items: center;
+	position: relative;
+	padding: 10%;
+	overflow: hidden;
 }
 
-.container {
-	display: flex;
-	flex-direction: row;
+.wrapper::before {
+	content: "";
+	position: absolute;
+	top: 20px; /* Ajustez la marge supérieure selon vos besoins */
+	left: 20px; /* Ajustez la marge gauche selon vos besoins */
+	right: 20px; /* Ajustez la marge droite selon vos besoins */
+	bottom: 20px; /* Ajustez la marge inférieure selon vos besoins */
+	background-image: url("/image/png/tube_wireframe.png");
+	background-size: contain; /* ou 'cover' selon vos besoins */
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.3; /* Ajustez ce niveau de transparence selon vos besoins */
+	z-index: 0;
 }
 
 .containerText {
 	display: flex;
 	flex-direction: column;
-}
-
-.containerImage {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }

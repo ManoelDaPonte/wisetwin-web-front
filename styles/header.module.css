@@ -1,74 +1,133 @@
+/* styles/header.module.css */
 .header {
+	display: flex;
 	position: sticky;
 	top: 0;
-
 	height: 60px;
-
-	background-color: white;
-	display: flex;
-	justify-content: center;
-
-	z-index: 100;
-}
-
-.topBar {
-	width: 95%;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: #ffffff;
+	z-index: 10;
+	padding: 10px 20px 10px 20px;
 }
 
-.leftGroup,
-.rightGroup {
+.leftGroup {
 	display: flex;
 	align-items: center;
-	gap: 20px;
 }
 
-.menuButton {
-	display: none;
-	cursor: pointer;
+.logo {
+	margin-right: 2rem;
 }
 
 .tabs {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	height: 60px;
 }
 
-@media screen and (max-width: 600px) {
-	.logo img {
-		width: 120px; /* Ajuster selon le besoin */
-		height: 30.5px; /* Ajuster selon le besoin, gardez le rapport d'aspect */
-	}
-	.menuButton {
-		display: block;
-	}
+.rightGroup {
+	display: flex;
+	align-items: center;
+}
 
-	.topBar {
-		justify-content: space-between;
-	}
+.menuButton {
+	display: none;
+	width: 50px;
+	font-size: 2rem;
+	cursor: pointer;
+	position: relative;
+	z-index: 15;
+	color: black;
+	text-align: center;
+}
 
-	.leftGroup {
-		order: 1;
-	}
+.nav {
+	display: none;
+}
 
-	.rightGroup {
-		order: 2;
-	}
-
+/* Mobile styles */
+@media (max-width: 768px) {
 	.tabs {
 		display: none;
 	}
 
-	.tabs.show {
-		display: flex;
+	.menuButton {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+		position: fixed;
+		top: 80px;
+		height: 100%;
+		width: 100vw;
+		background-color: rgba(255, 255, 255, 0.95);
 		flex-direction: column;
-		position: absolute;
-		top: 100%;
-		left: 0;
+		z-index: 5;
+	}
+
+	.nav.open {
+		display: flex;
+	}
+
+	.navList {
+		flex-direction: column;
+		list-style: none;
+		padding: 0px;
+		margin: 10px;
+	}
+
+	.navItem {
+		margin: 20px;
+	}
+
+	.navItem a {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		display: block;
 		width: 100%;
-		background-color: white;
-		z-index: 100;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.navItem a:hover {
+		color: #000000;
+	}
+
+	.subMenuLayer {
+		width: 100%;
+	}
+
+	.backButton {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+		margin-bottom: 1rem;
+	}
+
+	.subMenu {
+		list-style: none;
+		border-bottom: 1px solid rgb(212, 212, 212);
+	}
+
+	.subMenuItem {
+		margin: 0.5rem 0;
+	}
+
+	.subMenuItem a {
+		font-size: 1.2rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+	}
+
+	.subMenuItem a:hover {
+		color: #000000;
+	}
+
+	.navLink {
+		font-size: 1.5rem;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		cursor: pointer;
 	}
 }

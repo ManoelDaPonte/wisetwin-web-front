@@ -5,6 +5,9 @@
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	max-width: 400px;
+	min-width: 300px;
+	cursor: pointer;
+	margin: 30px;
 }
 .offerImage {
 	position: relative;
@@ -23,7 +26,6 @@
 
 	font-size: 20px;
 	font-weight: bold;
-	color: #0077b6;
 }
 
 .offerDescription {
@@ -32,7 +34,6 @@
 	margin-top: 10px;
 	align-items: center;
 	justify-content: center;
-	font-weight: bold;
 
 	font-size: 15px;
 	margin-top: 10px;

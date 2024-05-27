@@ -1,16 +1,28 @@
 .wrapper {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	align-items: center;
+	position: relative;
+	padding: 10%;
+	overflow: hidden;
+}
+
+.wrapper::before {
+	content: "";
+	position: absolute;
+	top: 20px; /* Ajustez la marge supérieure selon vos besoins */
+	left: 20px; /* Ajustez la marge gauche selon vos besoins */
+	right: 20px; /* Ajustez la marge droite selon vos besoins */
+	bottom: 20px; /* Ajustez la marge inférieure selon vos besoins */
+	background-image: url("/image/png/saas_exploded.png");
+	background-size: contain; /* ou 'cover' selon vos besoins */
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.3; /* Ajustez ce niveau de transparence selon vos besoins */
+	z-index: 0;
 }
 
 .containerText {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-}
-
-.containerImage {
-	display: flex;
-	justify-content: center;
+	z-index: 1;
+	text-align: center;
 }

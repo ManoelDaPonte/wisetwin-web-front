@@ -1,27 +1,15 @@
 .wrapper {
-	display: grid;
-	gap: 20px;
-}
-
-.containerGrid {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-	align-items: center;
-	justify-items: center;
+	padding: 10%;
 }
 
 .containerText {
 	display: flex;
 	flex-direction: column;
-}
-
-.containerImage {
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 
 .containerCardGrid {
+	margin-top: 50px;
 	display: grid;
 	gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));

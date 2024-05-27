@@ -1,13 +1,11 @@
 import styles from "@/styles/homePage/gamechanger.module.css";
-import Image from "next/image";
 
 const Gamechanger = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.containerText}>
-				<div className="subtitle"> Real</div>
-				<div className="title"> Game Changers</div>
-				<div className="normalText">
+				<div className="title">Real Game Changers</div>
+				<p className="dark">
 					Digital twins are no more science-fiction. Wise Twin thrives
 					to deploy high quality 3D rendering, with real-time
 					interactive data visualization, for complex IIOT network.
@@ -16,15 +14,7 @@ const Gamechanger = () => {
 					performance, and decrease risks. Cyber-secured data is a
 					keypoint of our products and ensure multilevel accessibility
 					of sensible information.
-				</div>
-			</div>
-			<div className={styles.containerImage}>
-				<Image
-					src="/image/svg/recompressor.svg"
-					alt="recompressor"
-					width={400}
-					height={300}
-				/>
+				</p>
 			</div>
 		</div>
 	);
