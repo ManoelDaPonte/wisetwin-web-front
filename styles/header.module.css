@@ -62,9 +62,10 @@
 		top: 80px;
 		height: 100%;
 		width: 100vw;
-		background-color: rgba(255, 255, 255, 0.95);
+		background-color: rgba(255, 255, 255, 0.99);
 		flex-direction: column;
 		z-index: 5;
+		transition: all 4s ease-in-out;
 	}
 
 	.nav.open {
@@ -80,6 +81,12 @@
 
 	.navItem {
 		margin: 20px;
+		border-bottom: 1px solid rgb(212, 212, 212);
+	}
+
+	.navItem:last-child {
+		margin-top: 50px;
+		border-bottom: none;
 	}
 
 	.navItem a {
@@ -107,7 +114,6 @@
 
 	.subMenu {
 		list-style: none;
-		border-bottom: 1px solid rgb(212, 212, 212);
 	}
 
 	.subMenuItem {
@@ -125,9 +131,22 @@
 	}
 
 	.navLink {
+		display: flex;
 		font-size: 1.5rem;
 		color: rgb(0, 0, 0);
 		text-decoration: none;
 		cursor: pointer;
+		justify-content: space-between;
+	}
+
+	.demoButtonMobile {
+		margin: 1rem 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* Hide the button on small screens */
+	.rightGroup {
+		display: none;
 	}
 }

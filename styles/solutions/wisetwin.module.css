@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-rows: auto auto;
 	justify-content: center;
+	padding: 5% 10%;
 }
 
 .textContainer {

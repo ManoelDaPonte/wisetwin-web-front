@@ -54,7 +54,7 @@ const CookiePolicy = () => {
 			<h2>5. Contact Us</h2>
 			<p>
 				If you have questions or comments about this Cookie Policy,
-				please contact us at: [email address]
+				please contact us at: contact.sales@wisetwin.eu
 			</p>
 		</div>
 	);

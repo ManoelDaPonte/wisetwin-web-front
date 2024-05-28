@@ -4,20 +4,20 @@
 	grid-gap: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	.gridContainer {
 		grid-template-columns: 1fr; /* Change la grille pour empiler les contenus verticalement */
 	}
 }
 
 .containerVideo {
-	height: calc(100vh - 70px);
+	height: calc(100vh - 80px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	.containerVideo {
 		height: fit-content;
 	}
