@@ -20,7 +20,7 @@ If Node.js and npm aren't installed, download and install them from [Node.js off
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/wisetwin-web-front.git
+git clone https://github.com/wise-twin/wisetwin-web-front.git
 cd wisetwin-web-front
 ```
 
@@ -30,7 +30,13 @@ cd wisetwin-web-front
 npm install
 ```
 
-3. Run the development server
+3. Create a .env file in the root directory
+
+```bash
+echo "env=local" > .env
+```
+
+4. Run the development server
 
 ```bash
 npm run dev
