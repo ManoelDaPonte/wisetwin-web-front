@@ -57,7 +57,7 @@ const Terms = () => {
 			<h2>9. Contact</h2>
 			<p>
 				If you have any questions about these terms and conditions,
-				please contact us at [email address].
+				please contact us at contact.sales@wisetwin.eu.
 			</p>
 		</div>
 	);

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { use } from "react";
 import Link from "next/link";
 import LanguageSelector from "@/components/common/LanguageSelector";
 import styles from "@/styles/footer.module.css";

@@ -1,11 +1,6 @@
-.wrapper {
-	width: 100%;
-}
-
 .pageSections {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 .pageSections > div:nth-child(even) {
@@ -16,12 +11,16 @@
 	background-color: #ffffff;
 }
 
+.section {
+	padding: 20px;
+}
+
 .containerGrid {
 	display: grid;
 	grid-template-rows: auto auto auto;
 	grid-gap: 20px;
 	max-width: 800px;
-	margin: 10px;
+	margin: auto;
 }
 
 .splitRow {
@@ -34,4 +33,17 @@
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 50px;
+	padding: 20px;
+}
+
+@media (max-width: 768px) {
+	.splitColumn {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 0px;
+	}
+
+	.splitColumn > div {
+		margin: auto;
+	}
 }

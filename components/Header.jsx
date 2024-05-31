@@ -1,4 +1,6 @@
-import { useState } from "react";
+"use client";
+
+import { use, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -91,7 +93,8 @@ const Header = () => {
 						onClick={() => toggleSubMenu("solutions")}
 					>
 						<div className={styles.navLink}>
-							Solutions {openSubMenus.solutions ? "▲" : "▼"}
+							<div>Solutions</div>
+							<div>{openSubMenus.solutions ? "▲" : "▼"}</div>
 						</div>
 						{openSubMenus.solutions && (
 							<ul className={styles.subMenu}>
@@ -136,6 +139,14 @@ const Header = () => {
 						<Link href="/contact" legacyBehavior>
 							<a onClick={toggleMenu}>Contact</a>
 						</Link>
+					</li>
+					<li className={styles.navItem}>
+						<Button
+							label="Request a Demo"
+							color="green"
+							onClick={requestDemo}
+							className={styles.demoButtonMobile}
+						/>
 					</li>
 				</ul>
 			</nav>
