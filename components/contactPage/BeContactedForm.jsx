@@ -1,7 +1,6 @@
 import styles from "@/styles/contactPage/beContactedForm.module.css";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
-import axios from "axios";
 
 export default function BeContactedForm() {
 	const [notification, setNotification] = useState({
@@ -19,64 +18,58 @@ export default function BeContactedForm() {
 
 	async function handleSubmit(event) {
 		event.preventDefault();
+
 		setIsSubmitting(true);
 		const formData = new FormData(event.target);
 
-		// Ensure receiveMail is correctly formatted
-		if (formData.get("receiveMail") === null) {
-			formData.set("receiveMail", "false");
-		}
-
-		// Ensure optional fields are included as empty strings
-		const optionalFields = [
-			"position",
-			"society",
-			"employeeNumber",
-			"country",
-			"interest",
-		];
-		optionalFields.forEach((field) => {
-			if (!formData.has(field)) {
-				formData.append(field, "");
-			}
+		const response = await fetch("/api/sendMailContact", {
+			method: "POST",
+			body: formData,
 		});
 
-		try {
-			const response = await axios.post(
-				"http://157.230.126.37:8888/send-email/",
-				formData
-			);
+		const data = await response.json(); // Parse JSON seulement après avoir vérifié le statut HTTP
+		console.log(data);
 
-			console.log(response.data);
-
+		if (response.ok) {
+			// Si le statut HTTP indique un succès
 			setNotification({
 				show: true,
-				message: response.data.message || "Email sent successfully!",
-				success: response.status === 200,
+				message: "Email sent successfully!",
+				success: true,
 			});
-
-			if (formRef.current) {
-				formRef.current.reset();
-			}
-		} catch (error) {
-			console.error("Error occurred:", error);
+		} else {
+			// Si le statut HTTP indique un échec
 			setNotification({
 				show: true,
-				message:
-					error.response?.data.message || "Failed to send email.",
+				message: data.message || "Failed to send email.",
 				success: false,
 			});
-		} finally {
-			setIsSubmitting(false);
-			setTimeout(() => {
-				setNotification((prev) => ({ ...prev, show: false }));
-			}, 5000); // Notification disappears after 5 seconds
 		}
+
+		// Réinitialisation du formulaire après l'envoi
+		if (formRef.current) {
+			formRef.current.reset();
+		}
+
+		setTimeout(() => {
+			setIsSubmitting(false); // Réactiver le bouton après 5 secondes
+		}, 5000);
 	}
+
+	useEffect(() => {
+		let timer;
+		if (notification.show) {
+			timer = setTimeout(() => {
+				setNotification((prev) => ({ ...prev, show: false }));
+			}, 5000); // Notification disparaît après 5 secondes
+		}
+
+		return () => clearTimeout(timer); // Nettoyage du timer
+	}, [notification.show]);
 
 	return (
 		<div className={styles.formContainer}>
-			<div className={styles.title}>Book an introduction call</div>
+			<div className={styles.title}>Book an introduction call </div>
 			<div className={styles.subtitle}>
 				Fill in the form below and we will contact you as soon as
 				possible with the right person to help you.
@@ -91,6 +84,7 @@ export default function BeContactedForm() {
 					placeholder="First Name *"
 					required
 				/>
+
 				<input
 					type="text"
 					id="lastname"
@@ -99,6 +93,7 @@ export default function BeContactedForm() {
 					placeholder="Last Name *"
 					required
 				/>
+
 				<input
 					type="text"
 					id="position"
@@ -106,6 +101,7 @@ export default function BeContactedForm() {
 					className={styles.input}
 					placeholder="Position"
 				/>
+
 				<input
 					type="email"
 					id="email"
@@ -114,6 +110,7 @@ export default function BeContactedForm() {
 					placeholder="Email *"
 					required
 				/>
+
 				<input
 					type="tel"
 					id="phone"
@@ -122,6 +119,7 @@ export default function BeContactedForm() {
 					placeholder="Phone *"
 					required
 				/>
+
 				<input
 					type="text"
 					id="society"
@@ -129,6 +127,7 @@ export default function BeContactedForm() {
 					className={styles.input}
 					placeholder="Society"
 				/>
+
 				<input
 					type="number"
 					id="employeeNumber"
@@ -136,6 +135,7 @@ export default function BeContactedForm() {
 					className={styles.input}
 					placeholder="Number of Employees"
 				/>
+
 				<input
 					type="text"
 					id="country"
@@ -155,6 +155,7 @@ export default function BeContactedForm() {
 					<option value="support">Support</option>
 					<option value="other">Other</option>
 				</select>
+
 				<div className={styles.checkboxContainer}>
 					<input
 						type="checkbox"
@@ -170,6 +171,7 @@ export default function BeContactedForm() {
 						Receive commercial email
 					</label>
 				</div>
+
 				<button
 					type="submit"
 					className={styles.submitButton}
