@@ -41,7 +41,7 @@ jobs:
               with:
                   host: ${{ secrets.HOSTINGER_HOST }}
                   username: ${{ secrets.HOSTINGER_USERNAME }}
-                  key: ${{ secrets.HOSTINGER_SSH_KEY }}
+                  key: ${{ secrets.HOSTINGER_SSH }}
                   passphrase: ${{ secrets.HOSTINGER_PASSPHRASE }}
                   port: ${{ secrets.HOSTINGER_PORT }}
                   script: |
