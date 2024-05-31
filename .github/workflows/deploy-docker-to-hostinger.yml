@@ -7,7 +7,7 @@ on:
         branches: ["main"]
 
 jobs:
-    build-and-deploy:
+    build-and-push:
         runs-on: ubuntu-latest
 
         steps:
@@ -28,6 +28,10 @@ jobs:
             - name: Push the Docker image
               run: docker push ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-api:latest
 
+    deploy-to-hostinger:
+        runs-on: ubuntu-latest
+
+        steps:
             - name: Deploy to Hostinger
               uses: appleboy/ssh-action@master
               with:
