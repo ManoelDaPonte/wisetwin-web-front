@@ -1,11 +1,10 @@
-name: Docker Image CI
-
+name: Create a docker Image and deploy to Hostinger
 on:
-    pull_request:
+    push:
         branches: ["main"]
 
 jobs:
-    build-and-push:
+    build-and-push-to-dockerhub:
         runs-on: ubuntu-latest
 
         steps:
@@ -27,7 +26,7 @@ jobs:
               run: docker push ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
 
     deploy-to-hostinger:
-        needs: build-and-push
+        needs: build-and-push-to-dockerhub
         runs-on: ubuntu-latest
 
         steps:
