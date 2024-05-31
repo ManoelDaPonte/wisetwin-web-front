@@ -48,4 +48,4 @@ jobs:
                       docker pull ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
                       docker stop wisetwin-web-front || true
                       docker rm wisetwin-web-front || true
-                      docker run -d --restart=always --name wisetwin-web-front -p 8888:8888 ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
+                      docker run -d --restart=always --name wisetwin-web-front -p 8080:80 ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
