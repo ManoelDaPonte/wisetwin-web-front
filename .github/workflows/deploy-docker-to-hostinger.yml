@@ -29,9 +29,13 @@ jobs:
               run: docker push ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
 
     deploy-to-hostinger:
+        needs: build-and-push
         runs-on: ubuntu-latest
 
         steps:
+            - name: Wait for build-and-push job to complete
+              run: echo "Build and push job completed, starting deployment"
+
             - name: Deploy to Hostinger
               uses: appleboy/ssh-action@master
               with:
