@@ -26,7 +26,7 @@ jobs:
               run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
 
             - name: Push the Docker image
-              run: docker push ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-api:latest
+              run: docker push ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
 
     deploy-to-hostinger:
         runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
                   passphrase: ${{ secrets.HOSTINGER_PASSPHRASE }}
                   port: ${{ secrets.HOSTINGER_PORT }}
                   script: |
-                      docker pull ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-api:latest
-                      docker stop wisetwin-web-api || true
-                      docker rm wisetwin-web-api || true
-                      docker run -d --restart=always --name wisetwin-web-api -p 8888:8888 ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-api:latest
+                      docker pull ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
+                      docker stop wisetwin-web-front || true
+                      docker rm wisetwin-web-front || true
+                      docker run -d --restart=always --name wisetwin-web-front -p 8888:8888 ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
