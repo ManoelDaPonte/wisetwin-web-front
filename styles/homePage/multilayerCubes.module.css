@@ -1,0 +1,59 @@
+/* components/MultiLayerSection.module.css */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative; /* Ajouté pour positionner correctement les éléments absolus */
+	height: 300px; /* Ajustez la hauteur selon vos besoins */
+	color: white;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.cubeLayer {
+	width: 200px;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.2);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3%;
+}
+
+.cubeLayer:nth-child(1) {
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.cubeLayer:nth-child(3) {
+	top: calc(50% + 30px);
+	left: calc(50% + 30px);
+	background: rgba(255, 255, 255, 0.4);
+}
+
+/* Media Queries pour rendre la section responsive */
+@media (max-width: 768px) {
+	.container {
+		height: 150px; /* Ajustez la hauteur pour les petits écrans */
+	}
+
+	.cubeLayer {
+		width: 100px;
+		height: 100px;
+	}
+
+	.cubeLayer:nth-child(1) {
+		top: calc(50% - 15px);
+		left: calc(50% - 15px);
+	}
+
+	.cubeLayer:nth-child(3) {
+		top: calc(50% + 15px);
+		left: calc(50% + 15px);
+	}
+}

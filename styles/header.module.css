@@ -3,7 +3,7 @@
 	display: flex;
 	position: sticky;
 	top: 0;
-	height: 60px;
+	height: 40px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #ffffff;
@@ -17,7 +17,7 @@
 }
 
 .logo {
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 .tabs {
@@ -59,7 +59,7 @@
 	.nav {
 		display: none;
 		position: fixed;
-		top: 80px;
+		top: 40px;
 		height: 100%;
 		width: 100vw;
 		background-color: rgba(255, 255, 255, 0.99);

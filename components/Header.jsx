@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -53,8 +53,8 @@ const Header = () => {
 							<Image
 								src="/image/svg/wisetwin.svg"
 								alt="Logo"
-								width={200}
-								height={50}
+								width={100}
+								height={1}
 							/>
 						</Link>
 					</div>
