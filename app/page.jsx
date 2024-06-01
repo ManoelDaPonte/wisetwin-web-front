@@ -1,19 +1,19 @@
 "use client";
 import Presentation from "@/components/homePage/Presentation";
-import Saasplatform from "@/components/homePage/Saasplatform";
-import Gamechanger from "@/components/homePage/Gamechanger";
-import Addedvalue from "@/components/homePage/Addedvalue";
+import MultiLayerSection from "@/components/homePage/MultiLayerSection";
 import Timeline from "@/components/homePage/Timeline";
+import Cube3d from "@/components/homePage/Cube3d";
 import styles from "@/styles/page.module.css";
 
 const HomePage = () => {
 	return (
 		<div className={styles.pageSections}>
 			<Presentation />
-			<Timeline />
-			<Saasplatform />
-			<Gamechanger />
-			<Addedvalue />
+			<div>
+				<MultiLayerSection />
+				<Cube3d />
+				<Timeline />
+			</div>
 		</div>
 	);
 };
