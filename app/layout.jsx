@@ -2,16 +2,10 @@ import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Utils from "@/components/Utils";
 import Footer from "@/components/Footer";
-// import { GoogleAnalytics } from "next-google-analytics";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
 	title: "WiseTwin",
-	script: [
-		{
-			src: "https://www.googletagmanager.com/gtag/js?id=G-7XCC5XZW36",
-			async: true,
-		},
-	],
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +17,7 @@ export default function RootLayout({ children }) {
 				<Utils />
 				<Footer />
 			</body>
+			<GoogleAnalytics gaId="G-7XCC5XZW36" />
 		</html>
 	);
 }
