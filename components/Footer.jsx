@@ -7,7 +7,7 @@ import styles from "@/styles/footer.module.css";
 const Footer = () => {
 	return (
 		<div className={styles.footer}>
-			<LanguageSelector height={20} width={20} />
+			{/* <LanguageSelector height={20} width={20} /> */}
 			<div className={styles.linksContainer}>
 				<div className={styles.link}>
 					<Link href="/legals/terms" legacyBehavior>
