@@ -36,12 +36,40 @@ const Header = () => {
 			href: "/solutions",
 			label: "Solutions",
 			subTabs: [
-				{ href: "/solutions/formation", label: "Formation" },
+				{ href: "/solutions/digital-twin", label: "Digital Twin" },
 				{
-					href: "/solutions/predictive",
-					label: "Predictive Maintenance",
+					href: "/solutions/iot-integration",
+					label: "Integration IoT",
 				},
-				{ href: "/solutions/awareness", label: "Awareness" },
+				{ href: "/solutions/ai-enhancement", label: "AI Enhancement" },
+			],
+		},
+		{
+			href: "/use-cases",
+			label: "Use Cases",
+			subTabs: [
+				{ href: "/use-cases/formation", label: "Formation" },
+				{ href: "/use-cases/selling", label: "Selling" },
+				{
+					href: "/use-cases/monitoring",
+					label: "Monitoring",
+				},
+				{
+					href: "/use-cases/analyse-predictive",
+					label: "Predictive Maitenance",
+				},
+			],
+		},
+		{
+			href: "/segments",
+			label: "Segments",
+			subTabs: [
+				{ href: "/segments/construction", label: "Construction" },
+				{
+					href: "/segments/health-care",
+					label: "Health Care",
+				},
+				{ href: "/segments/awareness", label: "Awareness" },
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },

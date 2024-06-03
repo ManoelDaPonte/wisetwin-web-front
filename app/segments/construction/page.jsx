@@ -1,11 +1,11 @@
 "use client";
-import FormationTraining from "@/components/solutions/FormationTraining";
+import OperationalAwareness from "@/components/solutions/OperationalAwareness";
 import styles from "@/styles/page.module.css";
 
 export default function Page() {
 	return (
 		<div className={styles.pageSections}>
-			<FormationTraining />
+			<OperationalAwareness />
 		</div>
 	);
 }
