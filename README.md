@@ -20,7 +20,7 @@ If Node.js and npm aren't installed, download and install them from [Node.js off
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/wisetwin-web-front.git
+git clone https://github.com/wise-twin/wisetwin-web-front.git
 cd wisetwin-web-front
 ```
 

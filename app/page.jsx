@@ -1,17 +1,29 @@
 "use client";
 import Presentation from "@/components/homePage/Presentation";
-import Saasplatform from "@/components/homePage/Saasplatform";
-import Gamechanger from "@/components/homePage/Gamechanger";
-import Addedvalue from "@/components/homePage/Addedvalue";
+import MultiLayerSection from "@/components/homePage/MultiLayerSection";
+import Timeline from "@/components/homePage/Timeline";
+import Cube3d from "@/components/homePage/Cube3d";
 import styles from "@/styles/page.module.css";
+import Hero from "@/components/homePage/Hero";
 
 const HomePage = () => {
 	return (
+		// <div className={styles.pageSections}>
+		// 	<Presentation />
+		// 	<div>
+		// 		<MultiLayerSection />
+		// 		<Cube3d />
+		// 		<Timeline />
+		// 	</div>
+		// </div>
+
 		<div className={styles.pageSections}>
-			<Presentation />
-			<Saasplatform />
-			<Gamechanger />
-			<Addedvalue />
+			<Hero />
+			<div>
+				<MultiLayerSection />
+				<Cube3d />
+				<Timeline />
+			</div>
 		</div>
 	);
 };

@@ -1,9 +1,8 @@
 "use client";
-
-import { use, useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import Tab from "@/components/common/Tab";
 import Button from "@/components/common/Button";
 import styles from "@/styles/header.module.css";
@@ -12,7 +11,6 @@ const Header = () => {
 	const router = useRouter();
 	const [isMenuOpen, setMenuOpen] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
-	const [subMenu, setSubMenu] = useState(null);
 	const [openSubMenus, setOpenSubMenus] = useState({});
 
 	const requestDemo = () => {
@@ -22,7 +20,6 @@ const Header = () => {
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
 		setIsOpen(!isOpen);
-		setSubMenu(null); // Réinitialiser le sous-menu quand le menu principal est fermé
 		setOpenSubMenus({}); // Réinitialiser les sous-menus
 	};
 
@@ -33,14 +30,22 @@ const Header = () => {
 		}));
 	};
 
-	const goBack = () => {
-		setSubMenu(null);
-	};
-
-	const solutionsSubTabs = [
-		{ href: "/solutions/formation", label: "Formation" },
-		{ href: "/solutions/predictive", label: "Predictive Maintenance" },
-		{ href: "/solutions/awareness", label: "Awareness" },
+	const tabs = [
+		// { href: "/", label: "Home" },
+		{
+			href: "/solutions",
+			label: "Solutions",
+			subTabs: [
+				{ href: "/solutions/formation", label: "Formation" },
+				{
+					href: "/solutions/predictive",
+					label: "Predictive Maintenance",
+				},
+				{ href: "/solutions/awareness", label: "Awareness" },
+			],
+		},
+		{ href: "/pricing", label: "Pricing" },
+		{ href: "/contact", label: "Contact" },
 	];
 
 	return (
@@ -53,19 +58,20 @@ const Header = () => {
 							<Image
 								src="/image/svg/wisetwin.svg"
 								alt="Logo"
-								width={200}
-								height={50}
+								width={100}
+								height={1}
 							/>
 						</Link>
 					</div>
 					<div className={styles.tabs}>
-						<Tab href="/" label="Home" />
-						<Tab
-							href="/solutions"
-							label="Solutions"
-							subTabs={solutionsSubTabs}
-						/>
-						<Tab href="/contact" label="Contact" />
+						{tabs.map((tab) => (
+							<Tab
+								key={tab.label}
+								href={tab.href}
+								label={tab.label}
+								subTabs={tab.subTabs}
+							/>
+						))}
 					</div>
 				</div>
 				<div className={styles.rightGroup}>
@@ -83,63 +89,57 @@ const Header = () => {
 			{/* Header pour écrans mobiles */}
 			<nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
 				<ul className={styles.navList}>
-					<li className={styles.navItem}>
-						<Link href="/" legacyBehavior>
-							<a onClick={toggleMenu}>Home</a>
-						</Link>
-					</li>
-					<li
-						className={styles.navItem}
-						onClick={() => toggleSubMenu("solutions")}
-					>
-						<div className={styles.navLink}>
-							<div>Solutions</div>
-							<div>{openSubMenus.solutions ? "▲" : "▼"}</div>
-						</div>
-						{openSubMenus.solutions && (
-							<ul className={styles.subMenu}>
-								<li className={styles.subMenuItem}>
-									<Link href="/solutions" legacyBehavior>
-										<a onClick={toggleMenu}>
-											All solutions
-										</a>
-									</Link>
-								</li>
-								<li className={styles.subMenuItem}>
-									<Link
-										href="/solutions/formation"
-										legacyBehavior
-									>
-										<a onClick={toggleMenu}>Formation</a>
-									</Link>
-								</li>
-								<li className={styles.subMenuItem}>
-									<Link
-										href="/solutions/predictive"
-										legacyBehavior
-									>
-										<a onClick={toggleMenu}>
-											Predictive Maintenance
-										</a>
-									</Link>
-								</li>
-								<li className={styles.subMenuItem}>
-									<Link
-										href="/solutions/awareness"
-										legacyBehavior
-									>
-										<a onClick={toggleMenu}>Awareness</a>
-									</Link>
-								</li>
-							</ul>
-						)}
-					</li>
-
-					<li className={styles.navItem}>
-						<Link href="/contact" legacyBehavior>
-							<a onClick={toggleMenu}>Contact</a>
-						</Link>
-					</li>
+					{tabs.map((tab) => (
+						<li key={tab.label} className={styles.navItem}>
+							{tab.subTabs ? (
+								<div onClick={() => toggleSubMenu(tab.label)}>
+									<div className={styles.navLink}>
+										<div>{tab.label}</div>
+										<div>
+											{openSubMenus[tab.label]
+												? "▲"
+												: "▼"}
+										</div>
+									</div>
+									{openSubMenus[tab.label] && (
+										<ul className={styles.subMenu}>
+											<li className={styles.subMenuItem}>
+												<Link
+													href={tab.href}
+													legacyBehavior
+												>
+													<a onClick={toggleMenu}>
+														All {tab.label}
+													</a>
+												</Link>
+											</li>
+											{tab.subTabs.map((subTab) => (
+												<li
+													key={subTab.label}
+													className={
+														styles.subMenuItem
+													}
+												>
+													<Link
+														href={subTab.href}
+														legacyBehavior
+													>
+														<a onClick={toggleMenu}>
+															{subTab.label}
+														</a>
+													</Link>
+												</li>
+											))}
+										</ul>
+									)}
+								</div>
+							) : (
+								<Link href={tab.href} legacyBehavior>
+									<a onClick={toggleMenu}>{tab.label}</a>
+								</Link>
+							)}
+						</li>
+					))}
 					<li className={styles.navItem}>
 						<Button
 							label="Request a Demo"
