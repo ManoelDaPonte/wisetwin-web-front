@@ -57,8 +57,8 @@ export default function Hero() {
                   type: "spring",
                 }}
               >
-                You still using 2D to monitor your industry? <br />
-                get ahead of the game and try Wise Twin !
+                Still using 2D to monitor your industry ? <br />
+                Get ahead of the game and try Wise Twin !
               </motion.p>
 
               <motion.div
