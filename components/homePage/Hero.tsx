@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { BorderBeam } from "@/components/ui/magicui/border-beam";
 import { motion, useInView } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useRef } from "react";
@@ -74,7 +73,7 @@ export default function Hero() {
                 }}
               >
                 <a
-                  href="#"
+                  href="/solutions#digital-twin"
                   className={cn(
                     // colors
                     "bg-black  text-white shadow hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90",

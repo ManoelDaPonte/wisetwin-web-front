@@ -1,0 +1,35 @@
+.section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	align-items: center;
+	padding: 10%;
+}
+
+.section img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.imageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.licence {
+	font-size: 0.7em;
+	color: rgba(0, 0, 0, 0.456);
+}
+
+@media (max-width: 768px) {
+	.section {
+		grid-template-columns: 1fr;
+	}
+
+	.section h2 {
+		grid-column: span 1;
+	}
+}

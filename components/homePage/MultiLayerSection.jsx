@@ -8,9 +8,7 @@ const MultiLayerSection = () => {
 				<div className={styles.cubeLayer}></div>
 				<div className={styles.cubeLayer}></div>
 			</div>
-			<h1 className={styles.cubeText}>
-				We build multi-layered Digital Twins
-			</h1>
+			<h1 className={styles.cubeText}>An Evolutive Software</h1>
 		</div>
 	);
 };
