@@ -8,7 +8,13 @@ import {
 	TimelineDot,
 	TimelineOppositeContent,
 } from "@mui/lab";
-import { Paper, Typography, Button, useMediaQuery } from "@mui/material";
+import {
+	Paper,
+	Typography,
+	Button,
+	useMediaQuery,
+	CardMedia,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import styles from "@/styles/homePage/timeline.module.css";
 
@@ -21,22 +27,25 @@ const CustomTimeline = () => {
 			title: "Virtual Twin",
 			description:
 				"Get your 3D virtual plant, industry or building as an early digital twin. Discover how you can enhance your communication, formation and training operations.",
-			link: "#",
+			link: "/solutions#digital-twin",
 			buttonText: "See more",
+			image: "image/png/turbine-exploded.png", // Ajoutez l'URL de l'image ici
 		},
 		{
-			title: "Monitoring Solutions",
+			title: "IoT Integration",
 			description:
-				"Add your IIoT devices to your virtual twin, and build your own digital twin. Customize your alerting systems.",
-			link: "#",
+				"Add your IoT devices to your virtual twin, and build your own digital twin. Customize your alerting systems.",
+			link: "/solutions#iot-integration",
 			buttonText: "See more",
+			image: "image/png/saas_exploded.png", // Ajoutez l'URL de l'image ici
 		},
 		{
-			title: "AI Assistant",
+			title: "AI Enhancement",
 			description:
-				"Deploy AI tools and see how to get your full operational digital twin for any process or automation.",
-			link: "#",
+				"From analyse descriptive to prescriptive maintenance, discover how AI can enhance your digital twin.",
+			link: "/solutions#ai-enhancement",
 			buttonText: "See more",
+			image: "image/png/ai-modeling.png", // Ajoutez l'URL de l'image ici
 		},
 	];
 
@@ -68,6 +77,13 @@ const CustomTimeline = () => {
 										: "inherit", // Limiter la largeur sur mobile
 								}}
 							>
+								<CardMedia
+									component="img"
+									height="140"
+									image={step.image}
+									alt={step.title}
+									style={{ marginBottom: "10px" }} // Ajoutez une marge en bas de l'image
+								/>
 								<Typography variant="h6" component="h1">
 									{step.title}
 								</Typography>

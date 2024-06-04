@@ -31,45 +31,69 @@ const Header = () => {
 	};
 
 	const tabs = [
-		// { href: "/", label: "Home" },
 		{
-			href: "/solutions",
+			href: "/solutions/",
 			label: "Solutions",
 			subTabs: [
-				{ href: "/solutions/digital-twin", label: "Digital Twin" },
+				{ href: "/solutions#digital-twin", label: "Digital Twin" },
 				{
-					href: "/solutions/iot-integration",
+					href: "/solutions#iot-integration",
 					label: "Integration IoT",
 				},
-				{ href: "/solutions/ai-enhancement", label: "AI Enhancement" },
+				{ href: "/solutions#ai-enhancement", label: "AI Enhancement" },
 			],
 		},
 		{
 			href: "/use-cases",
 			label: "Use Cases",
 			subTabs: [
-				{ href: "/use-cases/formation", label: "Formation" },
-				{ href: "/use-cases/selling", label: "Selling" },
+				{ href: "/use-cases#formation", label: "Formation" },
 				{
-					href: "/use-cases/monitoring",
+					href: "/use-cases#monitoring",
 					label: "Monitoring",
 				},
 				{
-					href: "/use-cases/analyse-predictive",
-					label: "Predictive Maitenance",
+					href: "/use-cases#predictive-maintenance",
+					label: "Predictive Maintenance",
 				},
+				{ href: "/use-cases#marketing", label: "Marketing" },
 			],
 		},
 		{
 			href: "/segments",
 			label: "Segments",
 			subTabs: [
-				{ href: "/segments/construction", label: "Construction" },
+				{ href: "/segments#smart-energy", label: "Smart Energy" },
 				{
-					href: "/segments/health-care",
-					label: "Health Care",
+					href: "/segments#warehouse-monitoring",
+					label: "Warehouse Monitoring",
 				},
-				{ href: "/segments/awareness", label: "Awareness" },
+				{
+					href: "/segments#smart-city",
+					label: "Smart City",
+				},
+				{
+					href: "/segments#smart-buildings",
+					label: "Smart Buildings",
+				},
+				{
+					href: "/segments#industry-4.0",
+					label: "Industry 4.0",
+				},
+			],
+		},
+		{
+			href: "/ressources/faqs",
+			label: "Resources",
+			subTabs: [
+				{
+					href: "/ressources/faqs",
+					label: "FAQs",
+				},
+				{
+					href: "/ressources/digital-twin",
+					label: "What's a Digital Twin ?",
+				},
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },

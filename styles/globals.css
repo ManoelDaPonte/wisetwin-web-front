@@ -65,6 +65,47 @@
 	}
 }
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+ul,
+ol,
+li {
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	font-size: 2em; /* Ajustez selon vos besoins */
+	font-weight: 700; /* Peut être ajusté selon vos préférences */
+	margin: 0.67em 0; /* Marges par défaut pour h1 */
+}
+
+h2 {
+	font-size: 1.5em; /* Ajustez selon vos besoins */
+	font-weight: 700; /* Peut être ajusté selon vos préférences */
+	margin: 0.75em 0; /* Marges par défaut pour h2 */
+}
+
+h3 {
+	font-size: 1.17em; /* Ajustez selon vos besoins */
+	font-weight: 700; /* Peut être ajusté selon vos préférences */
+	margin: 0.83em 0; /* Marges par défaut pour h3 */
+}
+
+/* Ajoutez des styles pour h4, h5, h6 si nécessaire */
+
+/* Exemple de style pour les balises strong */
+strong {
+	font-weight: bold; /* ou 700, en fonction de vos besoins */
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -88,4 +129,35 @@ iframe {
 	padding-bottom: 56.25%; /* Ratio d'aspect 16:9 */
 	height: 0;
 	overflow: hidden;
+}
+
+.cookie-consent {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+.cookie-consent p {
+	margin: 0;
+}
+
+.cookie-consent button {
+	background: #fff;
+	color: #000;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.cookie-consent button:hover {
+	background: #ddd;
 }
