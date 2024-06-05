@@ -1,13 +1,11 @@
 "use client";
-import WiseTwin from "@/components/solutions/WiseTwin";
 import styles from "@/styles/page.module.css";
+import HeroSolution from "@/components/solutions/HeroSolution";
 
 export default function Page() {
 	return (
 		<div className={styles.pageSections}>
-			<section id="">
-				<WiseTwin />
-			</section>
+			<HeroSolution />
 			<section id="digital-twin">
 				<div>digial twin</div>
 			</section>
