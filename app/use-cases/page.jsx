@@ -1,12 +1,12 @@
 import React from "react";
-import SectionIllustated from "@/components/common/SectionIllustrated";
+import SectionIllustrated from "@/components/common/SectionIllustrated";
 
 import styles from "@/styles/page.module.css";
 
 export default function Page() {
 	return (
 		<div className={styles.pageSections}>
-			<SectionIllustated
+			<SectionIllustrated
 				title="Formation"
 				image="/image/storyset/formation.svg"
 				sectionId="formation"
@@ -31,8 +31,8 @@ export default function Page() {
 					structure and organization of content on a page, including
 					headings, paragraphs, images, links, and more.
 				</p>
-			</SectionIllustated>
-			<SectionIllustated
+			</SectionIllustrated>
+			<SectionIllustrated
 				title="Monitoring"
 				image="/image/storyset/monitoring.svg"
 				sectionId="monitoring"
@@ -57,8 +57,8 @@ export default function Page() {
 					structure and organization of content on a page, including
 					headings, paragraphs, images, links, and more.
 				</p>
-			</SectionIllustated>
-			<SectionIllustated
+			</SectionIllustrated>
+			<SectionIllustrated
 				title="Predictive Maintenance"
 				image="/image/storyset/predictive-maintenance.svg"
 				sectionId="predictive-maintenance"
@@ -83,8 +83,8 @@ export default function Page() {
 					structure and organization of content on a page, including
 					headings, paragraphs, images, links, and more.
 				</p>
-			</SectionIllustated>
-			<SectionIllustated
+			</SectionIllustrated>
+			<SectionIllustrated
 				title="Marketing"
 				image="/image/storyset/marketing.svg"
 				sectionId="marketing"
@@ -109,7 +109,7 @@ export default function Page() {
 					structure and organization of content on a page, including
 					headings, paragraphs, images, links, and more.
 				</p>
-			</SectionIllustated>
+			</SectionIllustrated>
 		</div>
 	);
 }

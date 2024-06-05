@@ -8,17 +8,17 @@ const Cube3d = () => {
 	return (
 		<div className={styles.steps}>
 			<div className={styles.step}>
-				<CubeNormal color="white" height="100px" width="100px" />
+				<CubeNormal color="black" height="100px" width="100px" />
 				<div>3D</div>
 			</div>
 			<div className={styles.arrow}>→</div>
 			<div className={styles.step}>
-				<CubeIoT color="white" height="100px" width="100px" />
+				<CubeIoT color="black" height="100px" width="100px" />
 				<div>IoT Integration</div>
 			</div>
 			<div className={styles.arrow}>→</div>
 			<div className={styles.step}>
-				<CubeAI color="white" height="100px" width="100px" />
+				<CubeAI color="black" height="100px" width="100px" />
 				<div>AI Prediction</div>
 			</div>
 		</div>
