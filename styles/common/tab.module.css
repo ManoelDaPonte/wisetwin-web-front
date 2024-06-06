@@ -30,7 +30,7 @@
 	flex-direction: column;
 }
 
-.test {
+.ongoingGap {
 	display: flex;
 	flex-direction: row;
 	gap: 10px;

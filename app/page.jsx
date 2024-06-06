@@ -8,17 +8,17 @@ const HomePage = () => {
 		{
 			title: "Our Solutions",
 			text: "From Scada system to digital twin, discover our solutions.",
-			image: "image/png/turbine-exploded.png",
+			// image: "image/png/turbine-exploded.png",
 		},
 		{
 			title: "Uses Cases",
 			text: "How our digital twin solution can help you.",
-			image: "image/png/saas_exploded.png",
+			// image: "image/png/saas_exploded.png",
 		},
 		{
 			title: "Industry",
 			text: "Discover our solutions for the industry.",
-			image: "image/png/ai-modeling.png",
+			// image: "image/png/ai-modeling.png",
 		},
 	];
 	return (

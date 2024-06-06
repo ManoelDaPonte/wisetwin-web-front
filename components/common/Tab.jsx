@@ -16,7 +16,7 @@ const Tab = ({ href, label, subTabs = [] }) => {
 							>
 								<Link
 									href={subTab.href}
-									className={styles.test}
+									className={styles.ongoingGap}
 								>
 									{subTab.label}
 									{subTab.ongoing && <Badge>ongoing</Badge>}
