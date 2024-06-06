@@ -44,7 +44,7 @@ export default function Hero() {
                   type: "spring",
                 }}
               >
-                Discovery of  our Software
+                Discover our Software
               </motion.h1>
 
               <motion.p
@@ -60,7 +60,7 @@ export default function Hero() {
                 }}
               >
                 Are you still using scada systems? <br />
-                Bring your company to the future with our software.
+                Bring your company to the future with Wise Twin.
               </motion.p>
 
             </div>

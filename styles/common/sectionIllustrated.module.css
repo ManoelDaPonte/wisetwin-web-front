@@ -7,9 +7,19 @@
 }
 
 .section img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
+}
+
+.title {
+	font-size: 1.5em;
+}
+
+.subTitle {
+	font-size: 1em;
+	color: rgba(109, 109, 109, 0.456);
+	margin-bottom: 1em;
 }
 
 .imageContainer {

@@ -35,48 +35,68 @@ const Header = () => {
 			href: "/solutions/",
 			label: "Solutions",
 			subTabs: [
-				{ href: "/solutions#digital-twin", label: "Digital Twin" },
 				{
+					id: 0,
+					href: "/solutions#digital-twin",
+					label: "Digital Twin",
+				},
+				{
+					id: 1,
 					href: "/solutions#iot-integration",
 					label: "Integration IoT",
 				},
-				{ href: "/solutions#ai-enhancement", label: "AI Enhancement" },
+				{
+					id: 2,
+					href: "/solutions#ai-enhancement",
+					label: "AI Enhancement",
+					ongoing: true,
+				},
 			],
 		},
 		{
 			href: "/use-cases",
 			label: "Use Cases",
 			subTabs: [
-				{ href: "/use-cases#formation", label: "Formation" },
+				{ id: 0, href: "/use-cases#formation", label: "Formation" },
 				{
+					id: 1,
 					href: "/use-cases#monitoring",
 					label: "Monitoring",
 				},
 				{
+					id: 2,
 					href: "/use-cases#predictive-maintenance",
 					label: "Predictive Maintenance",
 				},
-				{ href: "/use-cases#marketing", label: "Marketing" },
+				{ id: 3, href: "/use-cases#marketing", label: "Marketing" },
 			],
 		},
 		{
 			href: "/segments",
 			label: "Segments",
 			subTabs: [
-				{ href: "/segments#smart-energy", label: "Smart Energy" },
 				{
+					id: 0,
+					href: "/segments#smart-energy",
+					label: "Smart Energy",
+				},
+				{
+					id: 1,
 					href: "/segments#warehouse-monitoring",
 					label: "Warehouse Monitoring",
 				},
 				{
+					id: 2,
 					href: "/segments#smart-city",
 					label: "Smart City",
 				},
 				{
+					id: 3,
 					href: "/segments#smart-buildings",
 					label: "Smart Buildings",
 				},
 				{
+					id: 4,
 					href: "/segments#industry-4.0",
 					label: "Industry 4.0",
 				},
@@ -87,10 +107,12 @@ const Header = () => {
 			label: "Resources",
 			subTabs: [
 				{
+					id: 0,
 					href: "/ressources/faqs",
 					label: "FAQs",
 				},
 				{
+					id: 1,
 					href: "/ressources/digital-twin",
 					label: "What's a Digital Twin ?",
 				},
@@ -161,7 +183,7 @@ const Header = () => {
 													legacyBehavior
 												>
 													<a onClick={toggleMenu}>
-														All {tab.label}
+														{tab.label}
 													</a>
 												</Link>
 											</li>
