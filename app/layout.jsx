@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Utils from "@/components/Utils";
 import Footer from "@/components/Footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import CookieConsent from "@/components/CookieConsent";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
 				{children}
 				<Utils />
 				<Footer />
+				<CookieConsent gaId="G-7XCC5XZW36" />
 			</body>
-			<GoogleAnalytics gaId="G-7XCC5XZW36" />
 		</html>
 	);
 }

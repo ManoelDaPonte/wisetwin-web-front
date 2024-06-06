@@ -3,13 +3,23 @@
 	flex-direction: column;
 }
 
+.pageSections > div {
+	padding: 5% 0;
+}
+
+.pageSections > section {
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+/* 
 .pageSections > div:nth-child(even) {
 	background-color: rgb(10, 22, 110);
 }
 
 .pageSections > div:nth-child(odd) {
 	background-color: #ffffff;
-}
+} */
 
 .section {
 	padding: 20px;

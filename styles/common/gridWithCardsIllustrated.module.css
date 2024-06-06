@@ -1,0 +1,69 @@
+/* styles/common/gridWithCardsIllustrated.module.css */
+
+.container {
+	width: 100%;
+	padding: 0 10%;
+	background-color: #ffffff;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center; /* centre les éléments horizontalement */
+	align-items: center; /* centre les éléments verticalement */
+	gap: 20px; /* Espace entre les éléments */
+}
+
+.card {
+	background-color: #efefef; /* Grey background */
+	border: 1px solid #e3e3e3; /* Border for the cards */
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 300px; /* Fixed width for the cards */
+	height: 400px;
+}
+
+.imageContainer {
+	height: 150px;
+	overflow: hidden;
+	margin: 10px; /* Margin around the image container */
+	background-color: #c6c6c6;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.learnMore {
+	margin-top: 10px;
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	align-self: center;
+}
+
+.learnMore:hover {
+	background-color: #0056b3;
+}

@@ -70,6 +70,9 @@ const Utils = () => {
 						<Link href="/about/wiseTwin" legacyBehavior>
 							<div>Who are we ?</div>
 						</Link>
+						<Link href="/about/faq" legacyBehavior>
+							<div>FAQs</div>
+						</Link>
 					</div>
 				</div>
 			</div>
