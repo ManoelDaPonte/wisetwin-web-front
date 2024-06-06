@@ -19,12 +19,9 @@ export default function Page() {
 				<SectionIllustrated
 					title="Digital Twin"
 					subTitle="Get yours in 7 days !"
-					image="/image/svg/cube-normal.svg"
+					image="image/svg/cube-normal.svg"
 					sectionId="digital-twin"
 					imagePosition="right"
-					license={{
-						url: "https://storyset.com/business",
-					}}
 					height={200}
 					width={200}
 				>
@@ -105,9 +102,6 @@ export default function Page() {
 					image="/image/svg/cube-normal.svg"
 					sectionId="digital-twin"
 					imagePosition="right"
-					license={{
-						url: "https://storyset.com/business",
-					}}
 					height={200}
 					width={200}
 				>
