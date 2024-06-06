@@ -64,7 +64,7 @@
 		top: 40px;
 		height: 100%;
 		width: 100vw;
-		background-color: rgba(255, 255, 255, 0.99);
+		background-color: rgb(255, 255, 255);
 		flex-direction: column;
 		z-index: 1000;
 		transition: all 4s ease-in-out;

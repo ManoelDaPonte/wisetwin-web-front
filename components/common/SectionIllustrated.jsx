@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function SectionIllustrated({
 	title,
+	subTitle,
 	image,
 	sectionId,
 	children,
@@ -58,14 +59,16 @@ export default function SectionIllustrated({
 					</div>
 
 					<div className={styles.textContainer}>
-						<h2>{title}</h2>
+						<h2 className={styles.title}>{title}</h2>
+						<h4 className={styles.subTitle}>{subTitle}</h4>
 						<div>{children}</div>
 					</div>
 				</>
 			) : (
 				<>
 					<div className={styles.textContainer}>
-						<h2>{title}</h2>
+						<h2 className={styles.title}>{title}</h2>
+						<h4 className={styles.subTitle}>{subTitle}</h4>
 						<div>{children}</div>
 					</div>
 

@@ -2,7 +2,7 @@
 
 .container {
 	width: 100%;
-	padding: 20px;
+	padding: 0 10%;
 	background-color: #ffffff;
 }
 
@@ -13,12 +13,11 @@
 }
 
 .grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 50px;
-	justify-content: center; /* Center the grid items horizontally */
-	align-items: center; /* Center the grid items vertically */
-	min-height: 60vh; /* Minimum height to ensure vertical centering */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center; /* centre les éléments horizontalement */
+	align-items: center; /* centre les éléments verticalement */
+	gap: 20px; /* Espace entre les éléments */
 }
 
 .card {

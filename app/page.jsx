@@ -22,15 +22,6 @@ const HomePage = () => {
 		},
 	];
 	return (
-		// <div className={styles.pageSections}>
-		// 	<Presentation />
-		// 	<div>
-		// 		<MultiLayerSection />
-		// 		<Cube3d />
-		// 		<Timeline />
-		// 	</div>
-		// </div>
-
 		<div className={styles.pageSections}>
 			<Hero />
 			<GridWithCardsIllustrated cards={cards} />

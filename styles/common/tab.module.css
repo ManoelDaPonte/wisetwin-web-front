@@ -30,6 +30,12 @@
 	flex-direction: column;
 }
 
+.test {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
 .tabContainer:hover .subTabs {
 	display: block;
 }

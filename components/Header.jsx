@@ -35,12 +35,22 @@ const Header = () => {
 			href: "/solutions/",
 			label: "Solutions",
 			subTabs: [
-				{ href: "/solutions#digital-twin", label: "Digital Twin" },
 				{
+					id: 0,
+					href: "/solutions#digital-twin",
+					label: "Digital Twin",
+				},
+				{
+					id: 1,
 					href: "/solutions#iot-integration",
 					label: "Integration IoT",
 				},
-				{ href: "/solutions#ai-enhancement", label: "AI Enhancement" },
+				{
+					id: 2,
+					href: "/solutions#ai-enhancement",
+					label: "AI Enhancement",
+					ongoing: true,
+				},
 			],
 		},
 		{
@@ -161,7 +171,7 @@ const Header = () => {
 													legacyBehavior
 												>
 													<a onClick={toggleMenu}>
-														All {tab.label}
+														{tab.label}
 													</a>
 												</Link>
 											</li>

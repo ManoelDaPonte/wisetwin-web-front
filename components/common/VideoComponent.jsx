@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import styles from "@/styles/common/videoComponent.module.css"; // Assurez-vous que ce chemin est correct
 
-// This component assumes you have a function `getVideoSrc` that fetches the video source URL.
 const VideoComponent = ({ getVideoSrc, height, width }) => {
 	const [src, setSrc] = useState("");
 
@@ -18,8 +18,14 @@ const VideoComponent = ({ getVideoSrc, height, width }) => {
 	}
 
 	return (
-		<div className="video-container">
-			<iframe src={src} allowFullScreen className="responsive-iframe" />
+		<div className={styles.videoContainer}>
+			<iframe
+				src={src}
+				allowFullScreen
+				className={styles.responsiveIframe}
+				width={width}
+				height={height}
+			/>
 		</div>
 	);
 };

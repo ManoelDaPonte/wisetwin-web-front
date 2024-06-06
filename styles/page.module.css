@@ -4,7 +4,12 @@
 }
 
 .pageSections > div {
-	border-bottom: 1px solid #0000001a;
+	padding: 5% 0;
+}
+
+.pageSections > section {
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 /* 
