@@ -26,7 +26,7 @@ export default function Hero() {
     <section id="hero" className="relative w-full h-[calc(100vh-60px)]">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-100"
-        src="video/presentation.mkv"
+        src="video/presentation.mp4"
         autoPlay
         loop
         muted
