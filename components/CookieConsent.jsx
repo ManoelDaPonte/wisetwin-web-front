@@ -18,26 +18,27 @@ const CookieConsentClient = ({ gaId }) => {
 		localStorage.setItem("cookie_consent", isConsent);
 	};
 
-	if (consent === null) {
-		return (
-			<div className={styles.cookieConsent}>
-				<p>
-					Nous utilisons des cookies pour améliorer votre expérience.
-					Acceptez-vous l'utilisation des cookies?
-				</p>
-				<div className={styles.cookie}>
-					<button onClick={() => handleConsent(true)}>
-						Accepter
-					</button>
-					<button onClick={() => handleConsent(false)}>
-						Refuser
-					</button>
+	return (
+		<>
+			{consent === null && (
+				<div className={styles.cookieConsent}>
+					<p>
+						Nous utilisons des cookies pour améliorer votre
+						expérience. Acceptez-vous l'utilisation des cookies?
+					</p>
+					<div className={styles.cookie}>
+						<button onClick={() => handleConsent(true)}>
+							Accepter
+						</button>
+						<button onClick={() => handleConsent(false)}>
+							Refuser
+						</button>
+					</div>
 				</div>
-			</div>
-		);
-	}
-
-	return consent ? <GoogleAnalytics gaId={gaId} /> : null;
+			)}
+			{consent && <GoogleAnalytics gaId={gaId} />}
+		</>
+	);
 };
 
 export default CookieConsentClient;

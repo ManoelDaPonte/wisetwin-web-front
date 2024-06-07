@@ -93,7 +93,7 @@ export default function Hero() {
               autoPlay
               loop
               muted
-              src="video/demo.mp4"
+              src="/video/demo.mp4"
               className="h-auto w-full"
             />
           </motion.div>
