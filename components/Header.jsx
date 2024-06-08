@@ -15,6 +15,7 @@ const Header = () => {
 
 	const requestDemo = () => {
 		router.push("/contact?interest=requestDemo");
+		toggleMenu(); // Fermer le menu après la redirection
 	};
 
 	const toggleMenu = () => {
@@ -72,32 +73,32 @@ const Header = () => {
 			],
 		},
 		{
-			href: "/segments",
-			label: "Segments",
+			href: "/industries",
+			label: "Industries",
 			subTabs: [
 				{
 					id: 0,
-					href: "/segments#smart-energy",
+					href: "/industries#smart-energy",
 					label: "Smart Energy",
 				},
 				{
 					id: 1,
-					href: "/segments#warehouse-monitoring",
+					href: "/industries#warehouse-monitoring",
 					label: "Warehouse Monitoring",
 				},
 				{
 					id: 2,
-					href: "/segments#smart-city",
+					href: "/industries#smart-city",
 					label: "Smart City",
 				},
 				{
 					id: 3,
-					href: "/segments#smart-buildings",
+					href: "/industries#smart-buildings",
 					label: "Smart Buildings",
 				},
 				{
 					id: 4,
-					href: "/segments#industry-4.0",
+					href: "/industries#industry-4.0",
 					label: "Industry 4.0",
 				},
 			],
@@ -113,7 +114,12 @@ const Header = () => {
 				},
 				{
 					id: 1,
-					href: "/ressources/digital-twin",
+					href: "/ressources/testimony",
+					label: "Testimony",
+				},
+				{
+					id: 2,
+					href: "/ressources/about/digital-twin",
 					label: "What's a Digital Twin ?",
 				},
 			],
@@ -132,8 +138,9 @@ const Header = () => {
 							<Image
 								src="/image/svg/wisetwin.svg"
 								alt="Logo"
-								width={100}
-								height={1}
+								width={100} // Fix width and height using properties
+								height={100}
+								style={{ maxWidth: "100%", height: "auto" }}
 							/>
 						</Link>
 					</div>
@@ -153,6 +160,7 @@ const Header = () => {
 						label="Request a Demo"
 						color="green"
 						onClick={requestDemo}
+						className={styles.demoButton}
 					/>
 				</div>
 				<div className={styles.menuButton} onClick={toggleMenu}>
@@ -214,14 +222,12 @@ const Header = () => {
 							)}
 						</li>
 					))}
-					<li className={styles.navItem}>
-						<Button
-							label="Request a Demo"
-							color="green"
-							onClick={requestDemo}
-							className={styles.demoButtonMobile}
-						/>
-					</li>
+					<Button
+						label="Request a Demo"
+						color="green"
+						onClick={requestDemo}
+						className={styles.demoButton}
+					/>
 				</ul>
 			</nav>
 		</>

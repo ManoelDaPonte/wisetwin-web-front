@@ -4,7 +4,8 @@
 }
 
 .pageSections > div {
-	padding: 5% 0;
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 .pageSections > section {

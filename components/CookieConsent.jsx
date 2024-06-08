@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import styles from "@/styles/cookies.module.css";
 
 const CookieConsentClient = ({ gaId }) => {
 	const [consent, setConsent] = useState(null);
@@ -17,20 +18,27 @@ const CookieConsentClient = ({ gaId }) => {
 		localStorage.setItem("cookie_consent", isConsent);
 	};
 
-	if (consent === null) {
-		return (
-			<div className="cookie-consent">
-				<p>
-					Nous utilisons des cookies pour améliorer votre expérience.
-					Acceptez-vous l'utilisation des cookies?
-				</p>
-				<button onClick={() => handleConsent(true)}>Accepter</button>
-				<button onClick={() => handleConsent(false)}>Refuser</button>
-			</div>
-		);
-	}
-
-	return consent ? <GoogleAnalytics gaId={gaId} /> : null;
+	return (
+		<>
+			{consent === null && (
+				<div className={styles.cookieConsent}>
+					<p>
+						Nous utilisons des cookies pour améliorer votre
+						expérience. Acceptez-vous l'utilisation des cookies?
+					</p>
+					<div className={styles.cookie}>
+						<button onClick={() => handleConsent(true)}>
+							Accepter
+						</button>
+						<button onClick={() => handleConsent(false)}>
+							Refuser
+						</button>
+					</div>
+				</div>
+			)}
+			{consent && <GoogleAnalytics gaId={gaId} />}
+		</>
+	);
 };
 
 export default CookieConsentClient;

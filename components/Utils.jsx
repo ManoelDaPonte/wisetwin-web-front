@@ -47,15 +47,13 @@ const Utils = () => {
 				<div className={styles.linkContainer}>
 					<div className={styles.columnTitle}>Start With</div>
 					<div className={styles.links}>
-						<Link href="/startWith/digitalTwin" legacyBehavior>
+						<Link
+							href="/ressources/about/digital-twin"
+							legacyBehavior
+						>
 							<div>What is a Digital Twin ?</div>
 						</Link>
-						<Link href="/startWith/powerPlant" legacyBehavior>
-							<div>What is a Power Plant ?</div>
-						</Link>
-						<Link href="/startWith/testimony" legacyBehavior>
-							<div>What our customers say about us ?</div>
-						</Link>
+
 						<Link href="/solutions" legacyBehavior>
 							<div>Our Offers</div>
 						</Link>
@@ -67,10 +65,13 @@ const Utils = () => {
 				<div className={styles.linkContainer}>
 					<div className={styles.columnTitle}>About</div>
 					<div className={styles.links}>
-						<Link href="/about/wiseTwin" legacyBehavior>
+						<Link href="/wisetwin" legacyBehavior>
 							<div>Who are we ?</div>
 						</Link>
-						<Link href="/about/faq" legacyBehavior>
+						<Link href="/ressources/testimony" legacyBehavior>
+							<div>Testimony</div>
+						</Link>
+						<Link href="/ressources/faqs" legacyBehavior>
 							<div>FAQs</div>
 						</Link>
 					</div>

@@ -25,6 +25,7 @@ const VideoComponent = ({ getVideoSrc, height, width }) => {
 				className={styles.responsiveIframe}
 				width={width}
 				height={height}
+				muted
 			/>
 		</div>
 	);

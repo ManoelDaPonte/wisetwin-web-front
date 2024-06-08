@@ -1,6 +1,7 @@
 // components/GridWithCards.js
 
 import React from "react";
+import Button from "@/components/common/Button";
 import styles from "@/styles/common/gridWithCardsIllustrated.module.css";
 
 const GridWithCardsIllustrated = ({ title, cards }) => {
@@ -20,9 +21,11 @@ const GridWithCardsIllustrated = ({ title, cards }) => {
 						<div className={styles.content}>
 							<h2>{card.title}</h2>
 							<p className={styles.textCard}>{card.text}</p>
-							<button className={styles.learnMore}>
-								Learn More
-							</button>
+							<Button
+								label="Show details"
+								color="green"
+								className={styles.demoButton}
+							/>
 						</div>
 					</div>
 				))}
