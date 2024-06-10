@@ -12,22 +12,20 @@ const faqs = [
     section: "General",
     qa: [
       {
-        question: "What is Magic UI?",
+        question: "How can I try the software?",
         answer: (
           <span>
-            Magic UI is a React-based UI library designed to help developers
-            build beautiful and interactive user interfaces with ease. It offers
-            a wide range of customizable components.
+            Wise Twin offer a variety of software licenses, 
+            and free trials of early digital twin projects to showcase our platform.
+            By completing the registration form, you will discover our free demo.
           </span>
         ),
       },
       {
-        question: "How can I get started with Magic UI?",
+        question: "I already have monitoring systems, can I integrate them into Wise Twin's solutions?",
         answer: (
           <span>
-            To get started, install the Magic UI package in your React project
-            using your package manager. Explore our documentation for guides on
-            using components and customizing your UI.
+            For sure! We offer basic plans for implementing your own dashboards to your 3D Digital Twins.
           </span>
         ),
       },
@@ -37,12 +35,10 @@ const faqs = [
     section: "Support",
     qa: [
       {
-        question: "Does Magic UI offer technical support?",
+        question: "I have specific needs for my industry, do you provide support for this?",
         answer: (
           <span>
-            While Magic UI is primarily a self-serve library, we provide
-            extensive documentation and a community forum where you can ask
-            questions and share insights with other developers.
+            Yes! Depending on your subscription plan, we provide technical support for the platform itself.
           </span>
         ),
       },
@@ -52,28 +48,11 @@ const faqs = [
     section: "Customization",
     qa: [
       {
-        question: "Can I customize Magic UI components?",
+        question: "Can I customize my Digital Twin?",
         answer: (
           <span>
-            Absolutely! Magic UI is built with customization in mind. You can
-            easily override styles and behaviors of components to match your
-            design requirements.
-          </span>
-        ),
-      },
-    ],
-  },
-  {
-    section: "Integration",
-    qa: [
-      {
-        question: "How do I integrate Magic UI with my existing project?",
-        answer: (
-          <span>
-            Magic UI can be integrated into any React project. Simply install
-            the library, import the components you need, and start using them in
-            your project. Our documentation provides detailed instructions for
-            integration.
+            Absolutely! We provide all the necessary 3D assets for your specific needs,
+            IoT Dashboards integration. For more complex upgrades, don't hesitate to contact us!
           </span>
         ),
       },
@@ -94,7 +73,7 @@ export default function FAQ() {
               Frequently Asked Questions
             </h2>
             <p className="mt-6 text-xl leading-8 text-black/80 dark:text-white">
-              Need help with something? Here are some of the most common
+              You are still hesitating? Here are some of the most common
               questions we get.
             </p>
           </div>
@@ -125,8 +104,8 @@ export default function FAQ() {
           </div>
           <h4 className="mb-12 text-center text-sm font-medium tracking-tight text-foreground/80">
             Still have questions? Email us at{" "}
-            <a href="mailto:support@example.com" className="underline">
-              support@example.com
+            <a href="mailto:support@wisetwin.eu" className="underline">
+              support@wisetwin.eu
             </a>
           </h4>
         </div>

@@ -7,18 +7,18 @@ const HomePage = () => {
 	const cards = [
 		{
 			title: "Our Solutions",
-			text: "From Scada system to digital twin, discover our solutions.",
-			// image: "image/png/turbine-exploded.png",
+			text: "We brought sci-fi ideas to reality. Discover our digital twin solutions.",
+			image: "image/png/turbine-exploded.png",
 		},
 		{
 			title: "Uses Cases",
 			text: "How our digital twin solution can help you.",
-			// image: "image/png/saas_exploded.png",
+			image: "image/png/our-solutions.jpg",
 		},
 		{
 			title: "Industry",
 			text: "Discover our solutions for the industry.",
-			// image: "image/png/ai-modeling.png",
+			image: "image/png/ai-modeling.png",
 		},
 	];
 	return (

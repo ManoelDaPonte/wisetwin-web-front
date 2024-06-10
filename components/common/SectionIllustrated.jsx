@@ -10,8 +10,8 @@ export default function SectionIllustrated({
 	sectionId,
 	children,
 	imagePosition = "left",
-	width = 400,
-	height = 400,
+	width = 700,
+	height = 700,
 	license = null,
 }) {
 	const [isMobile, setIsMobile] = useState(false);
