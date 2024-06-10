@@ -16,17 +16,16 @@ export const toHumanPrice = (price: number, decimals: number = 2) => {
 
 const demoPrices = [
   {
-    id: "price_1",
-    name: "Basic",
-    description: "A basic plan for startups and individual users",
+    id: "price_0",
+    name: "Modeling",
+    description: "A starter plan for small projects",
     features: [
-      "AI-powered analytics",
-      "Basic support",
-      "5 projects limit",
-      "Access to basic AI tools",
+      "Interactive Digital Twin",
+      "3D assets ",
+      "1 project limit",
     ],
-    monthlyPrice: 1000,
-    yearlyPrice: 10000,
+    monthlyPrice: 500,
+    yearlyPrice: 5000,
     isMostPopular: false,
   },
   {
@@ -34,13 +33,14 @@ const demoPrices = [
     name: "Premium",
     description: "A premium plan for growing businesses",
     features: [
-      "Advanced AI insights",
+      "Everything in Basic",
+      "Predictive maintenance",
+      "Connect up to 50 IoT devices",
+      "Collaborate with up to 10 team members",
       "Priority support",
-      "Unlimited projects",
-      "Access to all AI tools",
-      "Custom integrations",
+      ""
     ],
-    monthlyPrice: 2000,
+    monthlyPrice: 35000,
     yearlyPrice: 20000,
     isMostPopular: true,
   },
@@ -57,24 +57,8 @@ const demoPrices = [
       "Custom integrations",
       "Data security and compliance",
     ],
-    monthlyPrice: 5000,
+    monthlyPrice: 50000,
     yearlyPrice: 50000,
-    isMostPopular: false,
-  },
-  {
-    id: "price_6",
-    name: "Ultimate",
-    description: "The ultimate plan with all features for industry leaders",
-    features: [
-      "Bespoke AI development",
-      "White-glove support",
-      "Unlimited projects",
-      "Priority access to new AI tools",
-      "Custom integrations",
-      "Highest data security and compliance",
-    ],
-    monthlyPrice: 8000,
-    yearlyPrice: 80000,
     isMostPopular: false,
   },
 ];
@@ -95,40 +79,97 @@ export default function Pricing() {
     <section id="pricing">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 py-14 md:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">
-            Pricing
-          </h4>
 
           <h2 className="text-5xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
-            Simple pricing for everyone.
+            Get your Digital Twin
           </h2>
 
           <p className="mt-6 text-xl leading-8 text-black/80 dark:text-white">
-            Choose an <strong>affordable plan</strong> that&apos;s packed with
-            the best features for engaging your audience, creating customer
-            loyalty, and driving sales.
+            We propose modular price to fit your needs.
           </p>
         </div>
 
-        <div className="flex w-full items-center justify-center space-x-2">
-          <Switch
-            id="interval"
-            onCheckedChange={(checked) => {
-              setInterval(checked ? "year" : "month");
-            }}
-          />
-          <span>Annual</span>
-          <span className="inline-block whitespace-nowrap rounded-full bg-black px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white dark:bg-white dark:text-black">
-            2 MONTHS FREE ✨
-          </span>
-        </div>
+        <div className="mx-auto grid w-full justify-center gap-8 sm:grid-cols-[1fr,auto,1fr,1fr]">
+          <div className="relative flex w-full max-w-[400px] flex-col gap-4 overflow-hidden rounded-2xl border p-4 text-black dark:text-white">
+            <div className="flex items-center">
+              <div className="ml-4">
+                <h2 className="text-base font-semibold leading-7">
+                  Starter
+                </h2>
+                <p className="h-16 text-sm leading-5 text-black/70 dark:text-white">
+                  Get your first digital twin up and running within 7 days !
+                </p>
+              </div>
+            </div>
 
-        <div className="mx-auto grid w-full justify-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {demoPrices.map((price, idx) => (
+            <motion.div
+              key={`price_0-${interval}`}
+              initial="initial"
+              animate="animate"
+              variants={{
+                initial: {
+                  opacity: 0,
+                  y: 12,
+                },
+                animate: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              transition={{
+                duration: 0.4,
+                delay: 0.1,
+                ease: [0.21, 0.47, 0.32, 0.98],
+              }}
+              className="flex flex-row gap-1"
+            >
+              <span className="text-4xl font-bold text-black dark:text-white">
+                From 5000€
+              </span>
+            </motion.div>
+
+            <Button
+              className={cn(
+                "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+                "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+              )}
+              disabled={isLoading}
+              onClick={() => void onSubscribeClick(demoPrices[0].id)}
+            >
+              <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
+              {(!isLoading || (isLoading && id !== demoPrices[0].id)) && (
+                <p>Contact Us</p>
+              )}
+
+              {isLoading && id === demoPrices[0].id && <p>Contact Us</p>}
+              {isLoading && id === demoPrices[0].id && (
+                <Loader className="mr-2 h-4 w-4 animate-spin" />
+              )}
+            </Button>
+
+            <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
+            {demoPrices[0].features && demoPrices[0].features.length > 0 && (
+              <ul className="flex flex-col gap-2 font-normal">
+                {demoPrices[0].features.map((feature: any, idx: any) => (
+                  <li
+                    key={idx}
+                    className="flex items-center gap-3 text-xs font-medium text-black dark:text-white"
+                  >
+                    <CheckIcon className="h-5 w-5 shrink-0 rounded-full bg-green-400 p-[2px] text-black dark:text-white" />
+                    <span className="flex">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <div className="flex justify-center items-center w-12">
+            <span className="text-4xl font-bold text-black dark:text-white">+</span>
+          </div>
+          {demoPrices.slice(1).map((price, idx) => (
             <div
               key={price.id}
               className={cn(
-                " relative flex w-full max-w-[400px] flex-col gap-4 overflow-hidden rounded-2xl border p-4 text-black dark:text-white",
+                "relative flex w-full max-w-[400px] flex-col gap-4 overflow-hidden rounded-2xl border p-4 text-black dark:text-white",
                 {
                   "border-2 border-neutral-700 shadow-lg shadow-neutral-500 dark:border-neutral-400 dark:shadow-neutral-600":
                     price.isMostPopular,
