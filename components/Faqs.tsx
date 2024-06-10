@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Accordion,
   AccordionContent,
@@ -22,13 +20,21 @@ const faqs = [
         ),
       },
       {
-        question: "I already have monitoring systems, can I integrate them into Wise Twin's solutions?",
+        question: "What industries can benefit from Wise Twin's solutions?",
         answer: (
-          <span>
-            For sure! We offer basic plans for implementing your own dashboards to your 3D Digital Twins.
-          </span>
+          <span>Wise Twin's solutions are versatile and can be applied to various industries including manufacturing, healthcare, real estate, and more.</span>
         ),
       },
+
+      {
+        question: "What is a Digital Twin and how does it work?",
+        answer: (
+          <span>A Digital Twin is a virtual replica of a physical object or system. It uses real-time data and simulations to provide insights and optimize performance.</span>
+        ),
+      },
+
+
+
     ],
   },
   {
@@ -42,6 +48,18 @@ const faqs = [
           </span>
         ),
       },
+      {
+        question: "How can I contact technical support?",
+        answer: (
+          <span>You can reach our technical support team by emailing support@wisetwin.eu or through our support portal.</span>
+        ),
+      },
+      {
+        question: "What kind of training is provided for new users?",
+        answer: (
+          <span>We offer comprehensive training programs including online tutorials, webinars, and on-site training sessions depending on your subscription plan.</span>
+        ),
+      },
     ],
   },
   {
@@ -53,6 +71,33 @@ const faqs = [
           <span>
             Absolutely! We provide all the necessary 3D assets for your specific needs,
             IoT Dashboards integration. For more complex upgrades, don't hesitate to contact us!
+          </span>
+        ),
+      },
+      {
+        question: "I already have monitoring systems, can I integrate them into Wise Twin's solutions?",
+        answer: (
+          <span>For sure! We offer basic plans for implementing your own dashboards to your 3D Digital Twins.
+          </span>
+        ),
+        
+      },
+    ],
+  },
+  {
+    section: "Security",
+    qa: [
+      {
+        question: "How secure is my data on Wise Twin's platform?",
+        answer: (
+          <span>We prioritize security and ensure that your data is protected with advanced encryption and security protocols.</span>
+        ),
+      },
+      {
+        question: "Is that possible to get the software on premise?",
+        answer: (
+          <span>
+            We do not offer on-premise installations at the moment. Our platform is cloud-based and can be accessed from anywhere, securely and easily. However depending on your subscription plan, we can provide a dedicated instance.
           </span>
         ),
       },
@@ -86,7 +131,7 @@ export default function FAQ() {
                 <Accordion
                   type="single"
                   collapsible
-                  className="flex w-full flex-col items-center justify-center"
+                  className="flex w-full flex-col"
                 >
                   {faq.qa.map((faq, idx) => (
                     <AccordionItem
@@ -94,7 +139,7 @@ export default function FAQ() {
                       value={faq.question}
                       className="w-full max-w-[600px]"
                     >
-                      <AccordionTrigger>{faq.question}</AccordionTrigger>
+                      <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
                       <AccordionContent>{faq.answer}</AccordionContent>
                     </AccordionItem>
                   ))}

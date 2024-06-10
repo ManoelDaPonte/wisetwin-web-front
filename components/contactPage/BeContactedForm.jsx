@@ -150,8 +150,8 @@ export default function BeContactedForm() {
 					defaultValue={interest}
 				>
 					<option value="defaultValue">Choose your interest *</option>
-					<option value="requestDemo">Request a free demo</option>
-					<option value="service">Service information</option>
+					<option value="requestDemo">Request a demo</option>
+					<option value="information">Informations</option>
 					<option value="support">Support</option>
 					<option value="other">Other</option>
 				</select>

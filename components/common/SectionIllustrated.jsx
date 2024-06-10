@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import styles from "@/styles/common/sectionIllustrated.module.css";
 import Image from "next/image";
+import Button from "@/components/common/Button";
 
 export default function SectionIllustrated({
 	title,
@@ -13,6 +14,7 @@ export default function SectionIllustrated({
 	width = 700,
 	height = 700,
 	license = null,
+	button = null,
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const imageFirst = imagePosition === "left";
@@ -62,6 +64,14 @@ export default function SectionIllustrated({
 						<h2 className={styles.title}>{title}</h2>
 						<h4 className={styles.subTitle}>{subTitle}</h4>
 						<div>{children}</div>
+						{button && (
+							<div className={styles.buttonContainer}>
+								<Button
+									label={button.label}
+									href={button.href}
+								/>
+							</div>
+						)}
 					</div>
 				</>
 			) : (
@@ -70,6 +80,14 @@ export default function SectionIllustrated({
 						<h2 className={styles.title}>{title}</h2>
 						<h4 className={styles.subTitle}>{subTitle}</h4>
 						<div>{children}</div>
+						{button && (
+							<div className={styles.buttonContainer}>
+								<Button
+									label={button.label}
+									href={button.href}
+								/>
+							</div>
+						)}
 					</div>
 
 					<div className={styles.imageContainer}>
