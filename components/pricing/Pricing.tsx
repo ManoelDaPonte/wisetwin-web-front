@@ -21,43 +21,39 @@ const demoPrices = [
     description: "A starter plan for small projects",
     features: [
       "Interactive Digital Twin",
-      "3D assets ",
-      "1 project limit",
     ],
     monthlyPrice: 500,
     yearlyPrice: 5000,
     isMostPopular: false,
   },
   {
-    id: "price_2",
-    name: "Premium",
+    id: "price_1",
+    name: "SME",
     description: "A premium plan for growing businesses",
     features: [
-      "Everything in Basic",
-      "Predictive maintenance",
       "Connect up to 50 IoT devices",
       "Collaborate with up to 10 team members",
-      "Priority support",
-      ""
+      "Monitoring and alerts",
+      "Integrate your dashboards",
     ],
     monthlyPrice: 35000,
     yearlyPrice: 20000,
     isMostPopular: true,
   },
   {
-    id: "price_5",
+    id: "price_2",
     name: "Enterprise",
     description:
       "An enterprise plan with advanced features for large organizations",
     features: [
-      "Custom AI solutions",
-      "24/7 dedicated support",
-      "Unlimited projects",
-      "Access to all AI tools",
-      "Custom integrations",
-      "Data security and compliance",
+      "Everything in SME",
+      "Connect up to 100 IoT devices",
+      "Collaborate with up to 50 team members",
+      "Integration in your cloud provider",
+      "Access to our latest features",
+      "Priority support",
     ],
-    monthlyPrice: 50000,
+    monthlyPrice: 200000,
     yearlyPrice: 50000,
     isMostPopular: false,
   },
@@ -227,10 +223,10 @@ export default function Pricing() {
               >
                 <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
                 {(!isLoading || (isLoading && id !== price.id)) && (
-                  <p>Subscribe</p>
+                  <p>Contact Us</p>
                 )}
 
-                {isLoading && id === price.id && <p>Subscribing</p>}
+                {isLoading && id === price.id && <p>Contact Us</p>}
                 {isLoading && id === price.id && (
                   <Loader className="mr-2 h-4 w-4 animate-spin" />
                 )}

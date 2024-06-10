@@ -95,6 +95,7 @@ export default function Hero() {
               muted
               src="/video/demo.mp4"
               className="h-auto w-full"
+              style={{ pointerEvents: "none", userSelect: "none" }}
             />
           </motion.div>
         </div>

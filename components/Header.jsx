@@ -43,14 +43,8 @@ const Header = () => {
 				},
 				{
 					id: 1,
-					href: "/solutions#iot-integration",
-					label: "Integration IoT",
-				},
-				{
-					id: 2,
-					href: "/solutions#ai-enhancement",
-					label: "AI Enhancement",
-					ongoing: true,
+					href: "/solutions#twin-trainer",
+					label: "Twin Trainer",
 				},
 			],
 		},
@@ -222,12 +216,7 @@ const Header = () => {
 							)}
 						</li>
 					))}
-					<Button
-						label="Request a Demo"
-						color="green"
-						onClick={requestDemo}
-						className={styles.demoButton}
-					/>
+					<Button label="Request a Demo" onClick={requestDemo} />
 				</ul>
 			</nav>
 		</>
