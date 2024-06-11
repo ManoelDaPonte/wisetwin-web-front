@@ -17,8 +17,8 @@ export default function Page() {
 			<div>
 				<Title text="Digital Twin" />
 				<SectionIllustrated
-					title="Digital Twin"
-					subTitle="Get yours in 7 days !"
+					title="Your own Virtual Industry"
+					subTitle="Play with it!"
 					image="image/svg/cube-normal.svg"
 					sectionId="digital-twin"
 					imagePosition="right"
@@ -26,24 +26,16 @@ export default function Page() {
 					width={200}
 				>
 					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
+						Start your digitalization process and deploy high
+						quality 3D rendering of your plant, building.
+						whareohuse, or industry, and play with your
+						early-digital twin, so you will be able to: · Enhance
+						internal and external communication · Be aware of your
+						assets · Visualize and simulate changes in your industry
 					</p>
 				</SectionIllustrated>
 				<SectionIllustrated
-					title="IoT Integration"
+					title="Add some live data"
 					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
 					image="/image/svg/cube-iot.svg"
 					sectionId="iot-integration"
@@ -52,25 +44,18 @@ export default function Page() {
 					width={200}
 				>
 					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
+						Add interactive dashboards displaying real-time
+						properties of your twin. By integrating our
+						AI-assistant, you will let our visual alerting system
+						make the job within your 3D virtual world. · Enhance
+						your decision-making capabilities. · Enhance your
+						operational awareness. · Generate visual and fast
+						reporting.
 					</p>
 				</SectionIllustrated>
 				<SectionIllustrated
-					title="Monitoring"
-					subTitle="Let's get from descriptive analysis to predictive / prescriptive one !"
+					title="For innovation leaders"
+					subTitle="Integrate your predictive maintenance modules !"
 					image="/image/svg/cube-ai.svg"
 					sectionId="ai-enhancement"
 					imagePosition="right"
@@ -78,28 +63,20 @@ export default function Page() {
 					width={200}
 				>
 					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
+						Be a leader with your fully operational Digital Twin
+						with your predictive maintenance modules. Implement
+						algorithms and modeling tools to run numerical
+						simulations of your physical assets. · Optimize every
+						workflow · Avoid shutdowns of production lines · Avoid
+						shutdowns of machines
 					</p>
 				</SectionIllustrated>
 			</div>
 			<div>
 				<Title text="Twin Trainer" />
 				<SectionIllustrated
-					title="Digital Twin"
-					subTitle="Get yours in 7 days !"
+					title="TwinTrainer"
+					subTitle="Our formation module"
 					image="image/svg/cube-normal.svg"
 					sectionId="digital-twin"
 					imagePosition="right"
@@ -107,72 +84,12 @@ export default function Page() {
 					width={200}
 				>
 					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
-					</p>
-				</SectionIllustrated>
-				<SectionIllustrated
-					title="IoT Integration"
-					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
-					image="/image/svg/cube-iot.svg"
-					sectionId="iot-integration"
-					imagePosition="left"
-					height={200}
-					width={200}
-				>
-					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
-					</p>
-				</SectionIllustrated>
-				<SectionIllustrated
-					title="Monitoring"
-					subTitle="Let's get from descriptive analysis to predictive / prescriptive one !"
-					image="/image/svg/cube-ai.svg"
-					sectionId="ai-enhancement"
-					imagePosition="right"
-					height={200}
-					width={200}
-				>
-					<p>
-						When you open a website, you are looking at a page. A
-						page is a single document that can contain text, images,
-						videos, and other elements. Pages can be static or
-						dynamic. Static pages are predefined and do not change
-						unless the developer updates them. Dynamic pages, on the
-						other hand, can change based on user interactions or
-						other factors.
-					</p>
-					<p>
-						Pages are typically written in HTML, which stands for
-						HyperText Markup Language. HTML is the standard language
-						for creating web pages and web applications. It provides
-						the structure and organization of content on a page,
-						including headings, paragraphs, images, links, and more.
+						Add tailor-made formation modules to your digital twin
+						and virtualize the formation and training of your
+						workforce. With that tool, you will: · Gain a skilled
+						workforce · Decrease formation time and cost · Simulate
+						critical issues before they even happen · Analyse and
+						correct bad practices
 					</p>
 				</SectionIllustrated>
 			</div>
