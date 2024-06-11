@@ -44,7 +44,7 @@ const Header = () => {
 				{
 					id: 1,
 					href: "/solutions#twin-trainer",
-					label: "Twin Trainer",
+					label: "TrainerTwin™",
 				},
 			],
 		},
@@ -111,11 +111,11 @@ const Header = () => {
 					href: "/ressources/testimony",
 					label: "Testimony",
 				},
-				{
-					id: 2,
-					href: "/ressources/about/digital-twin",
-					label: "What's a Digital Twin ?",
-				},
+				// {
+				// 	id: 2,
+				// 	href: "/ressources/about/digital-twin",
+				// 	label: "What's a Digital Twin ?",
+				// },
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },

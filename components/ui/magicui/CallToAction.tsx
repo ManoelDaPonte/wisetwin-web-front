@@ -106,7 +106,19 @@ const Card = (card: { icon: JSX.Element; bg: JSX.Element }) => {
   );
 };
 
-export function CallToAction() {
+interface ReusableCallToActionProps {
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+}
+
+export default function CallToAction({
+  title,
+  description,
+  buttonText,
+  buttonLink,
+}: ReusableCallToActionProps) {
   const [randomTiles1, setRandomTiles1] = useState<typeof tiles>([]);
   const [randomTiles2, setRandomTiles2] = useState<typeof tiles>([]);
   const [randomTiles3, setRandomTiles3] = useState<typeof tiles>([]);
@@ -123,10 +135,10 @@ export function CallToAction() {
   }, []);
 
   return (
-    <section id="cta">
-      <div className="py-14">
-        <div className="container flex w-full flex-col items-center justify-center p-4">
-          <div className="relative flex w-full max-w-[1000px] flex-col items-center justify-center overflow-hidden rounded-[2rem] border">
+  <section id="cta" className="w-[100%] overflow-x-hidden mx-auto">
+      <div className="flex w-full flex-col items-center justify-center overflow-hidden">
+        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
             <Marquee
               reverse
               className="-delay-[200ms] [--duration:20s]"
@@ -161,13 +173,13 @@ export function CallToAction() {
               </div>
               <div className="z-10 mt-4 flex flex-col items-center text-center text-primary">
                 <h1 className="text-3xl font-bold lg:text-4xl">
-                  Stop wasting time on design.
+                  {title}
                 </h1>
                 <p className="mt-2">
-                  Start your 7-day free trial. No credit card required.
+                  {description}
                 </p>
                 <a
-                  href="/"
+                  href={buttonLink}
                   className={cn(
                     buttonVariants({
                       size: "lg",
@@ -176,7 +188,7 @@ export function CallToAction() {
                     "group mt-4 rounded-[2rem] px-6",
                   )}
                 >
-                  Get Started
+                  {buttonText}
                   <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </a>
               </div>
@@ -188,4 +200,5 @@ export function CallToAction() {
       </div>
     </section>
   );
+  
 }
