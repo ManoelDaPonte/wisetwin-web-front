@@ -6,55 +6,19 @@
 .pageSections > div {
 	padding-bottom: 5%;
 	padding-top: 5%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .pageSections > section {
 	padding-bottom: 5%;
 	padding-top: 5%;
-}
-
-/* 
-.pageSections > div:nth-child(even) {
-	background-color: rgb(10, 22, 110);
-}
-
-.pageSections > div:nth-child(odd) {
-	background-color: #ffffff;
-} */
-
-.section {
-	padding: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .containerGrid {
 	display: grid;
 	grid-template-rows: auto auto auto;
 	grid-gap: 20px;
-	max-width: 800px;
+	max-width: 600px;
 	margin: auto;
-}
-
-.splitRow {
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-gap: 50px;
-}
-
-.splitColumn {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 50px;
-	padding: 20px;
-}
-
-@media (max-width: 768px) {
-	.splitColumn {
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 0px;
-	}
-
-	.splitColumn > div {
-		margin: auto;
-	}
 }

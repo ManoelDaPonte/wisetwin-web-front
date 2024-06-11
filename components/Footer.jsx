@@ -10,17 +10,17 @@ const Footer = () => {
 			{/* <LanguageSelector height={20} width={20} /> */}
 			<div className={styles.linksContainer}>
 				<div className={styles.link}>
-					<Link href="/legals/terms" legacyBehavior>
+					<Link href="/ressources/legals/terms" legacyBehavior>
 						<div>General Terms and Conditions</div>
 					</Link>
 				</div>
 				<div className={styles.link}>
-					<Link href="/legals/privacy" legacyBehavior>
+					<Link href="/ressources/legals/privacy" legacyBehavior>
 						<div>Privacy Policy</div>
 					</Link>
 				</div>
 				<div className={styles.link}>
-					<Link href="/legals/cookies" legacyBehavior>
+					<Link href="/ressources/legals/cookies" legacyBehavior>
 						<div>Cookies Policy</div>
 					</Link>
 				</div>

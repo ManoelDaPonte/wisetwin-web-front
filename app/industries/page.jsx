@@ -1,8 +1,6 @@
 import styles from "@/styles/page.module.css";
 import GridWithCards from "@/components/common/GridWithCards";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
-import Title from "@/components/common/Title";
-import Image from "next/image";
 export default function Page() {
 	const cards_energy = [
 		{
@@ -113,12 +111,21 @@ export default function Page() {
 	return (
 		<div className={styles.pageSections}>
 			<div>
-				<Image
-					src="/image/png/energy.png"
-					alt="Industries"
-					width={1920}
-					height={1080}
-				/>
+				<SectionIllustrated
+					title="Power Plant"
+					image="/image/png/energy.png"
+					imagePosition="right"
+					button={{ label: "Learn more", href: "/solutions" }}
+				>
+					<p>
+						Complex grids and growing renewable energy capacity will
+						change the way we manage electricity. Using Digital
+						Twins can help support the design, monitoring, and
+						maintenance of power plants, new grid infrastructures,
+						and optimize electricity production. Here is what Wise
+						Twin solutions can do:
+					</p>
+				</SectionIllustrated>
 				<GridWithCards cards={cards_energy} />
 			</div>
 			<div>

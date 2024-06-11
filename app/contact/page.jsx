@@ -9,10 +9,12 @@ export default function Page() {
 	return (
 		<Suspense>
 			<div className={styles.pageSections}>
-				<div className={styles.containerGrid}>
-					<BeContactedForm />
-					<ContactUs />
-					<FeedBack />
+				<div>
+					<div className={styles.containerGrid}>
+						<BeContactedForm />
+						<ContactUs />
+						<FeedBack />
+					</div>
 				</div>
 			</div>
 		</Suspense>
