@@ -15,15 +15,16 @@ export default function Page() {
 		<div className={styles.pageSections}>
 			<HeroSolution />
 			<div>
-				<Title text="Digital Twin" />
+				<Title
+					title={"Digital Twin"}
+					subTitle={"This is our main solution get started with it !"}
+				/>
 				<SectionIllustrated
 					title="Your own Virtual Industry"
 					subTitle="Play with it!"
-					image="image/svg/cube-normal.svg"
+					image="/image/png/energy.png"
 					sectionId="digital-twin"
 					imagePosition="right"
-					height={200}
-					width={200}
 				>
 					<p>
 						Start your digitalization process and deploy high
@@ -37,11 +38,9 @@ export default function Page() {
 				<SectionIllustrated
 					title="Add some live data"
 					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
-					image="/image/svg/cube-iot.svg"
+					image="/image/png/energy.png"
 					sectionId="iot-integration"
 					imagePosition="left"
-					height={200}
-					width={200}
 				>
 					<p>
 						Add interactive dashboards displaying real-time
@@ -56,11 +55,9 @@ export default function Page() {
 				<SectionIllustrated
 					title="For innovation leaders"
 					subTitle="Integrate your predictive maintenance modules !"
-					image="/image/svg/cube-ai.svg"
+					image="/image/png/energy.png"
 					sectionId="ai-enhancement"
 					imagePosition="right"
-					height={200}
-					width={200}
 				>
 					<p>
 						Be a leader with your fully operational Digital Twin
@@ -73,15 +70,16 @@ export default function Page() {
 				</SectionIllustrated>
 			</div>
 			<div>
-				<Title text="Twin Trainer" />
+				<Title
+					title={"TrainerTwin™"}
+					subTitle={"This is our second solution check it out !"}
+				/>
 				<SectionIllustrated
 					title="TwinTrainer"
 					subTitle="Our formation module"
 					image="image/svg/cube-normal.svg"
 					sectionId="digital-twin"
 					imagePosition="right"
-					height={200}
-					width={200}
 				>
 					<p>
 						Add tailor-made formation modules to your digital twin

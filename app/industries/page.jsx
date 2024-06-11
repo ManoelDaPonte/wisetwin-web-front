@@ -1,6 +1,7 @@
 import styles from "@/styles/page.module.css";
 import GridWithCards from "@/components/common/GridWithCards";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
+import CallToAction from "@/components/ui/magicui/CallToAction";
 export default function Page() {
 	const cards_energy = [
 		{
@@ -109,91 +110,116 @@ export default function Page() {
 		},
 	];
 	return (
-		<div className={styles.pageSections}>
-			<div>
-				<SectionIllustrated
-					title="Power Plant"
-					image="/image/png/energy.png"
-					imagePosition="right"
-					button={{ label: "Learn more", href: "/solutions" }}
-				>
-					<p>
-						Complex grids and growing renewable energy capacity will
-						change the way we manage electricity. Using Digital
-						Twins can help support the design, monitoring, and
-						maintenance of power plants, new grid infrastructures,
-						and optimize electricity production. Here is what Wise
-						Twin solutions can do:
-					</p>
-				</SectionIllustrated>
-				<GridWithCards cards={cards_energy} />
-			</div>
-			<div>
-				<SectionIllustrated
-					title="Warehouse Monitoring"
-					image="/image/png/warehouse-monitoring.png"
-					imagePosition="left"
-					button={{ label: "Learn more", href: "/solutions" }}
-				>
-					<p>
-						Enter in next-gen factories and warehouses, fully
-						digitalized, to optimize processes, operations and
-						energy efficiency. Discover how Digital Twins will drive
-						your workforce to the top, and take care of your assets
-						management.
-					</p>
-					<p>
-						Allocate your assets with efficiency. Manage your
-						production lines, batch sizes and predict every outcome.
-					</p>
-				</SectionIllustrated>
-				<GridWithCards cards={cards_warehouse} />
-			</div>
-			<div>
-				<SectionIllustrated
-					title="Sustainable Cities"
-					image="/image/png/sustainable-cities.png"
-					imagePosition="right"
-					button={{ label: "Learn more", href: "/solutions" }}
-				>
-					<p>
-						Cities are more connected every day. Discover how our
-						Digital Twin virtualizes cities, and link billions of
-						data in an intuitive 3D platform.
-					</p>
-				</SectionIllustrated>
-				<GridWithCards cards={cards_cities} />
-			</div>
-			<div>
-				<SectionIllustrated
-					title="Smart Building"
-					image="/image/png/smart-building.png"
-					imagePosition="left"
-				>
-					<p>
-						Visualize and simulate any aspect of your office, flat,
-						or building, and increase your efficiency. Explore BIM
-						modeling for design, simulation, or any other aspect of
-						smart building.
-					</p>
-				</SectionIllustrated>
-				<GridWithCards cards={cards_building} />
-			</div>
-			<div>
-				<SectionIllustrated
-					title="4.0 Industry"
-					image="/image/png/40-industry.png"
-					imagePosition="right"
-					button={{ label: "Learn more", href: "/solutions" }}
-				>
-					<p>
-						Dive into 4.0 Industry with our immersive 3D platform
-						where your Digital Twin will gather any information of
-						your plant in an immersive, interactive, and intuitive
-						way.
-					</p>
-				</SectionIllustrated>
-				<GridWithCards cards={cards_industry} />
+		<div>
+			<CallToAction
+				title="Discover our Industry Solutions"
+				description="Contact us if you want to know more about our solutions for different industries and how we can help you achieve your goals."
+				buttonText="Contact us"
+				buttonLink="/contact"
+			/>
+			<div className={styles.pageSections}>
+				<div>
+					<SectionIllustrated
+						title="Power Plant"
+						image="/image/png/energy.png"
+						imagePosition="right"
+						button={{
+							label: "Contact for information",
+							href: "/contact",
+						}}
+					>
+						<p>
+							Complex grids and growing renewable energy capacity
+							will change the way we manage electricity. Using
+							Digital Twins can help support the design,
+							monitoring, and maintenance of power plants, new
+							grid infrastructures, and optimize electricity
+							production. Here is what Wise Twin solutions can do:
+						</p>
+					</SectionIllustrated>
+					<GridWithCards cards={cards_energy} />
+				</div>
+				<div>
+					<SectionIllustrated
+						title="Warehouse Monitoring"
+						image="/image/png/warehouse-monitoring.png"
+						imagePosition="left"
+						button={{
+							label: "Contact for information",
+							href: "/contact",
+						}}
+					>
+						<p>
+							Enter in next-gen factories and warehouses, fully
+							digitalized, to optimize processes, operations and
+							energy efficiency. Discover how Digital Twins will
+							drive your workforce to the top, and take care of
+							your assets management.
+						</p>
+						<p>
+							Allocate your assets with efficiency. Manage your
+							production lines, batch sizes and predict every
+							outcome.
+						</p>
+					</SectionIllustrated>
+					<GridWithCards cards={cards_warehouse} />
+				</div>
+				<div>
+					<SectionIllustrated
+						title="Sustainable Cities"
+						image="/image/png/sustainable-cities.png"
+						imagePosition="right"
+						button={{
+							label: "Contact for information",
+							href: "/contact",
+						}}
+					>
+						<p>
+							Cities are more connected every day. Discover how
+							our Digital Twin virtualizes cities, and link
+							billions of data in an intuitive 3D platform.
+						</p>
+					</SectionIllustrated>
+					<GridWithCards cards={cards_cities} />
+				</div>
+				<div>
+					<SectionIllustrated
+						title="Smart Building"
+						image="/image/png/smart-building.png"
+						imagePosition="left"
+						button={{
+							label: "Contact for information",
+							href: "/contact",
+						}}
+					>
+						<p>
+							Visualize and simulate any aspect of your office,
+							flat, or building, and increase your efficiency.
+							Explore BIM modeling for design, simulation, or any
+							other aspect of smart building.
+						</p>
+					</SectionIllustrated>
+					<GridWithCards cards={cards_building} />
+				</div>
+				<div>
+					<SectionIllustrated
+						title="4.0 Industry"
+						image="/image/png/40-industry.png"
+						imagePosition="right"
+						button={{
+							label: "Contact for information",
+							href: "/contact",
+						}}
+					>
+						<p>
+							Dive into 4.0 Industry with our immersive 3D
+							platform where your Digital Twin will gather any
+							information of your plant in an immersive,
+							interactive, and intuitive way.
+						</p>
+					</SectionIllustrated>
+					<GridWithCards cards={cards_industry} />
+				</div>
 			</div>
 		</div>
 	);
