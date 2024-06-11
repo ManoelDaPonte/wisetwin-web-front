@@ -14,8 +14,8 @@ export default function Page() {
 	return (
 		<div className={styles.pageSections}>
 			<HeroSolution />
-			<Title text="Digital Twin" />
 			<div>
+				<Title text="Digital Twin" />
 				<SectionIllustrated
 					title="Digital Twin"
 					subTitle="Get yours in 7 days !"
@@ -95,8 +95,8 @@ export default function Page() {
 					</p>
 				</SectionIllustrated>
 			</div>
-			<Title text="Twin Trainer" />
 			<div>
+				<Title text="Twin Trainer" />
 				<SectionIllustrated
 					title="Digital Twin"
 					subTitle="Get yours in 7 days !"
@@ -177,13 +177,13 @@ export default function Page() {
 				</SectionIllustrated>
 			</div>
 
-			<Suspense fallback={<p>Loading video...</p>}>
+			{/* <Suspense fallback={<p>Loading video...</p>}>
 				<VideoComponent
 					getVideoSrc={getVideoSrc}
 					width={600}
 					height={300}
 				/>
-			</Suspense>
+			</Suspense> */}
 		</div>
 	);
 }

@@ -26,7 +26,7 @@ export default function Hero() {
   <section id="hero" className="relative w-full h-[calc(100vh-60px)]">
     <video
       className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-100"
-      src="video/presentation.mp4"
+      src="/video/presentation.mp4"
       autoPlay
       loop
       muted
@@ -66,7 +66,7 @@ export default function Hero() {
                 <a
                   href="/solutions#"
                   className={cn(
-                    "bg-blue-700 text-white shadow hover:bg-blue-600 dark:bg-blue-700 dark:text-white dark:hover:bg-blue-600",
+                    "bg-green-700 text-white shadow hover:bg-green-600 dark:bg-green-700 dark:text-white dark:hover:bg-green-600",
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-6 py-3 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
                     "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
                   )}
