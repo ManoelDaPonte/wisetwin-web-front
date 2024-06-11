@@ -43,7 +43,7 @@ const Header = () => {
 				},
 				{
 					id: 1,
-					href: "/solutions#twin-trainer",
+					href: "/solutions#trainer-twin",
 					label: "TrainerTwin™",
 				},
 			],
@@ -72,8 +72,8 @@ const Header = () => {
 			subTabs: [
 				{
 					id: 0,
-					href: "/industries#smart-energy",
-					label: "Smart Energy",
+					href: "/industries#energy",
+					label: "Energy",
 				},
 				{
 					id: 1,
@@ -106,11 +106,11 @@ const Header = () => {
 					href: "/ressources/faqs",
 					label: "FAQs",
 				},
-				{
-					id: 1,
-					href: "/ressources/testimony",
-					label: "Testimony",
-				},
+				// {
+				// 	id: 1,
+				// 	href: "/ressources/testimony",
+				// 	label: "Testimony",
+				// },
 				// {
 				// 	id: 2,
 				// 	href: "/ressources/about/digital-twin",

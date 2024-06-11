@@ -68,9 +68,9 @@ const Utils = () => {
 						{/* <Link href="/wisetwin" legacyBehavior>
 							<div>Who are we ?</div>
 						</Link> */}
-						<Link href="/ressources/testimony" legacyBehavior>
+						{/* <Link href="/ressources/testimony" legacyBehavior>
 							<div>Testimony</div>
-						</Link>
+						</Link> */}
 						<Link href="/ressources/faqs" legacyBehavior>
 							<div>FAQs</div>
 						</Link>

@@ -8,7 +8,7 @@ export default function Page() {
 	return (
 		<div>
 			<CallToAction
-				title="Operator"
+				title="Discover different use cases of our digital twin solutions."
 				description="Contact us to learn more about our solutions and how they can help your business."
 				buttonText="Contact us"
 				buttonLink="/contact"

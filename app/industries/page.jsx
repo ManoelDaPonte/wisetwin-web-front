@@ -112,13 +112,13 @@ export default function Page() {
 	return (
 		<div>
 			<CallToAction
-				title="Discover our Industry Solutions"
+				title="Discover our solution for your industry."
 				description="Contact us if you want to know more about our solutions for different industries and how we can help you achieve your goals."
 				buttonText="Contact us"
 				buttonLink="/contact"
 			/>
 			<div className={styles.pageSections}>
-				<div>
+				<section id="energy">
 					<SectionIllustrated
 						title="Power Plant"
 						image="/image/png/energy.png"
@@ -138,8 +138,8 @@ export default function Page() {
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_energy} />
-				</div>
-				<div>
+				</section>
+				<section id="warehouse-monitoring">
 					<SectionIllustrated
 						title="Warehouse Monitoring"
 						image="/image/png/warehouse-monitoring.png"
@@ -163,8 +163,8 @@ export default function Page() {
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_warehouse} />
-				</div>
-				<div>
+				</section>
+				<section id="smart-city">
 					<SectionIllustrated
 						title="Sustainable Cities"
 						image="/image/png/sustainable-cities.png"
@@ -181,8 +181,8 @@ export default function Page() {
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_cities} />
-				</div>
-				<div>
+				</section>
+				<section id="smart-buildings">
 					<SectionIllustrated
 						title="Smart Building"
 						image="/image/png/smart-building.png"
@@ -200,8 +200,8 @@ export default function Page() {
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_building} />
-				</div>
-				<div>
+				</section>
+				<section id="industry-4.0">
 					<SectionIllustrated
 						title="4.0 Industry"
 						image="/image/png/40-industry.png"
@@ -219,7 +219,7 @@ export default function Page() {
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_industry} />
-				</div>
+				</section>
 			</div>
 		</div>
 	);
