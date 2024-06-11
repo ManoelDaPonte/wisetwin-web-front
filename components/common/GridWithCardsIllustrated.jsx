@@ -25,6 +25,7 @@ const GridWithCardsIllustrated = ({ title, cards }) => {
 								label="Show details"
 								color="green"
 								className={styles.demoButton}
+								href={card.href}
 							/>
 						</div>
 					</div>

@@ -2,6 +2,7 @@ import styles from "@/styles/page.module.css";
 import GridWithCards from "@/components/common/GridWithCards";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
 import Title from "@/components/common/Title";
+import Image from "next/image";
 export default function Page() {
 	const cards_energy = [
 		{
@@ -14,7 +15,7 @@ export default function Page() {
 		},
 		{
 			title: "Refueling stations",
-			text: "HRS for utilities, or entreprise levels.",
+			text: "HRS for utilities, or enterprise levels.",
 		},
 		{
 			title: "Energy storage",
@@ -24,164 +25,165 @@ export default function Page() {
 	const cards_warehouse = [
 		{
 			title: "Process lines",
-			text: "",
+			text: "Optimize and automate production lines for increased efficiency and reduced downtime.",
 		},
 		{
 			title: "Assets management",
-			text: "",
+			text: "Track, monitor, and maintain assets in real-time for optimal performance and longevity.",
 		},
 		{
 			title: "Flow simulation",
-			text: "",
-		},
-		{
-			title: "Work optimization",
-			text: "",
+			text: "Simulate and analyze material and product flows to improve logistics and workflow.",
 		},
 	];
 	const cards_cities = [
 		{
 			title: "Transport systems",
-			text: "",
+			text: "Integrate smart transportation solutions for efficient and sustainable urban mobility.",
 		},
 		{
 			title: "Air quality",
-			text: "",
+			text: "Monitor and manage air quality to ensure a healthy environment for city inhabitants.",
 		},
 		{
 			title: "Waste management",
-			text: "",
+			text: "Implement smart waste management systems to reduce pollution and improve recycling rates.",
 		},
 		{
 			title: "Public Safety",
-			text: "",
+			text: "Enhance public safety through intelligent surveillance and emergency response systems.",
+		},
+		{
+			title: "Green Spaces",
+			text: "Develop and maintain urban green spaces for recreation and environmental benefits.",
 		},
 	];
 	const cards_building = [
 		{
 			title: "Energy efficiency",
-			text: "",
+			text: "Adopt energy-efficient technologies and practices to reduce consumption and costs.",
 		},
 		{
 			title: "Security systems",
-			text: "",
+			text: "Install advanced security systems for comprehensive protection and monitoring.",
 		},
 		{
 			title: "Assets management",
-			text: "",
+			text: "Manage building assets efficiently to prolong their life and ensure optimal use.",
 		},
 		{
-			title: "Arquitectural design",
-			text: "",
+			title: "Architectural design",
+			text: "Utilize cutting-edge design tools for innovative and sustainable architectural solutions.",
+		},
+		{
+			title: "Space Utilization",
+			text: "Optimize space utilization for better functionality and productivity.",
 		},
 	];
 	const cards_industry = [
 		{
 			title: "Safety optimization",
-			text: "",
+			text: "Enhance industrial safety with advanced monitoring and risk management solutions.",
 		},
 		{
 			title: "Process lines management",
-			text: "",
+			text: "Streamline and automate process lines for improved efficiency and reduced errors.",
 		},
 		{
 			title: "Flow efficiency",
-			text: "",
+			text: "Improve material and workflow efficiency to boost overall productivity.",
 		},
 		{
 			title: "Automation design",
-			text: "",
+			text: "Design and implement automation solutions for seamless industrial operations.",
+		},
+		{
+			title: "Predictive Maintenance",
+			text: "Use predictive analytics to schedule maintenance and prevent downtime.",
+		},
+		{
+			title: "Quality Control",
+			text: "Implement robust quality control measures to ensure product consistency.",
+		},
+		{
+			title: "Resource Management",
+			text: "Efficiently manage resources to reduce waste and increase profitability.",
 		},
 	];
 	return (
 		<div className={styles.pageSections}>
 			<div>
-				<Title text={"Digital Twin for the Energy sector"} id={"smart-energy"} />
-				<SectionIllustrated
-					title="Power Plant"
-					image="/image/png/energy.png"
-					imagePosition="right"
-				>
-					<p>
-						Complex grids and growing renewable energy capacity will
-						change the way we manage electricity. Using Digital Twins can help
-						support the design, monitoring, and maintenance of power
-						plants, new grid infrastructures, and optimize electricity production.
-						Here is what Wise Twin solutions can do:
-					</p>
-				</SectionIllustrated>
+				<Image
+					src="/image/png/energy.png"
+					alt="Industries"
+					width={1920}
+					height={1080}
+				/>
 				<GridWithCards cards={cards_energy} />
 			</div>
 			<div>
-				<Title
-					text={"Digital Twin for Warehouse Monitoring"}
-					id={"warehouse-monitoring"}
-				/>
 				<SectionIllustrated
 					title="Warehouse Monitoring"
 					image="/image/png/warehouse-monitoring.png"
-					imagePosition="right"
+					imagePosition="left"
+					button={{ label: "Learn more", href: "/solutions" }}
 				>
 					<p>
-						Enter in next-gen factories and warehouses, fully digitalized,
-						to optimize processes, operations and energy efficiency.
-						Discover how Digital Twins will drive your workforce to the top,
-						and take care of your assets management.
+						Enter in next-gen factories and warehouses, fully
+						digitalized, to optimize processes, operations and
+						energy efficiency. Discover how Digital Twins will drive
+						your workforce to the top, and take care of your assets
+						management.
 					</p>
 					<p>
-						Allocate your assets with efficiency. Manage your productions
-						lines, batch sizes and predict avery outcome.
+						Allocate your assets with efficiency. Manage your
+						production lines, batch sizes and predict every outcome.
 					</p>
 				</SectionIllustrated>
 				<GridWithCards cards={cards_warehouse} />
 			</div>
 			<div>
-				<Title text={"Digital Twin for Smart City"} id={"smart-city"} />
 				<SectionIllustrated
 					title="Sustainable Cities"
 					image="/image/png/sustainable-cities.png"
 					imagePosition="right"
+					button={{ label: "Learn more", href: "/solutions" }}
 				>
 					<p>
-						Cities are more connected everyday. Discover how our
-						Digital Twin virtualizes cities, and link billions of data
-						in an intuitive 3D platform. 
+						Cities are more connected every day. Discover how our
+						Digital Twin virtualizes cities, and link billions of
+						data in an intuitive 3D platform.
 					</p>
 				</SectionIllustrated>
 				<GridWithCards cards={cards_cities} />
 			</div>
 			<div>
-				<Title
-					text={"Digital Twin for Smart Buildings"}
-					id={"smart-buildings"}
-				/>
 				<SectionIllustrated
 					title="Smart Building"
 					image="/image/png/smart-building.png"
-					imagePosition="right"
+					imagePosition="left"
 				>
 					<p>
-						Visualise and simulate any aspect of your office, flat or building,
-						and increase your efficiency. Explore BIM modeling for design,
-						simulation, or any other aspect of smart building.
+						Visualize and simulate any aspect of your office, flat,
+						or building, and increase your efficiency. Explore BIM
+						modeling for design, simulation, or any other aspect of
+						smart building.
 					</p>
 				</SectionIllustrated>
 				<GridWithCards cards={cards_building} />
 			</div>
 			<div>
-				<Title
-					text={"Digital Twin for 4.0 industry"}
-					id={"industry-4.0"}
-				/>
 				<SectionIllustrated
 					title="4.0 Industry"
 					image="/image/png/40-industry.png"
 					imagePosition="right"
+					button={{ label: "Learn more", href: "/solutions" }}
 				>
 					<p>
 						Dive into 4.0 Industry with our immersive 3D platform
-						where your Digital Twin will gather any information of your
-						plant in an immersive, interactive, and intuitive way.
+						where your Digital Twin will gather any information of
+						your plant in an immersive, interactive, and intuitive
+						way.
 					</p>
 				</SectionIllustrated>
 				<GridWithCards cards={cards_industry} />
