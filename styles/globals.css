@@ -81,6 +81,10 @@ li {
 	font-family: "Roboto", sans-serif;
 }
 
+li {
+	padding: 5px 0;
+}
+
 h1 {
 	font-size: 2em; /* Ajustez selon vos besoins */
 	font-weight: 700; /* Peut être ajusté selon vos préférences */

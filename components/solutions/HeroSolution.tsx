@@ -59,8 +59,8 @@ export default function Hero() {
                   type: "spring",
                 }}
               >
-                Are you still using scada systems? <br />
-                Bring your company to the future with Wise Twin.
+                Are you still using SCADA systems? <br />
+                Bring your company into the future with Wise Twin.
               </motion.p>
 
             </div>
