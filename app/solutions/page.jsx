@@ -17,26 +17,30 @@ export default function Page() {
 			<section id="digital-twin">
 				<Title
 					title={"Digital Twin"}
-					subTitle={"This is our main solution get started with it !"}
+					subTitle={
+						"This is our main solution – get started with it !"
+					}
 				/>
 				<SectionIllustrated
 					title="Your own Virtual Industry"
-					subTitle="Play with it!"
+					subTitle="Play with it !"
 					image="/image/png/saas-energy.png"
 					imagePosition="right"
 				>
 					<p>
-						Start your digitalization process and deploy high
-						quality 3D rendering of your plant, building.
-						whareohuse, or industry, and play with your
-						early-digital twin, so you will be able to:			 
+						Start your digitalization process and deploy
+						high-quality 3D rendering of your plant, building,
+						warehouse, or industry, and play with your early digital
+						twin, so you will be able to:
 					</p>
-					<br/>
+					<br />
 					<ul>
-						<li>· Enhance internal and external communication </li>
-						<li>· Be aware of your assets</li>
-						<li>· Visualize and simulate changes in your industry</li>
-					</ul>		
+						<li>• Enhance internal and external communication </li>
+						<li>• Be aware of your assets</li>
+						<li>
+							• Visualize and simulate changes in your industry
+						</li>
+					</ul>
 				</SectionIllustrated>
 				<div className={styles.split}></div>
 				<SectionIllustrated
@@ -49,11 +53,14 @@ export default function Page() {
 						Add interactive dashboards displaying real-time
 						properties of your twin. By integrating our
 						AI-assistant, you will let our visual alerting system
-						make the job within your 3D virtual world. · Enhance
-						your decision-making capabilities. · Enhance your
-						operational awareness. · Generate visual and fast
-						reporting.
+						make the job within your 3D virtual world.
 					</p>
+					<br />
+					<ul>
+						<li>• Enhance your decision-making capabilities</li>
+						<li>• Enhance your operational awareness</li>
+						<li>• Generate visual and fast reporting</li>
+					</ul>
 				</SectionIllustrated>
 				<div className={styles.split}></div>
 
@@ -69,12 +76,12 @@ export default function Page() {
 						algorithms and modeling tools to run numerical
 						simulations of your physical assets.
 					</p>
-					<br/>
+					<br />
 					<ul>
-						<li>· Optimize every workflow </li>
-						<li>· Avoid shutdowns of production lines</li>
-						<li>· Avoid shutdowns of machines</li>
-					</ul>	
+						<li>• Optimize every workflow </li>
+						<li>• Avoid shutdowns of production lines</li>
+						<li>• Avoid shutdowns of machines</li>
+					</ul>
 				</SectionIllustrated>
 			</section>
 			<section id="trainer-twin">
@@ -91,14 +98,16 @@ export default function Page() {
 					<p>
 						Add tailor-made formation modules to your digital twin
 						and virtualize the formation and training of your
-						workforce. With that tool, you will:
+						workforce.
 					</p>
-					<br/>
+					<br />
 					<ul>
-						<li>· Gain a skilled workforce</li>
-						<li>· Decrease formation time and cost</li>
-						<li>· Simulate critical issues before they even happen</li>
-						<li>· Analyse and correct bad practices</li>
+						<li>• Gain a skilled workforce</li>
+						<li>• Decrease formation time and cost</li>
+						<li>
+							• Simulate critical issues before they even happen
+						</li>
+						<li>• Analyse and correct bad practices</li>
 					</ul>
 				</SectionIllustrated>
 			</section>
