@@ -120,7 +120,7 @@ export default function Page() {
 			<div className={styles.pageSections}>
 				<section id="energy">
 					<SectionIllustrated
-						title="Power Plant"
+						title="Energy"
 						image="/image/png/energy.png"
 						imagePosition="right"
 						button={{
@@ -175,9 +175,11 @@ export default function Page() {
 						}}
 					>
 						<p>
-							Cities are more connected every day. Discover how
-							our Digital Twin virtualizes cities, and link
-							billions of data in an intuitive 3D platform.
+							As cities continue to evolve and grow, the need for 
+							innovative solutions to manage and optimize urban 
+							infrastructure has become increasingly pressing. 
+							Discover how our Digital Twin virtualizes cities, and link
+							billions of data in an intuitive 3D platform
 						</p>
 					</SectionIllustrated>
 					<GridWithCards cards={cards_cities} />
