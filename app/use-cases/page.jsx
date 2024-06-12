@@ -25,19 +25,19 @@ export default function Page() {
 					}}
 				>
 					<p>
-						We create a digital twin incorporating all the processes
-						and information you provide us. Using this technology,
-						we develop an interactive simulation in the form of a
-						game, allowing operators to train before being on-site.
-						This approach offers several advantages: it reduces the
-						risks associated with real-world training, allows
-						operators to familiarize themselves with the work
-						environment without pressure, and enhances efficiency
-						and responsiveness in real situations. Additionally,
-						this immersive and engaging training method promotes
-						better understanding and retention of operational
-						procedures.
+						Digitalize your Formation & Training modules from all the processes
+						and information you are able to provide us.
+						By interacting with our simulations, we allow operators and technicians 
+						to train even before being on-site, in an immersive and intuitive way.
+						This approach offers several advantages: 
 					</p>
+					<br/>
+					<ul>
+						<li>· It reduces the risks associated with real-world training</li>
+						<li>· Decrease time formation with higher efficiency</li>
+						<li>· Increase responsiveness in real situations</li>
+						<li>· Allow a better understanding and retention of operational procedures</li>
+					</ul>
 				</SectionIllustrated>
 				<SectionIllustrated
 					title="Real-Time Monitoring"
@@ -50,19 +50,20 @@ export default function Page() {
 					}}
 				>
 					<p>
-						Connect your sensors to your digital twin to benefit
-						from real-time alerts and monitoring, directly visible
+						Give life to your digital twin by connecting your sensors 
+						for real-time alerting systems and monitoring, displayed
 						through our software. This integration enables
 						continuous and proactive surveillance of operations,
 						ensuring immediate responsiveness in case of anomalies
-						or malfunctions. Moreover, you can connect your
-						dashboards and other tools directly to our software,
-						linking them to the relevant IoT devices. This
-						centralization of data and tools simplifies the
-						management and analysis of critical information, thereby
-						optimizing the performance and safety of your industrial
-						operations.
+						or malfunctions. This will allow for:
 					</p>
+					<br/>
+					<ul>
+						<li>· An complete awareness with an innovtive control room</li>
+						<li>· An easier management and analysis of critical information</li>
+						<li>· Increasing the performance and safety of your industrial operations</li>
+						<li>· A visual awareness of potential alerts</li>
+					</ul>
 				</SectionIllustrated>
 				<SectionIllustrated
 					title="Predictive Maintenance"
@@ -77,16 +78,21 @@ export default function Page() {
 					<p>
 						Monitoring your industry is a great start, but you can
 						go even further by predicting behaviors and prescribing
-						actions to take. With our digital twins, you can
+						actions to take. With your digital twin, you will
 						anticipate maintenance needs before they become
-						critical. Our data scientists collaborate with you to
+						critical. If you don't have these kind of algorithms, don't worry!
+						Our data scientists will collaborate with you to
 						develop custom predictive models that identify early
-						signs of failures and recommend preventive actions. This
-						approach extends the lifespan of your equipment, reduces
-						unplanned downtime, and optimizes maintenance costs,
-						ensuring continuous and reliable operational
-						performance.
+						signs of failures and recommend preventive actions. With this
+						complete approach, you will:
 					</p>
+					<br/>
+					<ul>
+						<li>· Extend the lifespan of your equipment</li>
+						<li>· Reduces unplanned downtime</li>
+						<li>· Optimizes maintenance costs</li>
+						<li>· Ensure a continuous and reliable operational performance</li>
+					</ul>
 				</SectionIllustrated>
 				<SectionIllustrated
 					title="Marketing"
@@ -100,16 +106,17 @@ export default function Page() {
 				>
 					<p>
 						Make your projects easier to sell with digital twins.
-						Instead of presenting traditional SCADA systems, a
-						digital twin offers a dynamic and interactive
-						visualization of your industrial solutions. This
-						innovative presentation helps your clients better
-						understand the benefits and features of your projects.
-						By making your proposals more tangible and attractive,
-						you significantly improve your chances of convincing and
-						engaging your prospects, transforming your
-						demonstrations into powerful and effective sales tools.
+						Give your POCs or projects a visual aspects, including 
+						a dynamic and interactive way to visualize of your industrial solutions. 
+						Boost your presentations and concretize the benefits
+						and features of your projects.
+						With this tool, you will:
 					</p>
+					<ul>
+						<li>· Make your proposals more tangible and attractive</li>
+						<li>· Convert your ideas into real projects</li>
+						<li>· Transform your demonstrations into powerful and effective sales tools.</li>
+					</ul>
 				</SectionIllustrated>
 			</div>
 		</div>

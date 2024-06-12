@@ -22,23 +22,27 @@ export default function Page() {
 				<SectionIllustrated
 					title="Your own Virtual Industry"
 					subTitle="Play with it!"
-					image="/image/png/energy.png"
+					image="/image/png/saas-energy.png"
 					imagePosition="right"
 				>
 					<p>
 						Start your digitalization process and deploy high
 						quality 3D rendering of your plant, building.
 						whareohuse, or industry, and play with your
-						early-digital twin, so you will be able to: · Enhance
-						internal and external communication · Be aware of your
-						assets · Visualize and simulate changes in your industry
+						early-digital twin, so you will be able to:			 
 					</p>
+					<br/>
+					<ul>
+						<li>· Enhance internal and external communication </li>
+						<li>· Be aware of your assets</li>
+						<li>· Visualize and simulate changes in your industry</li>
+					</ul>		
 				</SectionIllustrated>
 				<div className={styles.split}></div>
 				<SectionIllustrated
 					title="Add some live data"
 					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
-					image="/image/png/energy.png"
+					image="/image/png/awareness.png"
 					imagePosition="left"
 				>
 					<p>
@@ -56,38 +60,46 @@ export default function Page() {
 				<SectionIllustrated
 					title="For innovation leaders"
 					subTitle="Integrate your predictive maintenance modules !"
-					image="/image/png/energy.png"
+					image="/image/png/saas-exploded.png"
 					imagePosition="right"
 				>
 					<p>
 						Be a leader with your fully operational Digital Twin
 						with your predictive maintenance modules. Implement
 						algorithms and modeling tools to run numerical
-						simulations of your physical assets. · Optimize every
-						workflow · Avoid shutdowns of production lines · Avoid
-						shutdowns of machines
+						simulations of your physical assets.
 					</p>
+					<br/>
+					<ul>
+						<li>· Optimize every workflow </li>
+						<li>· Avoid shutdowns of production lines</li>
+						<li>· Avoid shutdowns of machines</li>
+					</ul>	
 				</SectionIllustrated>
 			</section>
 			<section id="trainer-twin">
 				<Title
 					title={"TrainerTwin™"}
-					subTitle={"This is our second solution check it out !"}
+					subTitle={"Our new solution! check it out !"}
 				/>
 				<SectionIllustrated
 					title="TwinTrainer"
 					subTitle="Our formation module"
-					image="image/svg/cube-normal.svg"
+					image="/image/png/virtual-formation.png"
 					imagePosition="right"
 				>
 					<p>
 						Add tailor-made formation modules to your digital twin
 						and virtualize the formation and training of your
-						workforce. With that tool, you will: · Gain a skilled
-						workforce · Decrease formation time and cost · Simulate
-						critical issues before they even happen · Analyse and
-						correct bad practices
+						workforce. With that tool, you will:
 					</p>
+					<br/>
+					<ul>
+						<li>· Gain a skilled workforce</li>
+						<li>· Decrease formation time and cost</li>
+						<li>· Simulate critical issues before they even happen</li>
+						<li>· Analyse and correct bad practices</li>
+					</ul>
 				</SectionIllustrated>
 			</section>
 

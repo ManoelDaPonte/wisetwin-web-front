@@ -14,7 +14,7 @@ const HomePage = () => {
 		{
 			title: "Uses Cases",
 			text: "Discover how our digital twins can help you, with use cases that drive real-world impact",
-			image: "image/png/our-solutions.jpg",
+			image: "image/png/bulb-solutions.png",
 			href: "/use-cases",
 		},
 		{
