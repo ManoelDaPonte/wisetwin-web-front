@@ -90,7 +90,7 @@ export default function Page() {
 					subTitle={"Our new solution! check it out !"}
 				/>
 				<SectionIllustrated
-					title="TwinTrainer"
+					title="TwinTrainer™"
 					subTitle="Our formation module"
 					image="/image/png/virtual-formation.png"
 					imagePosition="right"
