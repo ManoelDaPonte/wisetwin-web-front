@@ -1,0 +1,30 @@
+/* components/gridWithCards.module.css */
+
+.container {
+	display: block;
+	padding: 5% 10% 0 10%;
+}
+
+.title {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 50px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* Toujours 4 colonnes */
+	gap: 50px;
+}
+
+.card {
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 250px;
+}
+
+.textCard {
+	color: rgba(0, 0, 0, 0.5);
+}

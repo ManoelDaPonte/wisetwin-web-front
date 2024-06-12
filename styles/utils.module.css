@@ -10,6 +10,10 @@
 	justify-items: center;
 }
 
+.columnsGrid > div {
+	padding: 0 10px;
+}
+
 .columnTitle {
 	font-size: 20px;
 	font-weight: bold;
@@ -40,15 +44,6 @@
 
 @media screen and (max-width: 600px) {
 	.links > div {
-		font-size: 10px;
-	}
-
-	.links {
-		font-size: 10px;
-	}
-
-	.links > img {
-		width: 60px; /* Ajuster selon le besoin */
-		height: 60px; /* Ajuster selon le besoin, gardez le rapport d'aspect */
+		font-size: 12px;
 	}
 }

@@ -1,7 +1,11 @@
 "use client";
-import styles from "@/styles/utils.module.css";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import Facebook from "@/components/common/svg/Facebook";
+import Youtube from "@/components/common/svg/Youtube";
+import Linkedin from "@/components/common/svg/Linkedin";
+
+import styles from "@/styles/utils.module.css";
 
 const Utils = () => {
 	return (
@@ -20,12 +24,7 @@ const Utils = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Image
-								src="/image/svg/facebook.svg"
-								alt="facebook"
-								width={30}
-								height={30}
-							/>
+							<Facebook width={30} height={30} />
 						</a>
 
 						<a
@@ -33,12 +32,7 @@ const Utils = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Image
-								src="/image/svg/linkedin.svg"
-								alt="linkedin"
-								width={30}
-								height={30}
-							/>
+							<Linkedin width={30} height={30} />
 						</a>
 
 						<a
@@ -46,27 +40,20 @@ const Utils = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Image
-								src="/image/svg/youtube1.svg"
-								alt="youtube"
-								width={30}
-								height={30}
-							/>
+							<Youtube width={30} height={30} />
 						</a>
 					</div>
 				</div>
-				<div>
+				<div className={styles.linkContainer}>
 					<div className={styles.columnTitle}>Start With</div>
 					<div className={styles.links}>
-						<Link href="/startWith/digitalTwin" legacyBehavior>
+						{/* <Link
+							href="/ressources/about/digital-twin"
+							legacyBehavior
+						>
 							<div>What is a Digital Twin ?</div>
-						</Link>
-						<Link href="/startWith/powerPlant" legacyBehavior>
-							<div>What is a Power Plant ?</div>
-						</Link>
-						<Link href="/startWith/testimony" legacyBehavior>
-							<div>What our customers say about us ?</div>
-						</Link>
+						</Link> */}
+
 						<Link href="/solutions" legacyBehavior>
 							<div>Our Offers</div>
 						</Link>
@@ -75,11 +62,17 @@ const Utils = () => {
 						</Link>
 					</div>
 				</div>
-				<div>
+				<div className={styles.linkContainer}>
 					<div className={styles.columnTitle}>About</div>
 					<div className={styles.links}>
-						<Link href="/about/wiseTwin" legacyBehavior>
+						{/* <Link href="/wisetwin" legacyBehavior>
 							<div>Who are we ?</div>
+						</Link> */}
+						{/* <Link href="/ressources/testimony" legacyBehavior>
+							<div>Testimony</div>
+						</Link> */}
+						<Link href="/ressources/faqs" legacyBehavior>
+							<div>FAQs</div>
 						</Link>
 					</div>
 				</div>

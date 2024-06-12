@@ -1,0 +1,17 @@
+.titleContainer {
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.title {
+	font-size: 4em;
+	margin: 0.5em 0;
+}
+
+.subTitle {
+	font-size: 1em;
+	margin: 0.5em 0;
+	color: #66666688;
+}
