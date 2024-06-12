@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "@/styles/common/title.module.css";
+import Button from "@/components/ui/magicui/Button";
 
-const Title = ({ text, id }) => {
+const Title = ({ title, subTitle, id }) => {
 	return (
-		<h1 id={id} className={styles.title}>
-			{text}
-		</h1>
+		<section id={id} className={styles.titleContainer}>
+			<h1 className={styles.title}>{title}</h1>
+			{subTitle && <span className={styles.subTitle}>{subTitle}</span>}
+			<Button buttonText="Contact Us" buttonLink="/contact" />
+		</section>
 	);
 };
 

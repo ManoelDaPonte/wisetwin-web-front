@@ -32,7 +32,7 @@ const demoPrices = [
     description: "A premium plan for growing businesses",
     features: [
       "Connect up to 50 IoT devices",
-      "Collaborate with up to 10 team members",
+      "Collaborate with up to 3 team members",
       "Monitoring and alerts",
       "Integrate your dashboards",
     ],
@@ -48,7 +48,7 @@ const demoPrices = [
     features: [
       "Everything in SME",
       "Connect up to 100 IoT devices",
-      "Collaborate with up to 50 team members",
+      "Collaborate with up to 10 team members",
       "Integration in your cloud provider",
       "Access to our latest features",
       "Priority support",
@@ -123,25 +123,27 @@ export default function Pricing() {
                 From 5000€
               </span>
             </motion.div>
+            <a href="/contact">
+              <Button
+                className={cn(
+                  "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+                  "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+                )}
+                disabled={isLoading}
+                onClick={() => void onSubscribeClick(demoPrices[0].id)}
+              >
+                <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
+                {(!isLoading || (isLoading && id !== demoPrices[0].id)) && (
+                  <p>Contact Us</p>
+                )}
 
-            <Button
-              className={cn(
-                "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-                "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
-              )}
-              disabled={isLoading}
-              onClick={() => void onSubscribeClick(demoPrices[0].id)}
-            >
-              <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
-              {(!isLoading || (isLoading && id !== demoPrices[0].id)) && (
-                <p>Contact Us</p>
-              )}
+                {isLoading && id === demoPrices[0].id && <p>Contact Us</p>}
+                {isLoading && id === demoPrices[0].id && (
+                  <Loader className="mr-2 h-4 w-4 animate-spin" />
+                )}
+              </Button>
+            </a>
 
-              {isLoading && id === demoPrices[0].id && <p>Contact Us</p>}
-              {isLoading && id === demoPrices[0].id && (
-                <Loader className="mr-2 h-4 w-4 animate-spin" />
-              )}
-            </Button>
 
             <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
             {demoPrices[0].features && demoPrices[0].features.length > 0 && (

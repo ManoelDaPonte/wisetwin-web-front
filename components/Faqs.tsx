@@ -111,9 +111,6 @@ export default function FAQ() {
       <div className="py-14">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mx-auto max-w-5xl text-center">
-            <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">
-              FAQs
-            </h4>
             <h2 className="text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
               Frequently Asked Questions
             </h2>

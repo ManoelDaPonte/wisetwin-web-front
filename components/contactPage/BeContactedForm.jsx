@@ -151,10 +151,20 @@ export default function BeContactedForm() {
 				>
 					<option value="defaultValue">Choose your interest *</option>
 					<option value="requestDemo">Request a demo</option>
-					<option value="information">Informations</option>
+					<option value="digitalTwin">Digital Twin</option>
+					<option value="trainerTwin">TrainerTwin™</option>
+					<option value="information">Information</option>
 					<option value="support">Support</option>
 					<option value="other">Other</option>
 				</select>
+
+				<textarea
+					id="details"
+					name="details"
+					className={styles.textarea}
+					placeholder="Additional Details"
+					rows="4"
+				></textarea>
 
 				<div className={styles.checkboxContainer}>
 					<input
