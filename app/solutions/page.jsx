@@ -14,7 +14,7 @@ export default function Page() {
 	return (
 		<div className={styles.pageSections}>
 			<HeroSolution />
-			<div>
+			<section id="digital-twin">
 				<Title
 					title={"Digital Twin"}
 					subTitle={"This is our main solution get started with it !"}
@@ -23,7 +23,6 @@ export default function Page() {
 					title="Your own Virtual Industry"
 					subTitle="Play with it!"
 					image="/image/png/energy.png"
-					sectionId="digital-twin"
 					imagePosition="right"
 				>
 					<p>
@@ -35,11 +34,11 @@ export default function Page() {
 						assets · Visualize and simulate changes in your industry
 					</p>
 				</SectionIllustrated>
+				<div className={styles.split}></div>
 				<SectionIllustrated
 					title="Add some live data"
 					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
 					image="/image/png/energy.png"
-					sectionId="iot-integration"
 					imagePosition="left"
 				>
 					<p>
@@ -52,11 +51,12 @@ export default function Page() {
 						reporting.
 					</p>
 				</SectionIllustrated>
+				<div className={styles.split}></div>
+
 				<SectionIllustrated
 					title="For innovation leaders"
 					subTitle="Integrate your predictive maintenance modules !"
 					image="/image/png/energy.png"
-					sectionId="ai-enhancement"
 					imagePosition="right"
 				>
 					<p>
@@ -68,8 +68,8 @@ export default function Page() {
 						shutdowns of machines
 					</p>
 				</SectionIllustrated>
-			</div>
-			<div>
+			</section>
+			<section id="trainer-twin">
 				<Title
 					title={"TrainerTwin™"}
 					subTitle={"This is our second solution check it out !"}
@@ -78,7 +78,6 @@ export default function Page() {
 					title="TwinTrainer"
 					subTitle="Our formation module"
 					image="image/svg/cube-normal.svg"
-					sectionId="digital-twin"
 					imagePosition="right"
 				>
 					<p>
@@ -90,7 +89,7 @@ export default function Page() {
 						correct bad practices
 					</p>
 				</SectionIllustrated>
-			</div>
+			</section>
 
 			{/* <Suspense fallback={<p>Loading video...</p>}>
 				<VideoComponent

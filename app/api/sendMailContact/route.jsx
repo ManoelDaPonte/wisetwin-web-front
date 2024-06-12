@@ -15,6 +15,7 @@ export const POST = async (req, res) => {
 	const employeeNumber = formData.get("employeeNumber");
 	const country = formData.get("country");
 	const interest = formData.get("interest");
+	const details = formData.get("details");
 	const receiveMail = formData.get("receiveMail");
 
 	// Create a transporter object using the server SMTP details
@@ -43,6 +44,7 @@ export const POST = async (req, res) => {
 	    <p><strong>Country:</strong> ${country}</p>
 	    <p><strong>Interest:</strong> ${interest}</p>
 	    <p><strong>Opt-In for Mails:</strong> ${receiveMail ? "Yes" : "No"}</p>
+		<p><strong>Details:</strong> ${details}</p>
 	`;
 
 	// Prepare email data
