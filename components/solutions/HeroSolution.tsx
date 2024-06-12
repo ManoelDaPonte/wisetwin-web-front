@@ -90,12 +90,12 @@ export default function Hero() {
               )}
             />
             <video
+              className="h-auto w-full"
+              src="/video/demo.mp4"
               autoPlay
               loop
               muted
-              src="/video/demo.mp4"
-              className="h-auto w-full"
-              style={{ pointerEvents: "none", userSelect: "none" }}
+              playsInline
             />
           </motion.div>
         </div>
