@@ -160,7 +160,7 @@ export default function Pricing() {
               </ul>
             )}
           </div>
-          <div className="flex justify-center items-center w-12">
+          <div className="flex justify-center items-center w-full">
             <span className="text-4xl font-bold text-black dark:text-white">+</span>
           </div>
           {demoPrices.slice(1).map((price, idx) => (
