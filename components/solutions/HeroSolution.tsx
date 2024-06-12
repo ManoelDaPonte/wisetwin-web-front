@@ -96,6 +96,7 @@ export default function Hero() {
               loop
               muted
               playsInline
+              preload="auto"
             />
           </motion.div>
         </div>
