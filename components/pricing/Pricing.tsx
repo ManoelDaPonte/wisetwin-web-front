@@ -185,6 +185,7 @@ export default function Pricing() {
                 </div>
               </div>
 
+
               <motion.div
                 key={`${price.id}-${interval}`}
                 initial="initial"
@@ -207,32 +208,36 @@ export default function Pricing() {
                 className="flex flex-row gap-1"
               >
                 <span className="text-4xl font-bold text-black dark:text-white">
-                  $
                   {interval === "year"
                     ? toHumanPrice(price.yearlyPrice, 0)
                     : toHumanPrice(price.monthlyPrice, 0)}
+                    €
                   <span className="text-xs"> / {interval}</span>
+                  
                 </span>
               </motion.div>
 
-              <Button
-                className={cn(
-                  "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-                  "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
-                )}
-                disabled={isLoading}
-                onClick={() => void onSubscribeClick(price.id)}
-              >
-                <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
-                {(!isLoading || (isLoading && id !== price.id)) && (
-                  <p>Contact Us</p>
-                )}
+              <a href="/contact">
+                <Button
+                  className={cn(
+                    "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+                    "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+                  )}
+                  disabled={isLoading}
+                  onClick={() => void onSubscribeClick(price.id)}
+                >
+                  <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
+                  {(!isLoading || (isLoading && id !== price.id)) && (
+                    <p>Contact Us</p>
+                  )}
 
-                {isLoading && id === price.id && <p>Contact Us</p>}
-                {isLoading && id === price.id && (
-                  <Loader className="mr-2 h-4 w-4 animate-spin" />
-                )}
-              </Button>
+                  {isLoading && id === price.id && <p>Contact Us</p>}
+                  {isLoading && id === price.id && (
+                    <Loader className="mr-2 h-4 w-4 animate-spin" />
+                  )}
+                </Button>
+              </a>
+
 
               <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
               {price.features && price.features.length > 0 && (
