@@ -44,7 +44,7 @@ const Header = () => {
 				{
 					id: 1,
 					href: "/solutions#trainer-twin",
-					label: "TrainerTwin™",
+					label: "WiseTrainer™",
 				},
 			],
 		},

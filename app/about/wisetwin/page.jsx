@@ -14,7 +14,7 @@ export default function Page() {
 				<h1 className="title">Empowering Tomorrow's Workforce</h1>
 				<p className="simpleText">
 					At Wise Twin, we're passionate about helping industrial
-					plants achieve peak efficiency. Our Industrial TrainerTwin™
+					plants achieve peak efficiency. Our Industrial WiseTrainer™
 					platform is more than just training - it's a revolution in
 					building a skilled, confident workforce.
 				</p>
