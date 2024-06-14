@@ -86,11 +86,11 @@ export default function Page() {
 			</section>
 			<section id="trainer-twin">
 				<Title
-					title={"TrainerTwin™"}
+					title={"WiseTrainer™"}
 					subTitle={"Our new solution! check it out !"}
 				/>
 				<SectionIllustrated
-					title="TwinTrainer™"
+					title="WiseTrainer™"
 					subTitle="Our formation module"
 					image="/image/png/virtual-formation.png"
 					imagePosition="right"
