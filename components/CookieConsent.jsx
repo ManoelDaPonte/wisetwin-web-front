@@ -7,9 +7,18 @@ const CookieConsentClient = ({ gaId }) => {
 	const [consent, setConsent] = useState(null);
 
 	useEffect(() => {
-		const savedConsent = localStorage.getItem("cookie_consent");
-		if (savedConsent) {
-			setConsent(savedConsent === "true");
+		if (typeof window !== "undefined") {
+			const savedConsent = localStorage.getItem("cookie_consent");
+			if (savedConsent) {
+				if (savedConsent === "true") {
+					setConsent(true);
+				}
+				if (savedConsent === "false") {
+					setConsent(null);
+				}
+			} else {
+				setConsent(null);
+			}
 		}
 	}, []);
 
@@ -23,15 +32,15 @@ const CookieConsentClient = ({ gaId }) => {
 			{consent === null && (
 				<div className={styles.cookieConsent}>
 					<p>
-						Nous utilisons des cookies pour améliorer votre
-						expérience. Acceptez-vous l'utilisation des cookies?
+						We use cookies to improve user experience and analyze.
+						Do you accept our use of cookies?
 					</p>
 					<div className={styles.cookie}>
 						<button onClick={() => handleConsent(true)}>
-							Accepter
+							Accept
 						</button>
 						<button onClick={() => handleConsent(false)}>
-							Refuser
+							Decline
 						</button>
 					</div>
 				</div>
