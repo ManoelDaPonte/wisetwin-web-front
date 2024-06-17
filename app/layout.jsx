@@ -12,7 +12,10 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-	title: "WiseTwin",
+	title: "Wise Twin",
+	description: "Next-generation digital twins for Industry.",
+	content:
+		"Developing next-generation digital twins for industry. An immersive, interactive, and intuitive SaaS platform. Get your digital twin in 7 days to enhance your industry's performance!",
 };
 
 export default function RootLayout({ children }) {

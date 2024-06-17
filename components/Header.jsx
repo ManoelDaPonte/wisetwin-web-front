@@ -131,7 +131,8 @@ const Header = () => {
 						<Link href="/">
 							<Image
 								src="/image/svg/wisetwin.svg"
-								alt="Logo"
+								alt="Wise Twin Logo"
+								description="Wise Twin Logo"
 								width={100} // Fix width and height using properties
 								height={100}
 								style={{ maxWidth: "100%", height: "auto" }}
