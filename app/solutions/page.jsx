@@ -1,4 +1,3 @@
-// "use client";
 import styles from "@/styles/page.module.css";
 import HeroSolution from "@/components/solutions/HeroSolution";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
