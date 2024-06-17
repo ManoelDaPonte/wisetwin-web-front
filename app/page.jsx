@@ -1,4 +1,3 @@
-"use client";
 import styles from "@/styles/page.module.css";
 import Hero from "@/components/homePage/Hero";
 import GridWithCardsIllustrated from "@/components/common/GridWithCardsIllustrated";

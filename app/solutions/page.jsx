@@ -1,16 +1,9 @@
-"use client";
 import styles from "@/styles/page.module.css";
 import HeroSolution from "@/components/solutions/HeroSolution";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
-import VideoComponent from "@/components/common/VideoComponent";
 import Title from "@/components/common/Title";
-import { Suspense } from "react";
 
 export default function Page() {
-	const getVideoSrc = async () => {
-		// Simule un appel API ou toute autre logique pour obtenir l'URL de la vidéo
-		return "https://www.youtube.com/embed/MLf2doy24OY"; // Exemple d'URL de vidéo YouTube
-	};
 	return (
 		<div className={styles.pageSections}>
 			<HeroSolution />
@@ -111,14 +104,6 @@ export default function Page() {
 					</ul>
 				</SectionIllustrated>
 			</section>
-
-			{/* <Suspense fallback={<p>Loading video...</p>}>
-				<VideoComponent
-					getVideoSrc={getVideoSrc}
-					width={600}
-					height={300}
-				/>
-			</Suspense> */}
 		</div>
 	);
 }
