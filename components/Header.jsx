@@ -103,19 +103,20 @@ const Header = () => {
 			subTabs: [
 				{
 					id: 0,
+					href: "/ressources/about/digital-twin",
+					label: "What's a Digital Twin ?",
+				},
+				{
+					id: 1,
 					href: "/ressources/faqs",
 					label: "FAQs",
-				},
-				// {
-				// 	id: 1,
-				// 	href: "/ressources/testimony",
-				// 	label: "Testimony",
-				// },
-				// {
-				// 	id: 2,
-				// 	href: "/ressources/about/digital-twin",
-				// 	label: "What's a Digital Twin ?",
-				// },
+				}
+				//{
+				//	id: 2,
+				//	href: "/ressources/testimony",
+				//	label: "Testimony",
+				//}
+
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },
