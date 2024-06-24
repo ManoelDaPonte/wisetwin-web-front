@@ -1,7 +1,12 @@
-"use client";
-import Button from "@/components/common/Button";
 import styles from "@/styles/common/articles.module.css";
-import CallToAction from "@/components/ui/magicui/CallToAction";
+
+export const metadata = {
+	title: "Wise Twin | What is a Digital Twin ?",
+	description: "A comprehensive guide on Digital Twin technology",
+	keywords: "article, digital twin, industry 4.0, real-time insights, operational optimization, IoT",
+	url: "https://www.wisetwin.eu/ressources/about/digital-twin",
+	image: "https://www.yoursite.com/public/image/png/TS_logo-d6e6f57d.png"
+};
 
 export default function Page() {
 	return (
