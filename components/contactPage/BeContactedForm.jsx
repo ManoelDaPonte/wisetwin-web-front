@@ -152,7 +152,7 @@ export default function BeContactedForm() {
 					<option value="defaultValue">Choose your interest *</option>
 					<option value="requestDemo">Request a demo</option>
 					<option value="digitalTwin">Digital Twin</option>
-					<option value="trainerTwin">TrainerTwin™</option>
+					<option value="WiseTrainer">WiseTrainer™</option>
 					<option value="information">Information</option>
 					<option value="support">Support</option>
 					<option value="other">Other</option>

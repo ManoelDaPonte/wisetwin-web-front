@@ -56,6 +56,14 @@ const CookiePolicy = () => {
 				If you have questions or comments about this Cookie Policy,
 				please contact us at: support@wisetwin.eu
 			</p>
+			<br />
+			<p>
+				In fulfillment of the law 34/2002, of 11 July, of services of
+				the information society and electronic commerce, we inform you
+				that WISE TWIN S.L., with registered office in Madrid; with
+				number NIF B56691801, is the owner of the page
+				https://www.wisetwin.eu/
+			</p>
 		</div>
 	);
 };

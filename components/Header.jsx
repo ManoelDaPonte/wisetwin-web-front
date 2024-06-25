@@ -44,7 +44,7 @@ const Header = () => {
 				{
 					id: 1,
 					href: "/solutions#trainer-twin",
-					label: "TrainerTwin™",
+					label: "WiseTrainer™",
 				},
 			],
 		},
@@ -103,19 +103,20 @@ const Header = () => {
 			subTabs: [
 				{
 					id: 0,
+					href: "/ressources/about/digital-twin",
+					label: "What's a Digital Twin ?",
+				},
+				{
+					id: 1,
 					href: "/ressources/faqs",
 					label: "FAQs",
-				},
-				// {
-				// 	id: 1,
-				// 	href: "/ressources/testimony",
-				// 	label: "Testimony",
-				// },
-				// {
-				// 	id: 2,
-				// 	href: "/ressources/about/digital-twin",
-				// 	label: "What's a Digital Twin ?",
-				// },
+				}
+				//{
+				//	id: 2,
+				//	href: "/ressources/testimony",
+				//	label: "Testimony",
+				//}
+
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },
@@ -131,7 +132,8 @@ const Header = () => {
 						<Link href="/">
 							<Image
 								src="/image/svg/wisetwin.svg"
-								alt="Logo"
+								alt="Wise Twin Logo"
+								description="Wise Twin Logo"
 								width={100} // Fix width and height using properties
 								height={100}
 								style={{ maxWidth: "100%", height: "auto" }}

@@ -59,8 +59,8 @@ export default function Hero() {
                   type: "spring",
                 }}
               >
-                Are you still using scada systems? <br />
-                Bring your company to the future with Wise Twin.
+                Are you still using SCADA systems? <br />
+                Bring your company into the future with Wise Twin.
               </motion.p>
 
             </div>
@@ -90,12 +90,13 @@ export default function Hero() {
               )}
             />
             <video
+              className="h-auto w-full"
+              src="/video/demo.mp4"
               autoPlay
               loop
               muted
-              src="/video/demo.mp4"
-              className="h-auto w-full"
-              style={{ pointerEvents: "none", userSelect: "none" }}
+              playsInline
+              preload="auto"
             />
           </motion.div>
         </div>

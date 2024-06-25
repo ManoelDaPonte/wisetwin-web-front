@@ -1,0 +1,176 @@
+.pageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px;
+    width: 200px;
+    padding-right: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #161616;
+
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #0c47a1;
+}
+
+.mainContent {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #161616;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #161616;
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    font-size: 2.2em;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    color: #161616;
+    display: flex;
+    align-items: center;
+}
+
+.sectionSubTitle {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    color: #161616;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #333;
+}
+
+.titleInput {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #0c47a1;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.demoButton {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionImages {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.industryImages {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      padding: 0;
+      position: static;
+    }
+  
+    .sidebar nav ul {
+      display: flexbox;
+      justify-content: space-around;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+  
+    .sidebar nav ul li {
+      margin: 0;
+    }
+  
+    .mainContent {
+      padding: 20px;
+      margin-top: 20px;
+    }
+  
+    .title {
+      font-size: 2em;
+    }
+  
+    .subtitle {
+      font-size: 1em;
+    }
+  
+    .sectionTitle {
+      font-size: 1.5em;
+    }
+
+    .sectionSubTitle {
+        font-size: 1.3em;
+      }
+  
+    .title-input {
+      font-size: 1.5em;
+    }
+  }
