@@ -5,7 +5,7 @@ export const metadata = {
 	description: "A comprehensive guide on Digital Twin technology",
 	keywords: "article, digital twin, industry 4.0, real-time insights, operational optimization, IoT",
 	url: "https://www.wisetwin.eu/ressources/about/digital-twin",
-	image: "https://www.yoursite.com/public/image/png/TS_logo-d6e6f57d.png"
+	image: "https://www.wisetiwn.eu/public/image/png/TS_logo-d6e6f57d.png"
 };
 
 export default function Page() {
@@ -14,11 +14,11 @@ export default function Page() {
 			<div className={styles.sidebar}>
 				<nav>
 					<ul>
-					<li><a href="#introduction">Introduction to Digital Twin</a></li>
-					<li><a href="#content-1">How Does a Digital Twin Work?</a></li>
-					<li><a href="#content-2">Benefits of Digital Twins</a></li>
+					<li><a href="#introduction">Introduction to Digital Twins</a></li>
+					<li><a href="#content-1">How Do They Work?</a></li>
+					<li><a href="#content-2">What Are The Benefits?</a></li>
 					<li><a href="#content-3">Applications of Digital Twins</a></li>
-					<li><a href="#content-4">Future of Digital Twins</a></li>
+					<li><a href="#content-4">The Future of Digital Twins</a></li>
 					<li><a href="#conclusion">Learn More</a></li>
 					</ul>
 				</nav>
@@ -36,12 +36,9 @@ export default function Page() {
 						digital model that accurately reflects its physical
 						counterpart, allowing for real-time monitoring, simulation,
 						and analysis. Digital Twins are used in various fields such
-						as manufacturing, healthcare, aerospace, and urban
+						as energy, manufacturing, healthcare, aerospace, and urban
 						infrastructure.
 					</p>
-					<a>
-						<img src="https://via.placeholder.com/800x400?text=Digital+Twin+Concept" alt="Digital Twin Concept" className={styles.sectionImages}/>
-					</a>
 					<hr />
 					<h2 id="content-1" className={styles.sectionTitle}>How Does a Digital Twin Work?</h2>
 					<p className={styles.paragraph}>
@@ -60,7 +57,7 @@ export default function Page() {
 						<li className={styles.paragraph}><strong>Feedback Loop:</strong> Insights and recommendations from the digital twin are fed back to the physical entity, enabling real-time adjustments and improvements. This creates a continuous feedback loop that enhances efficiency and effectiveness.</li>
 					</ol>
 					<a>
-						<img src="https://via.placeholder.com/800x400?text=How+Digital+Twin+Works" alt="How Digital Twin Works" className={styles.sectionImages}/>
+						<img src="/image/png/digitaltwinstructure.png" alt="How Digital Twin Works" className={styles.sectionImages}/>
 					</a>
 					<hr />
 					<h2 id="content-2" className={styles.sectionTitle}>Benefits of Digital Twins</h2>
@@ -73,13 +70,13 @@ export default function Page() {
 					<h2 id="content-3" className={styles.sectionTitle}>Applications of Digital Twins</h2>
 					<h3 className={styles.sectionSubTitle}>Energy</h3>
 					<a href="/industries#energy">
-						<img src="https://via.placeholder.com/200x200?text=Energy+Logo" alt="Energy Logo" className={styles.industryImages}/>
+						<img src="/image/png/energy.png" alt="Energy Logo" className={styles.industryImages}/>
 					</a>
 					<p className={styles.paragraph}>
 						Digital twins are transforming energy production by enhancing efficiency, reliability, and sustainability. 
 						For instance, in wind energy, digital twins can optimize turbine performance 
-						by predicting maintenance needs, which can reduce operational costs by up to 20% and increase energy production 
-						by 5-10%. Similarly, in the oil and gas industry, digital twins help monitor and manage assets in real-time, 
+						by predicting maintenance needs, which can reduce operational costs by up to 35% and increase energy production 
+						by 15-25%. Similarly, in the oil and gas industry, digital twins help monitor and manage assets in real-time, 
 						potentially decreasing maintenance costs by 30% and extending asset life by 20%. 
 					</p>
 					<p className={styles.paragraph}>
@@ -95,7 +92,7 @@ export default function Page() {
 					</p>
 					<h3 className={styles.sectionSubTitle}>Warehouse Monitoring</h3>
 					<a href="/industries#warehouse-monitoring">
-						<img src="https://via.placeholder.com/200x200?text=Warehouse+Monitoring+Logo" alt="Warehouse Monitoring Logo" className={styles.industryImages}/>
+						<img src="/image/png/warehouse-monitoring.png" alt="Warehouse Monitoring Logo" className={styles.industryImages}/>
 					</a>
 					<p className={styles.paragraph}>
 						Digital twins are pivotal in revolutionizing warehouse monitoring by providing a comprehensive 
@@ -122,7 +119,7 @@ export default function Page() {
 					</p>
 					<h3 className={styles.sectionSubTitle}>Smart Cities</h3>
 					<a href="/industries#smart-city">
-						<img src="https://via.placeholder.com/200x200?text=Smart+Cities+Logo" alt="Smart Cities Logo" className={styles.industryImages}/>
+						<img src="/image/png/sustainable-cities.png" alt="Smart Cities Logo" className={styles.industryImages}/>
 					</a>
 					<p className={styles.paragraph}>
 						Digital twins are essential for the development and management of smart cities, 
@@ -150,7 +147,7 @@ export default function Page() {
 					</p>
 					<h3 className={styles.sectionSubTitle}>Smart Buildings</h3>
 					<a href="/industries#smart-buildings">
-						<img src="https://via.placeholder.com/200x200?text=Smart+Buildings+Logo" alt="Smart Buildings Logo" className={styles.industryImages}/>
+						<img src="/image/png/smart-building.png" alt="Smart Buildings Logo" className={styles.industryImages}/>
 					</a>
 					<p className={styles.paragraph}>
 						Digital twins are crucial for smart buildings, transforming how these structures are designed, 
@@ -175,12 +172,12 @@ export default function Page() {
 						smart buildings.
 						<a href="/industries#smart-buildings"><strong> Understand Digital Twins in Smart Buildings</strong></a>
 					</p>
-					<h3 className={styles.sectionSubTitle}>Industry 4.0</h3>
+					<h3 className={styles.sectionSubTitle}>4.0 Industry</h3>
 					<a href="/industries#industry-4.0">
-						<img src="https://via.placeholder.com/200x200?text=Industry+4.0+Logo" alt="Industry 4.0 Logo" className={styles.industryImages}/>
+						<img src="/image/png/40-industry.png" alt="4.0 Industry Logo" className={styles.industryImages}/>
 					</a>
 					<p className={styles.paragraph}>
-						Digital twins are integral to Industry 4.0, driving the transformation of manufacturing 
+						Digital twins are integral to 4.0 Industry, driving the transformation of manufacturing 
 						and industrial operations through advanced digital replication of physical assets and 
 						processes. These sophisticated models enable real-time monitoring, simulation, and 
 						optimization, leading to substantial improvements in efficiency and productivity.
@@ -198,8 +195,8 @@ export default function Page() {
 					<p className={styles.paragraph}>
 						By facilitating seamless integration of cyber-physical systems, IoT, and big data analytics, 
 						digital twins empower manufacturers to achieve higher levels of agility, flexibility, and 
-						responsiveness, making them a cornerstone of the Industry 4.0 revolution.
-						<a href="/industries#industry-4.0"><strong> Dive into Digital Twins in Industry 4.0</strong></a>
+						responsiveness, making them a cornerstone of the 4.0 Industry revolution.
+						<a href="/industries#industry-4.0"><strong> Dive into Digital Twins for 4.0 Industry</strong></a>
 					</p>
 					<hr />
 					<h2 id="content-4" className={styles.sectionTitle}>Future of Digital Twins</h2>
