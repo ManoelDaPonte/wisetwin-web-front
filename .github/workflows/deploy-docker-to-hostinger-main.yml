@@ -46,3 +46,4 @@ jobs:
                       docker stop wisetwin-web-front || true
                       docker rm wisetwin-web-front || true
                       docker run -d --restart=always --name wisetwin-web-front -p 8080:3000 ${{ secrets.DOCKER_USERNAME }}/wisetwin-web-front:latest
+                      docker image prune -a -f
