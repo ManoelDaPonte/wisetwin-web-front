@@ -1,4 +1,4 @@
-name: Create a docker Image and deploy to Hostinger
+name: Create a docker Image push it to dokcker hub and deploy to Hostinger
 on:
     push:
         branches: ["main"]
