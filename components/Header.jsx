@@ -104,7 +104,7 @@ const Header = () => {
 				{
 					id: 0,
 					href: "/ressources/about/digital-twin",
-					label: "What's a Digital Twin ?",
+					label: "What is a Digital Twin ?",
 				},
 				{
 					id: 1,
