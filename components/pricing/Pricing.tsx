@@ -90,7 +90,7 @@ export default function Pricing() {
             <div className="flex items-center">
               <div className="ml-4">
                 <h2 className="text-base font-semibold leading-7">
-                  Starter
+                  Your Digital Twin
                 </h2>
                 <p className="h-16 text-sm leading-5 text-black/70 dark:text-white">
                   Get your first digital twin up and running within 7 days !
