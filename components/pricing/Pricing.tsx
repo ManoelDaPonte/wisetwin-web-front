@@ -17,8 +17,8 @@ export const toHumanPrice = (price: number, decimals: number = 2) => {
 const demoPrices = [
   {
     id: "price_0",
-    name: "Modeling",
-    description: "A starter plan for small projects",
+    name: "Your Digital Twin",
+    description: "From",
     features: [
       "Interactive Digital Twin",
     ],
@@ -28,15 +28,14 @@ const demoPrices = [
   },
   {
     id: "price_1",
-    name: "SME",
-    description: "A premium plan for growing businesses",
+    name: "PoC / SME",
+    description: "From Proof of Concepts to growing businesses",
     features: [
-      "Connect up to 50 IoT devices",
       "Collaborate with up to 3 team members",
+      "Integrate your dashboards and analytics",
       "Monitoring and alerts",
-      "Integrate your dashboards",
     ],
-    monthlyPrice: 35000,
+    monthlyPrice: 10000,
     yearlyPrice: 20000,
     isMostPopular: true,
   },
@@ -47,9 +46,10 @@ const demoPrices = [
       "An enterprise plan with advanced features for large organizations",
     features: [
       "Everything in SME",
-      "Connect up to 100 IoT devices",
-      "Collaborate with up to 10 team members",
+      "Collaborate with all your team members",
       "Integration in your cloud provider",
+      "3D assets upgrades",
+      "Sub-modules integration",
       "Access to our latest features",
       "Priority support",
     ],
@@ -81,7 +81,7 @@ export default function Pricing() {
           </h2>
 
           <p className="mt-6 text-xl leading-8 text-black/80 dark:text-white">
-            We propose modular price to fit your needs.
+            Fit your needs with our modules
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function Pricing() {
             <div className="flex items-center">
               <div className="ml-4">
                 <h2 className="text-base font-semibold leading-7">
-                  Starter
+                  Your Digital Twin
                 </h2>
                 <p className="h-16 text-sm leading-5 text-black/70 dark:text-white">
                   Get your first digital twin up and running within 7 days !

@@ -22,14 +22,16 @@ const faqs = [
       {
         question: "What industries can benefit from Wise Twin's solutions?",
         answer: (
-          <span>Wise Twin's solutions are versatile and can be applied to various industries including manufacturing, healthcare, real estate, and more.</span>
+          <span>Wise Twin's solutions are versatile and can be applied to various industries including energy, manufacturing, healthcare, agriculture, real estate, and more.</span>
         ),
       },
 
       {
         question: "What is a Digital Twin and how does it work?",
         answer: (
-          <span>A Digital Twin is a virtual replica of a physical object or system. It uses real-time data and simulations to provide insights and optimize performance.</span>
+          <span>A Digital Twin is a virtual replica of a physical object or system. It uses real-time data and simulations to provide insights and optimize performance. See
+            <a href="/ressources/about/digital-twin"><strong> What is a Digital Twin?</strong></a>
+          </span>
         ),
       },
 
