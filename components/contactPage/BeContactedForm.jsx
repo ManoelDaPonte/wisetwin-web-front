@@ -122,8 +122,8 @@ export default function BeContactedForm() {
 
 				<input
 					type="text"
-					id="society"
-					name="society"
+					id="company"
+					name="company"
 					className={styles.input}
 					placeholder="Society"
 				/>
