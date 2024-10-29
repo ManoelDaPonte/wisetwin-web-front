@@ -1,0 +1,80 @@
+/* pricing.module.css */
+
+/* Styles généraux pour la page */
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alignement en haut */
+  background-color: #f9fafb; /* bg-gray-100 */
+  padding: 20px; /* Ajoute un peu d'espace autour */
+}
+
+.mainContent {
+  background: white; /* bg-white */
+  border-radius: 12px; /* Arrondit les coins */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  padding: 30px; /* Ajoute un peu d'espace intérieur */
+  max-width: 800px; /* Limite la largeur pour la lisibilité */
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.header {
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 20px; /* Ajoute un espace sous l'en-tête */
+}
+
+.title {
+  font-size: 2.5rem; /* Taille de police plus grande */
+  font-weight: bold; /* Gras pour le titre */
+  color: #003366; /* Couleur personnalisée */
+}
+
+.subtitle {
+  font-size: 1rem; /* Taille de police légèrement plus grande */
+  color: rgba(0, 0, 0, 0.7); /* Couleur grise */
+}
+
+/* Styles pour les articles */
+.article {
+  margin-top: 20px; /* Espace au-dessus de l'article */
+}
+
+.sectionTitle {
+  font-size: 1.5rem; /* Taille du titre des sections */
+  font-weight: 600; /* Gras pour le titre de section */
+  color: #4b5563; /* Couleur personnalisée pour le titre */
+  border-bottom: 2px solid #003366; /* Ligne en dessous du titre */
+  padding-bottom: 8px; /* Espace sous le titre */
+}
+
+.paragraph {
+  font-size: 1rem; /* Taille de police standard */
+  line-height: 1.6; /* Hauteur de ligne pour meilleure lisibilité */
+  margin-bottom: 12px; /* Espace entre les paragraphes */
+  color: rgba(0, 0, 0, 0.8); /* Couleur légèrement plus sombre */
+}
+
+/* Styles pour les images de section */
+.sectionImages {
+  max-width: 100%; /* Limite la largeur de l'image */
+  border-radius: 8px; /* Arrondit les coins de l'image */
+  margin: 20px 0; /* Espace autour de l'image */
+}
+
+/* Styles pour les séparateurs */
+.hr {
+  border: none; /* Supprime la bordure par défaut */
+  height: 2px; /* Hauteur de la ligne */
+  background-color: #d1d5db; /* Couleur personnalisée pour le séparateur */
+  margin: 30px 0; /* Espace autour du séparateur */
+}
+
+/* Styles pour les sous-titres de section */
+.sectionSubTitle {
+  font-size: 1.25rem; /* Taille de police pour sous-titres */
+  font-weight: 500; /* Poids de police medium */
+  color: #1f2937; /* Couleur personnalisée */
+  margin: 15px 0; /* Espace autour du sous-titre */
+}
+
+/* Autres styles ici (comme ceux déjà fournis) ... */
