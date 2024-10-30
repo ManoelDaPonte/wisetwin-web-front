@@ -153,7 +153,7 @@ const Header = () => {
 				</div>
 				<div className={styles.rightGroup}>
 					<Button
-						label="Request a Demo"
+						label="Try our FREE Demo"
 						color="green"
 						onClick={requestDemo}
 						className={styles.demoButton}
@@ -218,7 +218,7 @@ const Header = () => {
 							)}
 						</li>
 					))}
-					<Button label="Request a Demo" onClick={requestDemo} />
+					<Button label="Try our FREE Demo" onClick={requestDemo} />
 				</ul>
 			</nav>
 		</>
