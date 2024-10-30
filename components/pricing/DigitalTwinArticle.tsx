@@ -8,8 +8,8 @@ type DigitalTwinArticleProps = {
 
 const DigitalTwinArticle: React.FC<DigitalTwinArticleProps> = ({ type }) => {
   return (
-    <div className={styles.pageContainer}>
-      <div className={styles.mainContent}>
+      <div className={styles.pageContainer}>
+        <div className={styles.mainContent}>
         {type === "Startup - SME" ? (
           <>
             <header className={styles.header}>
