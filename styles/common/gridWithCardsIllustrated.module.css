@@ -2,79 +2,90 @@
 
 .container {
 	width: 100%;
-	padding: 0 10%;
-	background-color: #000a43;
+	padding: 0 5%;
+	background-color: #ffffff; /* Couleur de fond de la section */
 }
 
 .title {
 	text-align: center;
-	margin-bottom: 20px;
-	font-size: 2em;
+	margin-bottom: 40px;
+	font-size: 2.5em;
+	color: #333333; /* Couleur du texte du titre */
 }
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-items: center; /* centre les éléments horizontalement */
-	align-items: center; /* centre les éléments verticalement */
-	gap: 20px; /* Espace entre les éléments */
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 30px;
 }
 
 .card {
-	background-color: #131d57; /* Grey background */
-	border: 0px solid #000000; /* Border for the cards */
-	border-radius: 8px;
+	background-color: #ffffff; /* Couleur de fond des cartes */
+	border: 1px solid #e0e0e0; /* Couleur de la bordure des cartes */
+	border-radius: 12px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	width: 300px; /* Fixed width for the cards */
-	height: 400px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
 
 .imageContainer {
-	height: 200px;
+	height: 180px;
 	overflow: hidden;
-	margin: 2px; /* Margin around the image container */
-	background-color: #5b639493;
+	background-color: #f5f5f5;
 }
 
 .image {
 	width: 100%;
 	height: 100%;
-	object-fit: contain; /* Ensure the image covers the container without stretching */
+	object-fit: cover;
 }
 
 .content {
-	color: white;
+	color: #333333; /* Couleur du texte */
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
-	justify-content: space-between;
+	padding: 20px;
 	flex-grow: 1;
-	line-height: 1.2;
-	font-size: 0.8em;
 }
 
 .content h2 {
-	margin-bottom: 25px; /* Espace entre le titre et le paragraphe */
+	margin-bottom: 15px;
+	font-size: 1.5em;
 }
 
-.content p {
-	margin-bottom: 25px; /* Espace entre le paragraphe et le bouton */
+.textCard {
+	flex-grow: 1;
+	margin-bottom: 20px;
+	font-size: 1em;
+	line-height: 1.6;
 }
 
-.learnMore {
-	margin-top: 10px;
-	padding: 10px 15px;
-	background-color: #007bff;
-	color: #fff;
+.demoButton {
+	align-self: flex-start;
+}
+
+.demoButton a {
+	text-decoration: none;
+}
+
+.demoButton button {
+	padding: 12px 24px;
+	background-color: #4caf50; /* Couleur verte du bouton */
+	color: #ffffff; /* Couleur du texte du bouton */
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	align-self: center;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
 }
 
-.learnMore:hover {
-	background-color: #0056b3;
+.demoButton button:hover {
+	background-color: #43a047; /* Vert légèrement plus foncé au survol */
 }
