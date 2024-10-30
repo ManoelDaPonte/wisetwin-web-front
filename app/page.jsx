@@ -1,18 +1,19 @@
 import styles from "@/styles/page.module.css";
 import Hero from "@/components/homePage/Hero";
+import HeroSolution from "@/components/solutions/HeroSolutionv1";
 import GridWithCardsIllustrated from "@/components/common/GridWithCardsIllustrated";
 
 const HomePage = () => {
 	const cards = [
 		{
 			title: "Our Solutions",
-			text: "We have brought sci-fi to reality. Discover our digital twin solutions and our innovative approach to enhance your daily tasks.",
-			image: "image/png/digital-twin-recompressor-wise-twin.png",
+			text: "The front-end of industries. Discover our digital twin solutions and our innovative approach to enhance your daily tasks, with interfaces for decision-makers/engineers/operators",
+			image: "image/png/cube-ai.png",
 			href: "/solutions",
 		},
 		{
 			title: "Uses Cases",
-			text: "Discover how our digital twins can help you with use cases that drive real-world impact.",
+			text: "Discover how our digital twins can help you with use cases that drive real-world impact. From design and monitoring to a powerful simulation interface.",
 			image: "image/png/bulb-solutions.png",
 			href: "/use-cases",
 		},
@@ -26,6 +27,8 @@ const HomePage = () => {
 	return (
 		<div className={styles.pageSections}>
 			<Hero />
+			<HeroSolution />
+			
 			<GridWithCardsIllustrated cards={cards} />
 		</div>
 	);

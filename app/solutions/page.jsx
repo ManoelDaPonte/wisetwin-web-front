@@ -1,45 +1,54 @@
 import styles from "@/styles/page.module.css";
-import HeroSolution from "@/components/solutions/HeroSolution";
+import HeroSolution from "@/components/solutions/HeroSolutionv2";
 import SectionIllustrated from "@/components/common/SectionIllustrated";
 import Title from "@/components/common/Title";
 
 export default function Page() {
+	const cards_wisetwin = [
+		{
+			title: "Power plants",
+			text: "Renewables (Hydrogen, Solar PV, Concentrated solar power, Biomass, Wind, Hydro, etc...)",
+		},
+		{
+			title: "Smart grids",
+			text: "Next-gen smart grids, integrating DER in the mix. ",
+		},
+		{
+			title: "Refueling stations",
+			text: "HRS for utilities, or enterprise levels.",
+		},
+		{
+			title: "Energy storage",
+			text: "BESS: Heat, chemical, electricity storage",
+		},
+	];
 	return (
 		<div className={styles.pageSections}>
 			<HeroSolution />
 			<section id="digital-twin">
-				<Title
-					title={"Digital Twin"}
-					subTitle={
-						"This is our main solution – get started with it !"
-					}
-				/>
 				<SectionIllustrated
-					title="Your own Virtual Industry"
-					subTitle="Play with it !"
-					image="/image/png/saas-energy.png"
+					title="We do the work for you"
+					subTitle="The fastest on the market"
+					image="/image/png/WiseTwin-pipeline-development.png"
 					imagePosition="right"
 				>
 					<p>
-						Start your digitalization process and deploy
-						high-quality 3D rendering of your plant, building,
-						warehouse, or industry, and play with your early digital
+						Get the most innovative front-end of your plant.
+						Deploy high-quality 3D rendering of your assets, and play with your early digital
 						twin, so you will be able to:
 					</p>
 					<br />
 					<ul>
 						<li>• Enhance internal and external communication </li>
-						<li>• Be aware of your assets</li>
-						<li>
-							• Visualize and simulate changes in your industry
-						</li>
+						<li>• Get a global awareness of your assets</li>
+						<li>• Visualize and simulate changes in your industry</li>
 					</ul>
 				</SectionIllustrated>
 				<div className={styles.split}></div>
 				<SectionIllustrated
-					title="Add some live data"
-					subTitle="Connect your devices from any kind of Data Source. Everything is safely stored in the cloud."
-					image="/image/png/awareness.png"
+					title="Cross-platform integration"
+					subTitle="Make it operational"
+					image="/image/png/online-monitoring.png"
 					imagePosition="left"
 				>
 					<p>
@@ -59,7 +68,7 @@ export default function Page() {
 
 				<SectionIllustrated
 					title="For innovation leaders"
-					subTitle="Integrate your predictive maintenance modules !"
+					subTitle="Integrate your maintenance modules !"
 					image="/image/png/saas-exploded.png"
 					imagePosition="right"
 				>
@@ -84,7 +93,7 @@ export default function Page() {
 				/>
 				<SectionIllustrated
 					title="WiseTrainer™"
-					subTitle="Our formation module"
+					subTitle="Your Virtual Formation"
 					image="/image/png/virtual-formation.png"
 					imagePosition="right"
 				>

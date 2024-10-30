@@ -81,17 +81,17 @@ export default function Hero() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 mt-6">
                 <div className="relative bg-white bg-opacity-10 backdrop-blur-lg p-2 sm:p-4 md:p-6 rounded-lg text-sm sm:text-base">
                   <h2 className="text-base font-semibold text-white">7 Days</h2>
-                  <p className="text-white text-sm">Get your first digital twin within 7 days and take one step further towards innovation.</p>
+                  <p className="text-white text-sm">Get your first digital twin within 7 days and take one step further towards innovation</p>
                 </div>
 
                 <div className="relative bg-white bg-opacity-10 backdrop-blur-lg p-2 sm:p-4 md:p-6 rounded-lg text-sm sm:text-base">
                   <h2 className="text-base font-semibold text-white">Unlimited Design</h2>
-                  <p className="text-white text-sm">Customize your twin through our asset library, on demand, without restrictions.</p>
+                  <p className="text-white text-sm">Customize your twin and virtualize your plant, from pilot to industrial scale</p>
                 </div>
 
                 <div className="relative bg-white bg-opacity-10 backdrop-blur-lg p-2 sm:p-4 md:p-6 rounded-lg text-sm sm:text-base">
-                  <h2 className="text-base font-semibold text-white">100%</h2>
-                  <p className="text-white text-sm">Achieve 100% fidelity for your platform's twin by integrating all your IoT data securely and seamlessly.</p>
+                  <h2 className="text-base font-semibold text-white">100% Integration</h2>
+                  <p className="text-white text-sm">Get a full digital copy of your industry by cross-platform integrations</p>
                 </div>
               </div>
 

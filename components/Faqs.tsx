@@ -20,7 +20,7 @@ const faqs = [
         ),
       },
       {
-        question: "What industries can benefit from Wise Twin's solutions?",
+        question: "Which industries can benefit from Wise Twin's solutions?",
         answer: (
           <span>Wise Twin's solutions are versatile and can be applied to various industries including energy, manufacturing, healthcare, agriculture, real estate, and more.</span>
         ),
@@ -43,7 +43,7 @@ const faqs = [
     section: "Support",
     qa: [
       {
-        question: "I have specific needs for my industry, do you provide support for this?",
+        question: "I have specific needs for my use case, do you provide support for this?",
         answer: (
           <span>
             Yes! Depending on your subscription plan, we provide technical support for the platform itself.
@@ -68,11 +68,10 @@ const faqs = [
     section: "Customization",
     qa: [
       {
-        question: "Can I customize my Digital Twin?",
+        question: "Can I modify my Digital Twin once acquired?",
         answer: (
           <span>
-            Absolutely! We provide all the necessary 3D assets for your specific needs,
-            IoT Dashboards integration. For more complex upgrades, don't hesitate to contact us!
+            Absolutely! We provide all the necessary support for your specific needs, and our digital twins are evolutive, meaning that they can be infinitely modified in real time!
           </span>
         ),
       },
@@ -99,7 +98,7 @@ const faqs = [
         question: "Is that possible to get the software on premise?",
         answer: (
           <span>
-            We do not offer on-premise installations at the moment. Our platform is cloud-based and can be accessed from anywhere, securely and easily. However depending on your subscription plan, we can provide a dedicated instance.
+            We now offer on-premise installations. Our process is evolutive with a tailor-made cloud-based building for agile development. Both cloud and on-premise permit to access the digital twin from anywhere, securely and easily.
           </span>
         ),
       },
