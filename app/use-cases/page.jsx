@@ -66,13 +66,10 @@ export default function Page() {
 					</p>
 					<br />
 					<ul>
-						<li>• Extend the lifespan of your equipment</li>
+						<li>• Simulate materials and processes</li>
 						<li>• Reduces unplanned downtime</li>
 						<li>• Optimizes maintenance costs</li>
-						<li>
-							• Ensure a continuous and reliable operational
-							performance
-						</li>
+						<li>• Ensure continuous and reliable operations</li>
 					</ul>
 				</SectionIllustrated>
 				<SectionIllustrated
@@ -96,11 +93,11 @@ export default function Page() {
 					<br />
 					<ul>
 						<li>
-							• It reduces the risks associated with real-world
+							• Reduces the risks associated with real-world
 							training
 						</li>
 						<li>
-							• Decrease time formation with higher efficiency
+							• Decrease time formation by 90% with higher efficiency
 						</li>
 						<li>• Increase responsiveness in real situations</li>
 						<li>
