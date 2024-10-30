@@ -81,7 +81,115 @@ const PrivacyPolicy = () => {
 			
 			<h1>Wise Twin - Privacy Statement</h1>
 			<p>Effective: January 1, 2024</p>
+			<h2>Scope and Introduction</h2>
+			<p>
+				Thank you for entrusting Wise Twin S.L. and its Affiliates (“Wise Twin,” “we,” “us,” or “our”) with your Personal Information. This Privacy Statement explains our practices regarding the collection, use, and disclosure of your Personal Information, including any Personal Information we collect and process in connection with our applications, software, or products, including WiseTrainer, TwinBuilder, our cloud and SaaS services, and professional services (collectively, the “Service(s)”).
+			</p>
+			<p>
+				This Privacy Statement also explains the collection and use of Personal Information relating to visitors to our websites, including wisetwin.eu, and other sites linked to this Privacy Statement (“websites”). We have additional Privacy Statements concerning the collection and processing of Personal Information for SaaS Users and Mobile Apps, which supplement the terms of this Wise Twin Privacy Statement.
+			</p>
+			<p>
+				We use your Personal Information as this Privacy Statement describes. No matter where you are, where you live, or what your citizenship is, you receive the same high standard of privacy protection when using Wise Twin’s products and Services or visiting our websites.
+			</p>
 
+			<h2>Summary</h2>
+			<p>
+				This Wise Twin Privacy Statement aims to explain what Personal Information is processed by Wise Twin, who uses your Personal Information, for what purpose, for how long, and what rights you have in this context.
+			</p>
+
+			<h2>Who collects and processes your Personal Information?</h2>
+			<p>
+				Wise Twin, in the form of the respective legal entity, acts as either Wise Twin S.L. The Wise Twin Privacy Statement describes in detail which processing activities of a specific Wise Twin group entity apply.
+			</p>
+
+			<h2>What Personal Information do we collect?</h2>
+			<p>
+				Wise Twin may collect various types of Personal Information about you when conducting its business, including:
+				<ul>
+				<li>personal contact information,</li>
+				<li>personal Information related to your or your employer’s business relationship with Wise Twin,</li>
+				<li>Personal Information Wise Twin must collect for legal and compliance-related purposes,</li>
+				<li>personal usage, registration, and participation information generated through your use of our Services,</li>
+				<li>special categories of Personal Information,</li>
+				<li>application-related Personal Information,</li>
+				<li>Personal Information from third parties,</li>
+				<li>Personal Information to ensure your or your employer’s satisfaction with our Services, products, and offerings,</li>
+				<li>Personal Information collected when you visit our facilities or attend our events, online or in person.</li>
+				</ul>
+			</p>
+
+			<h2>How do we use your Personal Information?</h2>
+			<p>
+				Wise Twin uses your Personal Information to:
+				<ul>
+				<li>maintain business relationships with you, your employer, or your employer’s customers, including keeping you updated on our products and Services,</li>
+				<li>develop and offer our software products, cloud, SaaS, and other Services to you or your employer,</li>
+				<li>ensure quality and safety of our premises, facilities, products, or Services,</li>
+				<li>protect legal assets against unlawful attacks and assert rights,</li>
+				<li>ensure compliance with statutory laws and regulations,</li>
+				<li>operate websites, analyze user behavior, enable identity services, and promote and improve user experience,</li>
+				<li>explore potential talent for Wise Twin,</li>
+				<li>share with recipients such as other entities within the Wise Twin Group, third-party service providers, Wise Twin partners, and others.</li>
+				</ul>
+				For detailed information on the purposes for collecting, transferring, and using your Personal Information, data retention, and the legal basis under GDPR, please refer to the full Wise Twin Privacy Statement below.
+			</p>
+
+			<h2>What Personal Information do we collect?</h2>
+			<p>
+				We may collect and process the following Personal Information about you:
+				<ul>
+				<li>Information you provide by filling forms on our sites, including information provided when registering, posting material, or reporting issues.</li>
+				<li>Contact information of authorized individuals for accessing accounts and billing information.</li>
+				<li>Personal Information provided by your Organization, if applicable, including name, role, email, telephone number, Organization name, and technical information.</li>
+				<li>Records of correspondence with us, including audio and video recordings from meetings attended with Wise Twin.</li>
+				<li>Survey responses and research participation.</li>
+				<li>Transaction details for orders, including software downloading, licensing, and accessing Services.</li>
+				<li>Details of visits to our websites, such as traffic data, site pages visited, weblogs, and other communication data.</li>
+				<li>Information supplied in marketing and other business activities.</li>
+				<li>Information from event participation, including photographs, video, and/or audio recordings taken at live events.</li>
+				<li>Information shared on our site forums, feedback sites, email systems, and other community areas.</li>
+				<li>Personal Information from third parties for marketing purposes, or from public sources, combined with your provided information.</li>
+				<li>Information provided during your job application process.</li>
+				</ul>
+			</p>
+
+			<h2>How We Use Your Personal Information</h2>
+			<p>
+				We process Personal Information primarily for our legitimate interests or to fulfill a contract with you or your Organization. Uses include:
+				<ul>
+				<li>Ensuring effective content display on our sites.</li>
+				<li>Providing requested information, products, or Services.</li>
+				<li>Fulfilling contractual obligations with you or your Organization.</li>
+				<li>Allowing participation in interactive Service features.</li>
+				<li>Providing Wise Twin product updates and information.</li>
+				<li>Enforcing our terms of service and agreements.</li>
+				<li>Protecting the rights, property, or safety of Wise Twin and others.</li>
+				<li>Sending event updates.</li>
+				<li>Using event recordings for promotional and educational purposes.</li>
+				<li>Maintaining CCTV footage at our premises for safety purposes.</li>
+				<li>Supporting Organizational Users per agreements with their Organizations.</li>
+				</ul>
+				Job applicants and employees, refer to our specific Privacy Statements available on The Hub for more details.
+			</p>
+
+			<h2>Transfer and Sharing Personal Information</h2>
+			<p>
+				We may share Personal Information with third parties who agree to process it according to our instructions and with adequate security measures. These third parties may include:
+				<ul>
+				<li>Wise Twin Group entities for efficient Service provision,</li>
+				<li>Authorized resellers and business partners for limited purposes,</li>
+				<li>Trusted businesses processing data on our behalf,</li>
+				<li>Prospective business buyers or sellers,</li>
+				<li>In compliance with legal obligations,</li>
+				<li>Government agencies as permitted by law.</li>
+				</ul>
+				Wise Twin never sells your information for commercial gain. If you use a Wise Twin product via an Organization account, the Organization may control your account and access your Personal Information. Wise Twin's processing of your data is governed by our contract with your Organization.
+			</p>
+
+			<h2>Marketing Choices</h2>
+			<p>
+				You may choose not to provide certain Personal Information; however, this may limit our ability to fulfill requests. To opt out of marketing messages, click “Unsubscribe” or contact your Wise Twin account executive. Please inform us if you prefer not to receive telemarketing calls.
+			</p>
 			<h2>5. Where We Store and Access Your Personal Information</h2>
 			<p>
 				Wise Twin is a global company headquartered in Spain, meaning your Personal Information may be processed in Spain. or accessed internationally. If you interact with our sites or communicate electronically, your information may cross international boundaries. By using our Services or communicating with us, you consent to this international processing.
