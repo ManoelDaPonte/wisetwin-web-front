@@ -7,13 +7,13 @@ const HomePage = () => {
 	const cards = [
 		{
 			title: "Our Solutions",
-			text: "The front-end of industries. Discover our digital twin solutions and our innovative approach to enhance your daily tasks, with interfaces for decision-makers/engineers/operators",
-			image: "image/png/cube-ai.png",
+			text: "We have brought sci-fi to reality. Discover our digital twin solutions and our innovative approach to enhance your daily tasks.",
+			image: "image/png/digital-twin-recompressor-wise-twin.png",
 			href: "/solutions",
 		},
 		{
 			title: "Uses Cases",
-			text: "Discover how our digital twins can help you with use cases that drive real-world impact. From design and monitoring to a powerful simulation interface.",
+			text: "Discover how our digital twins can help you with use cases that drive real-world impact.",
 			image: "image/png/bulb-solutions.png",
 			href: "/use-cases",
 		},
@@ -28,7 +28,6 @@ const HomePage = () => {
 		<div className={styles.pageSections}>
 			<Hero />
 			<HeroSolution />
-			
 			<GridWithCardsIllustrated cards={cards} />
 		</div>
 	);

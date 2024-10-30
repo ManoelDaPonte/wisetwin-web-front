@@ -14,8 +14,12 @@ const Header = () => {
 	const [openSubMenus, setOpenSubMenus] = useState({});
 
 	const requestDemo = () => {
-		router.push("/contact?interest=requestDemo");
-		toggleMenu(); // Fermer le menu après la redirection
+		window.open(
+			"https://app.wisetwin.eu/login",
+			"_blank",
+			"noopener,noreferrer"
+		);
+		toggleMenu(); // Fermer le menu après l'ouverture du lien
 	};
 
 	const toggleMenu = () => {
@@ -110,13 +114,12 @@ const Header = () => {
 					id: 1,
 					href: "/ressources/faqs",
 					label: "FAQs",
-				}
+				},
 				//{
 				//	id: 2,
 				//	href: "/ressources/testimony",
 				//	label: "Testimony",
 				//}
-
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },
