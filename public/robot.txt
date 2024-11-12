@@ -5,3 +5,7 @@ Disallow: /api
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+User-agent: *
+Allow: /
+Sitemap: /sitemap.xml
