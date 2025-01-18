@@ -6,13 +6,13 @@
 .pageSections > div {
 	padding-bottom: 5%;
 	padding-top: 5%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .pageSections > section {
 	padding-bottom: 5%;
 	padding-top: 5%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .containerGrid {

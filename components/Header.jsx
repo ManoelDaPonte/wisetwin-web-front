@@ -14,8 +14,12 @@ const Header = () => {
 	const [openSubMenus, setOpenSubMenus] = useState({});
 
 	const requestDemo = () => {
-		router.push("/contact?interest=requestDemo");
-		toggleMenu(); // Fermer le menu après la redirection
+		window.open(
+			"https://demo.wisetwin.eu/login",
+			"_blank",
+			"noopener,noreferrer"
+		);
+		toggleMenu(); // Fermer le menu après l'ouverture du lien
 	};
 
 	const toggleMenu = () => {
@@ -120,8 +124,7 @@ const Header = () => {
 					id: 3,
 					href: "/ressources/faqs",
 					label: "FAQs",
-				},
-
+				},,
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },
@@ -158,7 +161,7 @@ const Header = () => {
 				</div>
 				<div className={styles.rightGroup}>
 					<Button
-						label="Request a Demo"
+						label="Try our FREE Demo"
 						color="green"
 						onClick={requestDemo}
 						className={styles.demoButton}
@@ -223,7 +226,7 @@ const Header = () => {
 							)}
 						</li>
 					))}
-					<Button label="Request a Demo" onClick={requestDemo} />
+					<Button label="Try our FREE Demo" onClick={requestDemo} />
 				</ul>
 			</nav>
 		</>

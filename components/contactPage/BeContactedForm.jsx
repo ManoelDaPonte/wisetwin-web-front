@@ -69,9 +69,9 @@ export default function BeContactedForm() {
 
 	return (
 		<div className={styles.formContainer}>
-			<div className={styles.title}>Book an introduction call </div>
+			<div className={styles.title}>Get in touch</div>
 			<div className={styles.subtitle}>
-				Fill in the form below and we will contact you as soon as
+				Please fill in the form below and we will contact you as soon as
 				possible with the right person to help you.
 			</div>
 
@@ -122,8 +122,8 @@ export default function BeContactedForm() {
 
 				<input
 					type="text"
-					id="society"
-					name="society"
+					id="company"
+					name="company"
 					className={styles.input}
 					placeholder="Society"
 				/>

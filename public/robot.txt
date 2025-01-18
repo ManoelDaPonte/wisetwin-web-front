@@ -1,7 +1,5 @@
-# Block all crawlers for /accounts
-User-agent: *
-Disallow: /api
-
-# Allow all crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
+
+Sitemap: https://wisetwin.eu/sitemap.xml
