@@ -1,176 +1,180 @@
+/* Conteneur principal */ 
 .pageContainer {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Espacement entre la sidebar et le contenu principal */
+  padding: 20px;
 }
 
+/* Sidebar - Barre de navigation fixe */
 .sidebar {
-    position: sticky;
-    top: 20px;
-    width: 200px;
-    padding-right: 20px;
+  position: sticky;        /* Fixe la sidebar */
+  top: 0;                  /* La position reste en haut de la fenêtre */
+  width: 25vh;            /* Définir la largeur de la sidebar */
+  height: 100vh;           /* S'assurer que la sidebar occupe toute la hauteur de la fenêtre */
+  background-color: #f4f4f4;  /* Couleur de fond de la sidebar (ajustez à vos besoins) */
+  padding: 20px;           /* Padding autour de la sidebar */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour séparer la sidebar du contenu */
+  z-index: 10;             /* S'assurer qu'elle soit toujours au-dessus du contenu */
 }
 
 .sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .sidebar nav ul li {
-    margin: 10px 0;
+  margin: 15px 0;
 }
 
-.sidebar nav ul li a {
-    text-decoration: none;
-    color: #161616;
-
-    transition: color 0.3s;
+.sidebarLink {
+  display: block;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.sidebar nav ul li a:hover {
-    color: #0c47a1;
+.sidebarLink:hover {
+  background-color: #ddd;
+  color: #000;
 }
 
+/* S'il y a un état actif (ex: lors du scroll), vous pouvez changer l'apparence du lien actif */
+.sidebarLink.activeLink {
+  font-weight: bold;
+  color: #02008a;
+}
+
+/* Contenu principal */
 .mainContent {
-    flex: 1;
-    background: #ffffff;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
+  flex: 1;                 /* Le contenu principal prend l'espace restant */
+  max-width: 700px;       /* Limite la largeur de l'article (ajustez selon vos besoins) */
+  margin: 0 auto;          /* Centre horizontalement */
+  padding: 20px;
+  width: 100%;             /* Prend toute la largeur disponible, jusqu'à max-width */
 }
 
 .title {
-    font-size: 3.5em;
-    margin: 0;
-    margin-bottom: 20px;
-    color: #161616;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .subtitle {
-    font-size: 1.5em;
-    color: #161616;
+  font-size: 20px;
+  color: #02008a;
+  margin-top: 10px;
+  margin-bottom: 100px;
 }
 
+/* Style pour l'image dans le header */
+.sectionImages {
+  width: 100%;                 /* L'image occupe 50% de l'espace */
+  border-radius: 8px;         /* Coins arrondis */
+}
+
+/* Ajouter un effet au survol */
+.sectionImages:hover {
+  transform: scale(1.05);  /* Légère mise à l'échelle au survol */
+}
+
+/* Contenu de l'article */
 .article {
-    margin-bottom: 40px;
+  margin-top: 20px;
+  color: #2d3748;
 }
 
 .sectionTitle {
-    font-size: 2.2em;
-    margin-top: 40px;
-    margin-bottom: 8px;
-    color: #161616;
-    display: flex;
-    align-items: center;
-}
-
-.sectionSubTitle {
-    font-size: 1.8em;
-    margin-top: 40px;
-    margin-bottom: 8px;
-    color: #161616;
-    display: flex;
-    align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #02008a;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #cbd5e0;
 }
 
 .paragraph {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: #333;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* Justifie les paragraphes */
 }
 
-.titleInput {
-    border: none;
-    border-bottom: 2px solid #ddd;
-    font-size: 1.8em;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    color: #0c47a1;
+.list,
+.orderedList {
+  margin-left: 20px;
 }
 
-.footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
+.list li,
+.orderedList li {
+  margin: 10px 0;
+  font-size: 22px; /* Définit la taille de police des éléments de liste */
 }
 
+.list li strong,
+.orderedList li strong {
+  color: #02008a;
+}
+
+/* Ligne de séparation */
+.divider {
+  border-top: 2px solid #e2e8f0;
+  margin: 40px 0;
+}
+
+/* Call to action button */
 .demoButton {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.sectionImages {
-    display: block;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+.ctaButton {
+  background-color: #02008a;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.industryImages {
-    display: block;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.ctaButton:hover {
+  background-color: #FF6C00;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-    .page-container {
-      flex-direction: column;
-    }
-  
-    .sidebar {
-      width: 100%;
-      padding: 0;
-      position: static;
-    }
-  
-    .sidebar nav ul {
-      display: flexbox;
-      justify-content: space-around;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-  
-    .sidebar nav ul li {
-      margin: 0;
-    }
-  
-    .mainContent {
-      padding: 20px;
-      margin-top: 20px;
-    }
-  
-    .title {
-      font-size: 2em;
-    }
-  
-    .subtitle {
-      font-size: 1em;
-    }
-  
-    .sectionTitle {
-      font-size: 1.5em;
-    }
-
-    .sectionSubTitle {
-        font-size: 1.3em;
-      }
-  
-    .title-input {
-      font-size: 1.5em;
-    }
+  .pageContainer {
+    flex-direction: column;
+    padding: 10px;
   }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .mainContent {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  /* Assurez-vous d'ajouter cette classe à votre CSS pour l'effet actif */
+  .activeLink {
+    font-weight: bold;
+    color: #007bff; /* Exemple de couleur pour le lien actif */
+  }
+}

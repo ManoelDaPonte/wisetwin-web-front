@@ -5,7 +5,7 @@ export const metadata = {
 	description: "A comprehensive guide on Digital Twin technology",
 	keywords: "article, digital twin, industry 4.0, real-time insights, operational optimization, IoT",
 	url: "https://www.wisetwin.eu/ressources/about/digital-twin",
-	image: "https://www.wisetiwn.eu/public/image/png/TS_logo-d6e6f57d.png"
+	image: "https://www.wisetwin.eu/public/image/png/TS_logo-d6e6f57d.png"
 };
 
 export default function Page() {

@@ -35,6 +35,15 @@ const faqs = [
         ),
       },
 
+      {
+        question: "How to implement a Digital Twin?",
+        answer: (
+          <span>A practical guide to implementing Digital Twin technology in Industry 4.0. See
+            <a href="/ressources/blog/how-to-implement-a-digital-twin"><strong> How to implement a Digital Twin?</strong></a>
+          </span>
+        ),
+      },
+
 
 
     ],
