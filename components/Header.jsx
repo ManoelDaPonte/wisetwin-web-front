@@ -113,7 +113,7 @@ const Header = () => {
 				{
 					id: 1,
 					href: "/ressources/blog/digital-twin-for-startups",
-					label: "Transform Your Ideas with Digital Twin Technology",
+					label: "Digital Twins for Startups",
 				},
 				{
 					id: 2,
