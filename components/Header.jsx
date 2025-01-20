@@ -107,24 +107,30 @@ const Header = () => {
 			subTabs: [
 				{
 					id: 0,
-					href: "/ressources/blog/how-to-implement-a-digital-twin",
-					label: "How to implement a Digital Twin ?",
-				},
-				{
-					id: 1,
 					href: "/ressources/about/digital-twin",
 					label: "What is a Digital Twin ?",
 				},
 				{
+					id: 1,
+					href: "/ressources/blog/digital-twin-for-startups",
+					label: "Transform Your Ideas with Digital Twin Technology",
+				},
+				{
 					id: 2,
-					href: "/ressources/blog/digital-twin-cost-breakdown",
-					label: "How much does it cost?",
+					href: "/ressources/blog/how-much-for-your-digital-twin",
+					label: "Digital Twin Cost Breakdown",
 				},
 				{
 					id: 3,
+					href: "/ressources/blog/how-to-implement-a-digital-twin",
+					label: "Digital Twin Implementation Guide",
+				},
+				{
+					id: 4,
 					href: "/ressources/faqs",
 					label: "FAQs",
-				},,
+				},
+				,
 			],
 		},
 		{ href: "/pricing", label: "Pricing" },
