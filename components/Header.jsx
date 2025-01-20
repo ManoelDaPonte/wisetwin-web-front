@@ -117,13 +117,8 @@ const Header = () => {
 				},
 				{
 					id: 2,
-					href: "/ressources/blog/how-much-for-your-digital-twin",
-					label: "Digital Twin Cost Breakdown",
-				},
-				{
-					id: 3,
 					href: "/ressources/blog/how-to-implement-a-digital-twin",
-					label: "Digital Twin Implementation Guide",
+					label: "Digital Twin Implementation & Cost Guide",
 				},
 				{
 					id: 4,
