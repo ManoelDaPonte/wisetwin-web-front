@@ -15,7 +15,7 @@ const Header = () => {
 
 	const requestDemo = () => {
 		window.open(
-			"https://demo.wisetwin.eu/login",
+			"https://wisetrainer.wisetwin.eu/login",
 			"_blank",
 			"noopener,noreferrer"
 		);
